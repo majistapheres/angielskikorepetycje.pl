@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezerwacja Lekcji – Angielski Wrocław i Online | Adrian Ekrem</title>
+    <meta name="description"
+        content="Zarezerwuj lekcję angielskiego online lub stacjonarnie we Wrocławiu. Wybierz termin, który Ci odpowiada i zacznij mówić pewniej.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .booking-container {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            min-height: 600px;
+        }
+
+        #my-cal-inline-lekcja {
+            min-height: 550px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="/" class="logo">Adrian<span>Ekrem</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/" class="nav-link">Start</a></li>
+                    <li><a href="/angielski-wroclaw.html" class="nav-link">Wrocław</a></li>
+                    <li><a href="/angielski-online.html" class="nav-link">Online</a></li>
+                    <li><a href="/o-mnie.html" class="nav-link">O mnie</a></li>
+                    <li><a href="/metodologia.html" class="nav-link">Metodologia</a></li>
+                    <li><a href="/blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="/kontakt.html" class="nav-link">Kontakt</a></li>
+                    <li><a href="/rezerwacja.html" class="nav-cta">Umów Lekcję</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section" style="padding-top: 140px; text-align: center; background: var(--color-bg-light);">
+            <div class="container">
+                <p style="color: var(--color-primary); font-weight: 600; margin-bottom: 1rem;">Rezerwacja Online</p>
+                <h1 style="font-size: 3rem; margin-bottom: 1.5rem;">Wybierz Termin Lekcji</h1>
+                <p
+                    style="font-size: 1.25rem; color: var(--color-text-secondary); max-width: 700px; margin: 0 auto 2rem;">
+                    Zarezerwuj lekcję próbną lub regularną sesję. Wybierz datę i godzinę, która Ci odpowiada.
+                    System automatycznie wyśle Ci potwierdzenie i link do spotkania.
+                </p>
+            </div>
+        </section>
+
+        <!-- Booking Calendar Section -->
+        <section class="section">
+            <div class="container" style="max-width: 900px;">
+                <div class="booking-container">
+                    <!-- Cal inline embed code begins -->
+                    <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-lekcja"></div>
+                    <script type="text/javascript">
+                        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+                        Cal("init", "lekcja", { origin: "https://app.cal.com" });
+
+                        Cal.ns.lekcja("inline", {
+                            elementOrSelector: "#my-cal-inline-lekcja",
+                            config: { "layout": "month_view", "theme": "light" },
+                            calLink: "adrian-ekrem-a-jzkc5k/lekcja",
+                        });
+
+                        Cal.ns.lekcja("ui", { "theme": "light", "cssVarsPerTheme": { "light": { "cal-brand": "#6F83EB" }, "dark": { "cal-brand": "#6F83EB" } }, "hideEventTypeDetails": false, "layout": "month_view" });
+                    </script>
+                    <!-- Cal inline embed code ends -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Signals -->
+        <section class="section" style="background: var(--color-bg-light);">
+            <div class="container">
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+                    <div>
+                        <i data-lucide="shield-check"
+                            style="width: 40px; height: 40px; color: var(--color-accent); margin-bottom: 1rem;"></i>
+                        <h4>Bezpłatna rezygnacja</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.9rem;">Do 24h przed lekcją możesz
+                            odwołać bez konsekwencji.</p>
+                    </div>
+                    <div>
+                        <i data-lucide="mail-check"
+                            style="width: 40px; height: 40px; color: var(--color-primary); margin-bottom: 1rem;"></i>
+                        <h4>Automatyczne przypomnienie</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.9rem;">Dostaniesz maila z linkiem i
+                            przypomnieniem.</p>
+                    </div>
+                    <div>
+                        <i data-lucide="video"
+                            style="width: 40px; height: 40px; color: var(--color-accent); margin-bottom: 1rem;"></i>
+                        <h4>Lekcja Online lub Wrocław</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.9rem;">Wybierzesz format podczas
+                            rezerwacji.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h5 style="margin-bottom: 1rem; color: var(--color-primary);">Angielskie Korepetycje</h5>
+                    <p>Adrian Ekrem Abdulkerim</p>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Oferta</h5>
+                    <ul style="line-height: 2;">
+                        <li><a href="/angielski-wroclaw.html">Angielski Wrocław</a></li>
+                        <li><a href="/angielski-online.html">Angielski Online</a></li>
+                        <li><a href="/o-mnie.html">O Mnie</a></li>
+                        <li><a href="/metodologia.html">Metodologia</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Kursy</h5>
+                    <ul style="line-height: 2;">
+                        <li><a href="/kurs-speaking.html">Speaking & Konwersacje</a></li>
+                        <li><a href="/kurs-ielts.html">Kurs IELTS</a></li>
+                        <li><a href="/kurs-toefl.html">Kurs TOEFL</a></li>
+                        <li><a href="/kurs-toeic.html">Kurs TOEIC</a></li>
+                        <li><a href="/matura-angielski.html">Matura Rozszerzona</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Kontakt</h5>
+                    <p><a href="mailto:kontakt@angielskikorepetycje.pl">kontakt@angielskikorepetycje.pl</a></p>
+                    <p>+48 571 055 039</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adrian Ekrem Abdulkerim. Wszelkie prawa zastrzeżone.</p>
+                <div>
+                    <a href="#" style="margin-right: 1rem;">Polityka Prywatności</a>
+                    <a href="#">Regulamin</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>

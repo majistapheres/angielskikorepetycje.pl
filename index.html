@@ -154,7 +154,9 @@
                     <li><a href="/metodologia.html" class="nav-link">Metodologia</a></li>
                     <li><a href="/blog.html" class="nav-link">Blog</a></li>
                     <li><a href="/kontakt.html" class="nav-link">Kontakt</a></li>
-                    <li><a href="/kontakt.html" class="nav-cta">Umów Lekcję</a></li>
+                    <li><a href="/rezerwacja.html" class="nav-cta" data-cal-link="adrian-ekrem-a-jzkc5k/lekcja"
+                            data-cal-namespace="lekcja" data-cal-config='{"layout":"month_view","theme":"light"}'>Umów
+                            Lekcję</a></li>
                 </ul>
             </nav>
         </div>
@@ -172,7 +174,9 @@
                     swobodne konwersacje.
                 </p>
                 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <a href="#contact" class="btn btn-success">Umów Lekcję Próbną</a>
+                    <a href="/rezerwacja.html" class="btn btn-success" data-cal-link="adrian-ekrem-a-jzkc5k/lekcja"
+                        data-cal-namespace="lekcja" data-cal-config='{"layout":"month_view","theme":"light"}'>Umów
+                        Lekcję Próbną</a>
                     <a href="/o-mnie.html" class="btn btn-primary"
                         style="background: transparent; border: 2px solid var(--color-primary); color: var(--color-primary); box-shadow: none;">Poznaj
                         Lektora</a>
@@ -708,6 +712,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- Cal.com Popup Script -->
+    <script type="text/javascript">
+        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+        Cal("init", "lekcja", { origin: "https://app.cal.com" });
+        Cal.ns.lekcja("ui", { "theme": "light", "cssVarsPerTheme": { "light": { "cal-brand": "#6F83EB" }, "dark": { "cal-brand": "#6F83EB" } }, "hideEventTypeDetails": false, "layout": "month_view" });
+    </script>
 
     <script>
         lucide.createIcons();
