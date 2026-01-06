@@ -174,8 +174,9 @@
                     swobodne konwersacje.
                 </p>
                 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <a href="/rezerwacja.html" class="btn btn-success" data-cal-link="adrian-ekrem-a-jzkc5k/lekcja"
-                        data-cal-namespace="lekcja" data-cal-config='{"layout":"month_view","theme":"light"}'>Umów
+                    <a href="/rezerwacja.html" class="btn btn-success"
+                        data-cal-link="adrian-ekrem-a-jzkc5k/lekcja-probna-30-min"
+                        data-cal-namespace="lekcja-probna-30-min" data-cal-config='{"layout":"month_view"}'>Umów
                         Lekcję Próbną</a>
                     <a href="/o-mnie.html" class="btn btn-primary"
                         style="background: transparent; border: 2px solid var(--color-primary); color: var(--color-primary); box-shadow: none;">Poznaj
@@ -387,7 +388,8 @@
                             <li style="margin-bottom: 0.5rem;">✔ Materiały PDF w cenie</li>
                             <li style="margin-bottom: 0.5rem;">✔ Elastyczne godziny</li>
                         </ul>
-                        <a href="/rezerwacja.html" class="btn btn-success">Umów Lekcję Online</a>
+                        <a href="/rezerwacja.html" class="btn btn-success" data-cal-link="adrian-ekrem-a-jzkc5k/lekcja"
+                            data-cal-namespace="lekcja" data-cal-config='{"layout":"month_view"}'>Umów Lekcję Online</a>
                     </article>
                     <article class="glass-card"
                         style="padding: 2rem; text-align: center; border-top: 4px solid var(--color-primary);">
@@ -401,7 +403,9 @@
                             <li style="margin-bottom: 0.5rem;">✔ Nauka w kawiarni lub biurze</li>
                             <li style="margin-bottom: 0.5rem;">✔ Krzyki, Śródmieście, Fabryczna</li>
                         </ul>
-                        <a href="/rezerwacja.html" class="btn btn-primary">Umów Lekcję Wrocław</a>
+                        <a href="/rezerwacja.html" class="btn btn-primary" data-cal-link="adrian-ekrem-a-jzkc5k/lekcja"
+                            data-cal-namespace="lekcja" data-cal-config='{"layout":"month_view"}'>Umów Lekcję
+                            Wrocław</a>
                     </article>
                 </div>
             </div>
@@ -423,7 +427,10 @@
                                 style="background: var(--gradient-accent); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-weight: bold; display: inline-flex; align-items: center; gap: 0.3rem;"><i
                                     data-lucide="award" style="width: 16px; height: 16px;"></i> Świetna robota!</span>
                         </p>
-                        <a href="/rezerwacja.html" class="btn btn-success">Chcę zdobyć odznakę!</a>
+                        <a href="/rezerwacja.html" class="btn btn-success"
+                            data-cal-link="adrian-ekrem-a-jzkc5k/lekcja-probna-30-min"
+                            data-cal-namespace="lekcja-probna-30-min" data-cal-config='{"layout":"month_view"}'>Chcę
+                            zdobyć odznakę!</a>
                     </div>
                     <div style="text-align: center;">
                         <div class="glass-card" style="padding: 1rem;">
@@ -450,7 +457,8 @@
                     Czy jest ważny wszędzie? Nie. Ale wiesz, że miałeś najlepszą edukację językową ode mnie.
                     I to się liczy.
                 </p>
-                <a href="/rezerwacja.html" class="btn"
+                <a href="/rezerwacja.html" class="btn" data-cal-link="adrian-ekrem-a-jzkc5k/lekcja"
+                    data-cal-namespace="lekcja" data-cal-config='{"layout":"month_view"}'
                     style="background: white; color: var(--color-primary); font-weight: bold;">Rozpocznij swoją
                     podróż</a>
             </div>
@@ -716,8 +724,14 @@
     <!-- Cal.com Popup Script -->
     <script type="text/javascript">
         (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+
+        // Regular Lesson Popup
         Cal("init", "lekcja", { origin: "https://app.cal.com" });
         Cal.ns.lekcja("ui", { "theme": "light", "cssVarsPerTheme": { "light": { "cal-brand": "#6F83EB" }, "dark": { "cal-brand": "#6F83EB" } }, "hideEventTypeDetails": false, "layout": "month_view" });
+
+        // Trial Lesson Popup
+        Cal("init", "lekcja-probna-30-min", { origin: "https://app.cal.com" });
+        Cal.ns["lekcja-probna-30-min"]("ui", { "cssVarsPerTheme": { "light": { "cal-brand": "#6F83EB" }, "dark": { "cal-brand": "#6F83EB" } }, "hideEventTypeDetails": false, "layout": "month_view" });
     </script>
 
     <script>
