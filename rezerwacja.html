@@ -19,8 +19,56 @@
             min-height: 600px;
         }
 
-        #my-cal-inline-lekcja {
+        .calendar-embed {
             min-height: 550px;
+            width: 100%;
+            overflow: scroll;
+        }
+
+        /* Toggle Switch Styles */
+        .toggle-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            gap: 0;
+        }
+
+        .toggle-btn {
+            padding: 1rem 2.5rem;
+            border: 2px solid var(--color-primary);
+            background: transparent;
+            color: var(--color-primary);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-btn:first-child {
+            border-radius: 50px 0 0 50px;
+            border-right: 1px solid var(--color-primary);
+        }
+
+        .toggle-btn:last-child {
+            border-radius: 0 50px 50px 0;
+            border-left: 1px solid var(--color-primary);
+        }
+
+        .toggle-btn.active {
+            background: var(--color-primary);
+            color: white;
+        }
+
+        .toggle-btn:hover:not(.active) {
+            background: rgba(101, 123, 230, 0.1);
+        }
+
+        .calendar-view {
+            display: none;
+        }
+
+        .calendar-view.active {
+            display: block;
         }
     </style>
 </head>
@@ -54,7 +102,6 @@
                 <p
                     style="font-size: 1.25rem; color: var(--color-text-secondary); max-width: 700px; margin: 0 auto 2rem;">
                     Zarezerwuj lekcję próbną lub regularną sesję. Wybierz datę i godzinę, która Ci odpowiada.
-                    System automatycznie wyśle Ci potwierdzenie i link do spotkania.
                 </p>
             </div>
         </section>
@@ -62,22 +109,29 @@
         <!-- Booking Calendar Section -->
         <section class="section">
             <div class="container" style="max-width: 900px;">
+
+                <!-- Toggle Switch -->
+                <div class="toggle-container">
+                    <button class="toggle-btn active" id="btn-probna" onclick="showCalendar('probna')">
+                        🎯 Lekcja Próbna (30 min)
+                    </button>
+                    <button class="toggle-btn" id="btn-lekcja" onclick="showCalendar('lekcja')">
+                        📚 Regularna Lekcja (60 min)
+                    </button>
+                </div>
+
                 <div class="booking-container">
-                    <!-- Cal inline embed code begins -->
-                    <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-lekcja"></div>
-                    <script type="text/javascript">
-                        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-                        Cal("init", "lekcja", { origin: "https://app.cal.com" });
 
-                        Cal.ns.lekcja("inline", {
-                            elementOrSelector: "#my-cal-inline-lekcja",
-                            config: { "layout": "month_view", "theme": "light" },
-                            calLink: "adrian-ekrem-a-jzkc5k/lekcja",
-                        });
+                    <!-- Trial Lesson Calendar -->
+                    <div id="calendar-probna" class="calendar-view active">
+                        <div class="calendar-embed" id="my-cal-inline-lekcja-probna-30-min"></div>
+                    </div>
 
-                        Cal.ns.lekcja("ui", { "theme": "light", "cssVarsPerTheme": { "light": { "cal-brand": "#6F83EB" }, "dark": { "cal-brand": "#6F83EB" } }, "hideEventTypeDetails": false, "layout": "month_view" });
-                    </script>
-                    <!-- Cal inline embed code ends -->
+                    <!-- Regular Lesson Calendar -->
+                    <div id="calendar-lekcja" class="calendar-view">
+                        <div class="calendar-embed" id="my-cal-inline-lekcja"></div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -157,8 +211,44 @@
         </div>
     </footer>
 
+    <!-- Cal.com Scripts -->
+    <script type="text/javascript">
+        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+
+        // Trial Lesson (30 min)
+        Cal("init", "lekcja-probna-30-min", { origin: "https://app.cal.com" });
+        Cal.ns["lekcja-probna-30-min"]("inline", {
+            elementOrSelector: "#my-cal-inline-lekcja-probna-30-min",
+            config: { "layout": "month_view" },
+            calLink: "adrian-ekrem-a-jzkc5k/lekcja-probna-30-min",
+        });
+        Cal.ns["lekcja-probna-30-min"]("ui", { "cssVarsPerTheme": { "light": { "cal-brand": "#6F83EB" }, "dark": { "cal-brand": "#6F83EB" } }, "hideEventTypeDetails": false, "layout": "month_view" });
+
+        // Regular Lesson (60 min)
+        Cal("init", "lekcja", { origin: "https://app.cal.com" });
+        Cal.ns.lekcja("inline", {
+            elementOrSelector: "#my-cal-inline-lekcja",
+            config: { "layout": "month_view", "theme": "light" },
+            calLink: "adrian-ekrem-a-jzkc5k/lekcja",
+        });
+        Cal.ns.lekcja("ui", { "theme": "light", "cssVarsPerTheme": { "light": { "cal-brand": "#6F83EB" }, "dark": { "cal-brand": "#6F83EB" } }, "hideEventTypeDetails": false, "layout": "month_view" });
+    </script>
+
     <script>
         lucide.createIcons();
+
+        // Toggle Calendar Function
+        function showCalendar(type) {
+            // Update buttons
+            document.getElementById('btn-probna').classList.remove('active');
+            document.getElementById('btn-lekcja').classList.remove('active');
+            document.getElementById('btn-' + type).classList.add('active');
+
+            // Update calendar views
+            document.getElementById('calendar-probna').classList.remove('active');
+            document.getElementById('calendar-lekcja').classList.remove('active');
+            document.getElementById('calendar-' + type).classList.add('active');
+        }
     </script>
 
 </body>
