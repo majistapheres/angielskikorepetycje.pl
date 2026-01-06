@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodologia Nauczania – Angielski Wrocław i Online | Adrian Ekrem</title>
+    <meta name="description"
+        content="Poznaj moją metodę nauczania. Fonetyka, praktyka mówienia i indywidualne podejście. Zobacz, dlaczego uczniowie osiągają sukcesy trzy razy szybciej.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .phonetic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .phonetic-card {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.2s;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .phonetic-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--color-primary);
+        }
+
+        .phonetic-symbol {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--color-primary);
+            font-family: 'Arial Unicode MS', sans-serif;
+            margin-bottom: 0.5rem;
+        }
+
+        .phonetic-example {
+            color: var(--color-text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--color-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1.5rem;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .comparison-table th {
+            background: #f8f9fc;
+            font-weight: 700;
+            color: var(--color-text-main);
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .check-icon {
+            color: #00d47e;
+            stroke-width: 3px;
+        }
+
+        .cross-icon {
+            color: #ff4d4d;
+            stroke-width: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="/" class="logo">Adrian<span>Ekrem</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/" class="nav-link">Start</a></li>
+                    <li><a href="/angielski-wroclaw.html" class="nav-link">Wrocław</a></li>
+                    <li><a href="/angielski-online.html" class="nav-link">Online</a></li>
+                    <li><a href="/o-mnie.html" class="nav-link">O mnie</a></li>
+                    <li><a href="/metodologia.html" class="nav-link active"
+                            style="color: var(--color-primary);">Metodologia</a></li>
+                    <li><a href="/blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="/kontakt.html" class="nav-link">Kontakt</a></li>
+                    <li><a href="/kontakt.html" class="nav-cta">Umów Lekcję</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section" style="padding-top: 140px; text-align: center; background: var(--color-bg-light);">
+            <div class="container">
+                <p style="color: var(--color-primary); font-weight: 600; margin-bottom: 1rem;">Filozofia Nauczania</p>
+                <h1 style="font-size: 3rem; margin-bottom: 1.5rem;">Twoje Usta Mogą Więcej, <br>Niż Ci Się Wydaje</h1>
+                <p
+                    style="font-size: 1.25rem; color: var(--color-text-secondary); max-width: 700px; margin: 0 auto 3rem;">
+                    Język to nie tylko słowa zapisane w zeszycie. To dźwięk, rytm i fizyczna pamięć mięśniowa.
+                    Poznaj metodę opartą na <strong>fonetyce</strong> i <strong>aktywnym mówieniu</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- The Difference Table -->
+        <section class="section">
+            <div class="container" style="max-width: 900px;">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Dlaczego "szkolna metoda" zawodzi?</h2>
+
+                <div style="overflow-x: auto;">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 40%;">Aspekt</th>
+                                <th style="width: 30%; color: #666;">Tradycyjna Szkoła</th>
+                                <th style="width: 30%; color: var(--color-primary);">Moja Metoda</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Priorytet na lekcji</strong></td>
+                                <td>Wypełnianie luk w zdaniach (Gramatyka)</td>
+                                <td><strong style="color: #00d47e;">Mówienie i Komunikacja (80% czasu)</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Wymowa</strong></td>
+                                <td>"Powtórzcie za mną" (bez wyjaśnienia)</td>
+                                <td><strong style="color: #00d47e;">Trening fonetyczny (układ ust i języka)</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Błędy</strong></td>
+                                <td>Karanie czerwoną kredką</td>
+                                <td><strong style="color: #00d47e;">Analiza i natychmiastowa korekta</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Podejście do ucznia</strong></td>
+                                <td>Jeden program dla wszystkich (20+ osób)</td>
+                                <td><strong style="color: #00d47e;">Indywidualny plan pod Twoje cele</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Materiały</strong></td>
+                                <td>Przestarzałe podręczniki</td>
+                                <td><strong style="color: #00d47e;">Autentyczne (TED, BBC, Seriale, Biznes)</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Visual Phonetics Section -->
+        <section class="section"
+            style="background: linear-gradient(135deg, rgba(101,123,230,0.05) 0%, rgba(0,212,126,0.05) 100%);">
+            <div class="container">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+                    <h2 style="margin-bottom: 1rem;">Sekret tkwi w Fonetyce</h2>
+                    <p style="font-size: 1.1rem; color: var(--color-text-secondary);">
+                        Polacy mają świetny "słuch", ale nasze aparaty mowy nie są przyzwyczajone do angielskich
+                        dźwięków.
+                        Na moich lekcjach "łamiemy" te nawyki. Uczę Cię fizyki dźwięku.
+                    </p>
+                </div>
+
+                <div class="phonetic-grid">
+                    <div class="phonetic-card">
+                        <div class="phonetic-symbol">/θ/</div>
+                        <div class="phonetic-example">Think</div>
+                    </div>
+                    <div class="phonetic-card">
+                        <div class="phonetic-symbol">/ð/</div>
+                        <div class="phonetic-example">This</div>
+                    </div>
+                    <div class="phonetic-card">
+                        <div class="phonetic-symbol">/æ/</div>
+                        <div class="phonetic-example">Cat</div>
+                    </div>
+                    <div class="phonetic-card">
+                        <div class="phonetic-symbol">/ə/</div>
+                        <div class="phonetic-example">Teacher (Schwa)</div>
+                    </div>
+                    <div class="phonetic-card">
+                        <div class="phonetic-symbol">/ŋ/</div>
+                        <div class="phonetic-example">Sing</div>
+                    </div>
+                    <div class="phonetic-card">
+                        <div class="phonetic-symbol">/i:/</div>
+                        <div class="phonetic-example">Sheep</div>
+                    </div>
+                    <div class="phonetic-card">
+                        <div class="phonetic-symbol">/ɪ/</div>
+                        <div class="phonetic-example">Ship</div>
+                    </div>
+                    <div class="phonetic-card">
+                        <div class="phonetic-symbol">/w/</div>
+                        <div class="phonetic-example">Window</div>
+                    </div>
+                </div>
+
+                <p
+                    style="text-align: center; margin-top: 2rem; color: var(--color-text-secondary); font-style: italic;">
+                    To tylko próbka. Nauczę Cię wszystkich 44 dźwięków angielskich, których nie ma w języku polskim.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- The Process -->
+        <section class="section">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 4rem;">Jak wygląda proces nauki?</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+
+                    <div style="text-align: center;">
+                        <div class="step-number">1</div>
+                        <h3 style="margin-bottom: 1rem;">Diagnoza</h3>
+                        <p style="color: var(--color-text-secondary);">
+                            Na pierwszej lekcji nie "przerabiamy materiału". Rozmawiamy. Sprawdzam Twoje blokady,
+                            słownictwo i analizuję błędy wymowy.
+                        </p>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <div class="step-number">2</div>
+                        <h3 style="margin-bottom: 1rem;">Plan Taktyczny</h3>
+                        <p style="color: var(--color-text-secondary);">
+                            Układam program pod Twój cel. Matura? Awans w pracy? Wyjazd? Dobieram słownictwo i
+                            gramatykę, które są Ci <strong>niezbędne</strong>.
+                        </p>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <div class="step-number">3</div>
+                        <h3 style="margin-bottom: 1rem;">Aktywny Trening</h3>
+                        <p style="color: var(--color-text-secondary);">
+                            Lekcja to poligon. Ty mówisz 80% czasu. Ja koryguję, naprowadzam i podrzucam właściwe
+                            zwroty. Zero ciszy.
+                        </p>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <div class="step-number">4</div>
+                        <h3 style="margin-bottom: 1rem;">Weryfikacja</h3>
+                        <p style="color: var(--color-text-secondary);">
+                            Co kilka lekcji robimy "checkpoint". Sprawdzamy postępy, nagrywamy Twoją wymowę i
+                            porównujemy z pierwszą lekcją.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section" style="background: white;">
+            <div class="container">
+                <div class="glass-card"
+                    style="padding: 3rem; text-align: center; max-width: 800px; margin: 0 auto; background: linear-gradient(135deg, rgba(101,123,230,0.1) 0%, rgba(142,158,252,0.1) 100%); border: 2px solid var(--color-primary);">
+                    <h2 style="margin-bottom: 1rem; color: var(--color-primary);">Gotowy porzucić stare metody?</h2>
+                    <p style="margin-bottom: 2rem; font-size: 1.1rem;">
+                        Przestań uczyć się o języku. Zacznij mówić językiem.<br>Umów się na próbną lekcję i poczuj
+                        różnicę już po 60 minutach.
+                    </p>
+                    <a href="/kontakt.html" class="btn btn-primary">Umów Lekcję Próbną</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h5 style="margin-bottom: 1rem; color: var(--color-primary);">Angielskie Korepetycje</h5>
+                    <p>Adrian Ekrem Abdulkerim</p>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Oferta</h5>
+                    <ul style="line-height: 2;">
+                        <li><a href="/angielski-wroclaw.html">Angielski Wrocław</a></li>
+                        <li><a href="/angielski-online.html">Angielski Online</a></li>
+                        <li><a href="/o-mnie.html">O Mnie</a></li>
+                        <li><a href="/metodologia.html">Metodologia</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Kursy</h5>
+                    <ul style="line-height: 2;">
+                        <li><a href="/kurs-speaking.html">Speaking & Konwersacje</a></li>
+                        <li><a href="/kurs-ielts.html">Kurs IELTS</a></li>
+                        <li><a href="/kurs-toefl.html">Kurs TOEFL</a></li>
+                        <li><a href="/kurs-toeic.html">Kurs TOEIC</a></li>
+                        <li><a href="/matura-angielski.html">Matura Rozszerzona</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Kontakt</h5>
+                    <p><a href="mailto:kontakt@angielskikorepetycje.pl">kontakt@angielskikorepetycje.pl</a></p>
+                    <p>+48 571 055 039</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adrian Ekrem Abdulkerim. Wszelkie prawa zastrzeżone.</p>
+                <div>
+                    <a href="#" style="margin-right: 1rem;">Polityka Prywatności</a>
+                    <a href="#">Regulamin</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>

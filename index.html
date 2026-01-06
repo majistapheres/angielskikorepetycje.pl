@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skuteczne Korepetycje z Angielskiego – Wrocław i Online</title>
+    <meta name="description"
+        content="Ucz się angielskiego z Adrianem Ekremem Abdulkerimem. Lekcje z dojazdem we Wrocławiu, spotkania w kawiarniach lub nauka online. Przełam barierę językową już dziś.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Schema.org Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://angielskikorepetycje.pl/#person",
+          "name": "Adrian Ekrem Abdulkerim",
+          "jobTitle": "English Tutor",
+          "url": "https://angielskikorepetycje.pl",
+          "sameAs": [
+             "https://www.linkedin.com/in/adrian-ekrem-abdulkerim",
+             "https://lineup.agency"
+          ],
+          "knowsAbout": ["English Language", "Business English", "Phonetics", "SEO"]
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://angielskikorepetycje.pl/#business",
+          "name": "Angielskie Korepetycje - Adrian Ekrem",
+          "image": "https://angielskikorepetycje.pl/adrian-ekrem-zdecie.webp",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Wrocław",
+            "addressCountry": "PL"
+          },
+          "url": "https://angielskikorepetycje.pl",
+          "telephone": "+48123456789"
+        },
+        {
+          "@type": "EducationalOccupationalProgram",
+          "@id": "https://angielskikorepetycje.pl/#service",
+          "name": "Korepetycje z Angielskiego",
+          "provider": {
+            "@id": "https://angielskikorepetycje.pl/#business"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Wrocław"
+            },
+            {
+              "@type": "VirtualLocation",
+              "name": "Online"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Czy uczysz osoby początkujące?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tak, specjalizuję się w przełamywaniu barier językowych, również u osób, które zaczynają od zera lub miały długą przerwę."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy wystawiasz faktury?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oczywiście. Prowadzę legalną działalność gospodarczą i wystawiam faktury (zwolnione z VAT)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jak wyglądają lekcje online?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Korzystamy z Google Meet/Zoom oraz wirtualnej tablicy Miro. To pełnoprawna lekcja, tylko bez dojazdów."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy dojeżdżasz do ucznia?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tak, na terenie Wrocławia (Krzyki, Śródmieście, Fabryczna, Oporów, Klecina). Dojazd jest wliczony w cenę lekcji."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy uczysz w kawiarniach?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tak! Nauka przy kawie to jeden z moich ulubionych formatów. Spotykamy się w Twoim ulubionym lokalu we Wrocławiu."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy przygotowujesz do IELTS/TOEFL?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tak, specjalizuję się w przygotowaniu do egzaminów: IELTS, TOEFL, TOEIC, Matura i CET. Korzystam z autentycznych materiałów egzaminacyjnych."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Review",
+          "itemReviewed": {"@id": "https://angielskikorepetycje.pl/#business"},
+          "author": {"@type": "Person", "name": "Michał"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "reviewBody": "Adrian pomógł mi przygotować się do rozmowy kwalifikacyjnej w IT. Dostałem tę pracę!"
+        },
+        {
+          "@type": "Review",
+          "itemReviewed": {"@id": "https://angielskikorepetycje.pl/#business"},
+          "author": {"@type": "Person", "name": "Kasia"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "reviewBody": "Nareszcie przestałam bać się mówić. Lekcje w kawiarni to strzał w dziesiątkę."
+        },
+        {
+          "@type": "Review",
+          "itemReviewed": {"@id": "https://angielskikorepetycje.pl/#business"},
+          "author": {"@type": "Person", "name": "Tomasz"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "reviewBody": "Profesjonalne podejście i zero stresu. Polecam każdemu, kto chce się odblokować."
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="/" class="logo">Adrian<span>Ekrem</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/" class="nav-link">Start</a></li>
+                    <li><a href="/angielski-wroclaw.html" class="nav-link">Wrocław</a></li>
+                    <li><a href="/angielski-online.html" class="nav-link">Online</a></li>
+                    <li><a href="/o-mnie.html" class="nav-link">O mnie</a></li>
+                    <li><a href="/metodologia.html" class="nav-link">Metodologia</a></li>
+                    <li><a href="/blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="/kontakt.html" class="nav-link">Kontakt</a></li>
+                    <li><a href="/kontakt.html" class="nav-cta">Umów Lekcję</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="container hero-home">
+            <div class="hero-content">
+                <h1>Skuteczne Korepetycje z Angielskiego – Wrocław i Online</h1>
+                <p class="hero-subtitle">
+                    Przełam barierę językową z indywidualnym podejściem. Native speaker standard, Business English i
+                    swobodne konwersacje.
+                </p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="#contact" class="btn btn-success">Umów Lekcję Próbną</a>
+                    <a href="/o-mnie.html" class="btn btn-primary"
+                        style="background: transparent; border: 2px solid var(--color-primary); color: var(--color-primary); box-shadow: none;">Poznaj
+                        Lektora</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-blob"></div>
+                <div class="hero-image-container glass-card">
+                    <img src="adrian-ekrem-zdecie.webp" alt="Adrian Ekrem Abdulkerim - Nauczyciel Angielskiego"
+                        style="max-height: 500px; object-fit: cover;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Accent Check / BBC -->
+        <section class="section"
+            style="background: var(--gradient-main); color: white; text-align: center; padding: 3rem 0;">
+            <div class="container">
+                <h2 style="color: white; margin-bottom: 1rem;"><i data-lucide="mic"
+                        style="width: 24px; height: 24px; display: inline; vertical-align: middle;"></i> Posłuchaj
+                    mojego akcentu</h2>
+                <p style="opacity: 0.9; margin-bottom: 2rem;">Wychowałem się w Liverpoolu. Występowałem w BBC. Sprawdź
+                    sam!</p>
+                <div style="max-width: 400px; margin: 0 auto;">
+                    <a href="https://youtube.com/shorts/5Lasy8vJIKw" target="_blank"
+                        style="display: block; position: relative;">
+                        <img src="https://img.youtube.com/vi/5Lasy8vJIKw/hqdefault.jpg" alt="Adrian Ekrem - BBC News"
+                            style="width: 100%; border-radius: 12px;">
+                        <div
+                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.7); border-radius: 50%; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 2.5rem; margin-left: 5px; color: white;">▶</span>
+                        </div>
+                    </a>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">Kliknij, aby obejrzeć na YouTube →
+                    </p>
+                </div>
+                <a href="/o-mnie.html"
+                    style="color: white; text-decoration: underline; margin-top: 1rem; display: inline-block;">Więcej o
+                    mnie →</a>
+            </div>
+        </section>
+
+        <!-- Exam Types / Specializations -->
+        <section class="section" id="specjalizacje">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 1rem;">W czym pomagam?</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem;">Specjalizuję się
+                    w przygotowaniu do egzaminów i praktycznym mówieniu.</p>
+                <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; text-align: center;">
+                    <a href="kurs-speaking.html" class="glass-card"
+                        style="padding: 1.5rem; text-decoration: none; color: inherit; transition: transform 0.2s; display: block;">
+                        <i data-lucide="message-circle"
+                            style="width: 32px; height: 32px; color: var(--color-primary); margin-bottom: 0.5rem;"></i>
+                        <h4 style="font-size: 0.9rem;">Speaking</h4>
+                    </a>
+                    <a href="matura-angielski.html" class="glass-card"
+                        style="padding: 1.5rem; text-decoration: none; color: inherit; transition: transform 0.2s; display: block;">
+                        <i data-lucide="book-open"
+                            style="width: 32px; height: 32px; color: var(--color-primary); margin-bottom: 0.5rem;"></i>
+                        <h4 style="font-size: 0.9rem;">Matura</h4>
+                    </a>
+                    <a href="kurs-ielts.html" class="glass-card"
+                        style="padding: 1.5rem; text-decoration: none; color: inherit; transition: transform 0.2s; display: block;">
+                        <i data-lucide="graduation-cap"
+                            style="width: 32px; height: 32px; color: var(--color-accent); margin-bottom: 0.5rem;"></i>
+                        <h4 style="font-size: 0.9rem;">IELTS</h4>
+                    </a>
+                    <a href="kurs-toefl.html" class="glass-card"
+                        style="padding: 1.5rem; text-decoration: none; color: inherit; transition: transform 0.2s; display: block;">
+                        <i data-lucide="plane"
+                            style="width: 32px; height: 32px; color: var(--color-primary); margin-bottom: 0.5rem;"></i>
+                        <h4 style="font-size: 0.9rem;">TOEFL</h4>
+                    </a>
+                    <a href="kurs-toeic.html" class="glass-card"
+                        style="padding: 1.5rem; text-decoration: none; color: inherit; transition: transform 0.2s; display: block;">
+                        <i data-lucide="briefcase"
+                            style="width: 32px; height: 32px; color: var(--color-accent); margin-bottom: 0.5rem;"></i>
+                        <h4 style="font-size: 0.9rem;">TOEIC</h4>
+                    </a>
+                </div>
+        </section>
+
+        <!-- The Hybrid Split -->
+        <section class="container section">
+            <div class="split-section">
+                <!-- Local -->
+                <article class="split-card glass-card" style="border-top: 4px solid var(--color-primary);">
+                    <h2>Jestem we Wrocławiu</h2>
+                    <p>
+                        Ucz się w swoim naturalnym środowisku. Dojazd do domu, biura lub lekcje w ulubionej kawiarni.
+                    </p>
+                    <ul
+                        style="text-align: left; margin-bottom: 2rem; color: var(--color-text-secondary); margin-left: 1rem;">
+                        <li style="margin-bottom: 0.5rem;">✔ Dojazd: Krzyki, Śródmieście, Fabryczna</li>
+                        <li style="margin-bottom: 0.5rem;">✔ Nauka przy kawie</li>
+                        <li style="margin-bottom: 0.5rem;">✔ Bezpośredni kontakt face-to-face</li>
+                    </ul>
+                    <a href="/angielski-wroclaw.html" class="btn btn-primary">Wybieram Wrocław</a>
+                </article>
+
+                <!-- Online -->
+                <article class="split-card glass-card" style="border-top: 4px solid var(--color-accent);">
+                    <h2>Jestem spoza Wrocławia</h2>
+                    <p>
+                        Profesjonalne lekcje online na nowoczesnej platformie. Oszczędność czasu i pełna elastyczność.
+                    </p>
+                    <ul
+                        style="text-align: left; margin-bottom: 2rem; color: var(--color-text-secondary); margin-left: 1rem;">
+                        <li style="margin-bottom: 0.5rem;">✔ Wirtualna Tablica (Miro/Zoom)</li>
+                        <li style="margin-bottom: 0.5rem;">✔ Materiały PDF w cenie</li>
+                        <li style="margin-bottom: 0.5rem;">✔ Nauka z dowolnego miejsca</li>
+                    </ul>
+                    <a href="/angielski-online.html" class="btn btn-success">Wybieram Online</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Phonetics Section -->
+        <section class="section"
+            style="background: linear-gradient(135deg, rgba(101,123,230,0.05) 0%, rgba(0,212,126,0.05) 100%);">
+            <div class="container">
+                <div class="split-section" style="align-items: center;">
+                    <div>
+                        <h2 style="margin-bottom: 1.5rem;">Fonetyka i Wymowa</h2>
+                        <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Kształtuj język jak native speaker
+                        </h3>
+                        <p style="margin-bottom: 1rem;">
+                            Uczę nie tylko słów, ale i <strong>jak je wypowiadać</strong>. Pracujemy nad ułożeniem
+                            języka, kształtem ust i przepływem powietrza.
+                        </p>
+                        <ul style="color: var(--color-text-secondary); margin-left: 1rem; margin-bottom: 1.5rem;">
+                            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i
+                                    data-lucide="languages" style="width: 18px; height: 18px;"></i> Prawidłowe ułożenie
+                                języka dla trudnych dźwięków (th, r, w)</li>
+                            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i
+                                    data-lucide="smile" style="width: 18px; height: 18px;"></i> Ćwiczenia kształtu ust
+                                dla naturalnego akcentu</li>
+                            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i
+                                    data-lucide="target" style="width: 18px; height: 18px;"></i> Eliminacja polskiego
+                                akcentu</li>
+                            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i
+                                    data-lucide="volume-2" style="width: 18px; height: 18px;"></i> Intonacja i rytm mowy
+                            </li>
+                        </ul>
+                        <p style="font-style: italic; color: var(--color-text-secondary);">
+                            "Wymowa to pierwsze wrażenie. Zróbmy je niezapomniane."
+                        </p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="glass-card" style="padding: 1.5rem; display: inline-block;">
+                            <img src="fonetyka-diagram-mouth.webp" alt="Diagram fonetyczny - ułożenie języka i ust"
+                                style="border-radius: 12px; max-width: 350px;">
+                            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--color-text-secondary);">Diagram
+                                fonetyczny</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Signals / USP -->
+        <section class="section" style="background-color: white;">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Dlaczego warto?</h2>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                    <div style="text-align: center;">
+                        <div style="margin-bottom: 1rem;"><i data-lucide="message-circle"
+                                style="width: 48px; height: 48px; color: var(--color-accent);"></i></div>
+                        <h4>Przełamanie Bariery</h4>
+                        <p style="color: var(--color-text-secondary);">Koniec z blokadą w mówieniu. Skupiamy się na
+                            komunikacji.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="margin-bottom: 1rem;"><i data-lucide="briefcase"
+                                style="width: 48px; height: 48px; color: var(--color-primary);"></i></div>
+                        <h4>Business English</h4>
+                        <p style="color: var(--color-text-secondary);">Doświadczenie z agencji LineUp przenoszę na
+                            lekcje biznesowe.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="margin-bottom: 1rem;"><i data-lucide="target"
+                                style="width: 48px; height: 48px; color: var(--color-accent);"></i></div>
+                        <h4>Indywidualny Plan</h4>
+                        <p style="color: var(--color-text-secondary);">Brak sztywnych podręczników. Uczymy się tego,
+                            czego potrzebujesz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricelist Section -->
+        <section class="section" id="cennik"
+            style="background: linear-gradient(135deg, rgba(0,212,126,0.05) 0%, rgba(101,123,230,0.05) 100%);">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Cennik</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem;">Przejrzyste
+                    ceny, bez ukrytych opłat.</p>
+                <div class="split-section" style="max-width: 800px; margin: 0 auto;">
+                    <article class="glass-card"
+                        style="padding: 2rem; text-align: center; border-top: 4px solid var(--color-accent);">
+                        <h3 style="color: var(--color-accent);">Lekcja Online</h3>
+                        <p style="font-size: 3rem; font-weight: bold; margin: 1rem 0;">85 <span
+                                style="font-size: 1rem; color: var(--color-text-secondary);">PLN / 60 min</span></p>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem;"><s
+                                style="opacity: 0.5;">100 PLN</s> – Promocja!</p>
+                        <ul style="text-align: left; color: var(--color-text-secondary); margin-bottom: 2rem;">
+                            <li style="margin-bottom: 0.5rem;">✔ Wirtualna tablica Miro/Zoom</li>
+                            <li style="margin-bottom: 0.5rem;">✔ Materiały PDF w cenie</li>
+                            <li style="margin-bottom: 0.5rem;">✔ Elastyczne godziny</li>
+                        </ul>
+                        <a href="#kontakt" class="btn btn-success">Umów Lekcję Online</a>
+                    </article>
+                    <article class="glass-card"
+                        style="padding: 2rem; text-align: center; border-top: 4px solid var(--color-primary);">
+                        <h3 style="color: var(--color-primary);">Lekcja Wrocław</h3>
+                        <p style="font-size: 3rem; font-weight: bold; margin: 1rem 0;">125 <span
+                                style="font-size: 1rem; color: var(--color-text-secondary);">PLN / 60 min</span></p>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem;">Dojazd wliczony w cenę!
+                        </p>
+                        <ul style="text-align: left; color: var(--color-text-secondary); margin-bottom: 2rem;">
+                            <li style="margin-bottom: 0.5rem;">✔ Spotkania face-to-face</li>
+                            <li style="margin-bottom: 0.5rem;">✔ Nauka w kawiarni lub biurze</li>
+                            <li style="margin-bottom: 0.5rem;">✔ Krzyki, Śródmieście, Fabryczna</li>
+                        </ul>
+                        <a href="#kontakt" class="btn btn-primary">Umów Lekcję Wrocław</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback System & Badge -->
+        <section class="section" style="background-color: white;">
+            <div class="container">
+                <div class="split-section" style="align-items: center;">
+                    <div>
+                        <h2 style="margin-bottom: 1rem;">Jak sprawdzam i daję feedback?</h2>
+                        <p style="margin-bottom: 1rem;">
+                            Każda lekcja kończy się krótkim podsumowaniem: co poszło dobrze, nad czym pracujemy.
+                            Regularnie sprawdzam postępy i daję konkretne wskazówki.
+                        </p>
+                        <p style="margin-bottom: 1.5rem;">
+                            <strong>Fun Fact:</strong> Jeśli świetnie Ci idzie, dostajesz ode mnie odznakę
+                            <span
+                                style="background: var(--gradient-accent); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-weight: bold; display: inline-flex; align-items: center; gap: 0.3rem;"><i
+                                    data-lucide="award" style="width: 16px; height: 16px;"></i> Świetna robota!</span>
+                        </p>
+                        <a href="#kontakt" class="btn btn-success">Chcę zdobyć odznakę!</a>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="glass-card" style="padding: 1rem;">
+                            <img src="landingpage-czystopis.webp"
+                                alt="System oceniania i feedbacku - przykład poprawionej pracy"
+                                style="border-radius: 12px; max-width: 400px;">
+                            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--color-text-secondary);">Przykład
+                                feedbacku na lekcji</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6-Month Certification -->
+        <section class="section" style="background: var(--gradient-main); color: white; text-align: center;">
+            <div class="container">
+                <h2 style="margin-bottom: 1rem; color: white;"><i data-lucide="trophy"
+                        style="width: 28px; height: 28px; display: inline; vertical-align: middle;"></i> Certyfikat po 6
+                    miesiącach</h2>
+                <p style="max-width: 700px; margin: 0 auto 2rem; opacity: 0.9;">
+                    Po ukończeniu mojego 6-miesięcznego kursu otrzymujesz specjalny <strong>Certyfikat Adrian
+                        Ekrem</strong>.
+                    Czy jest ważny wszędzie? Nie. Ale wiesz, że miałeś najlepszą edukację językową ode mnie.
+                    I to się liczy.
+                </p>
+                <a href="#kontakt" class="btn"
+                    style="background: white; color: var(--color-primary); font-weight: bold;">Rozpocznij swoją
+                    podróż</a>
+            </div>
+        </section>
+
+        <!-- Scrolling Testimonials -->
+        <section class="section" style="background: var(--color-bg-light); overflow: hidden;">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Co mówią moi uczniowie? ⭐️</h2>
+
+                <!-- Scroll Container -->
+                <div class="testimonial-slider"
+                    style="display: flex; gap: 2rem; overflow-x: auto; padding-bottom: 2rem; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
+
+                    <!-- Review 1 -->
+                    <div class="glass-card" style="min-width: 300px; padding: 2rem; scroll-snap-align: center;">
+                        <div style="color: #FFD700; margin-bottom: 0.5rem;"><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i></div>
+                        <p style="font-style: italic; margin-bottom: 1rem;">"Dzięki Adrianowi zdałam maturę rozszerzoną
+                            na 96%. Najlepszy nauczyciel we Wrocławiu!"</p>
+                        <strong>- Kasia, Licealistka</strong>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="glass-card" style="min-width: 300px; padding: 2rem; scroll-snap-align: center;">
+                        <div style="color: #FFD700; margin-bottom: 0.5rem;"><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i></div>
+                        <p style="font-style: italic; margin-bottom: 1rem;">"Potrzebowałem Business English do nowej
+                            pracy. Po 3 miesiącach prowadzę spotkania bez stresu."</p>
+                        <strong>- Michał, Project Manager</strong>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="glass-card" style="min-width: 300px; padding: 2rem; scroll-snap-align: center;">
+                        <div style="color: #FFD700; margin-bottom: 0.5rem;"><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i></div>
+                        <p style="font-style: italic; margin-bottom: 1rem;">"Lekcje w kawiarni to strzał w dziesiątkę.
+                            Luźna atmosfera, zero stresu. Polecam!"</p>
+                        <strong>- Ewa, Graficzka</strong>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="glass-card" style="min-width: 300px; padding: 2rem; scroll-snap-align: center;">
+                        <div style="color: #FFD700; margin-bottom: 0.5rem;"><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i></div>
+                        <p style="font-style: italic; margin-bottom: 1rem;">"IELTS na 7.5. Nie wierzyłem, że to możliwe
+                            w tak krótkim czasie. Dziękuję!"</p>
+                        <strong>- Tomasz, Student</strong>
+                    </div>
+
+                    <!-- Review 5 -->
+                    <div class="glass-card" style="min-width: 300px; padding: 2rem; scroll-snap-align: center;">
+                        <div style="color: #FFD700; margin-bottom: 0.5rem;"><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i></div>
+                        <p style="font-style: italic; margin-bottom: 1rem;">"Adrian ma świetne podejście. Nie ma nudy,
+                            jest konkretna praca nad wymową."</p>
+                        <strong>- Karolina, Lekarz</strong>
+                    </div>
+
+                    <!-- Review 6 -->
+                    <div class="glass-card" style="min-width: 300px; padding: 2rem; scroll-snap-align: center;">
+                        <div style="color: #FFD700; margin-bottom: 0.5rem;"><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i></div>
+                        <p style="font-style: italic; margin-bottom: 1rem;">"Konwersacje online działają super.
+                            Oszczędzam czas na dojazdy, a efekt ten sam."</p>
+                        <strong>- Piotr, Programista</strong>
+                    </div>
+
+                    <!-- Review 7 -->
+                    <div class="glass-card" style="min-width: 300px; padding: 2rem; scroll-snap-align: center;">
+                        <div style="color: #FFD700; margin-bottom: 0.5rem;"><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i></div>
+                        <p style="font-style: italic; margin-bottom: 1rem;">"Profesjonalne przygotowanie do TOEFL.
+                            Dostałam się na wymarzone studia w USA!"</p>
+                        <strong>- Julia, Studentka</strong>
+                    </div>
+
+                    <!-- Review 8 -->
+                    <div class="glass-card" style="min-width: 300px; padding: 2rem; scroll-snap-align: center;">
+                        <div style="color: #FFD700; margin-bottom: 0.5rem;"><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i></div>
+                        <p style="font-style: italic; margin-bottom: 1rem;">"Najlepsze korepetycje we Wrocławiu. Polecam
+                            każdemu, kto boi się mówić."</p>
+                        <strong>- Marek, Handlowiec</strong>
+                    </div>
+
+                    <!-- Review 9 -->
+                    <div class="glass-card" style="min-width: 300px; padding: 2rem; scroll-snap-align: center;">
+                        <div style="color: #FFD700; margin-bottom: 0.5rem;"><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i></div>
+                        <p style="font-style: italic; margin-bottom: 1rem;">"TOEIC zdany na 900+ punktów. Awans w pracy
+                            gwarantowany :)"</p>
+                        <strong>- Ania, Specjalista HR</strong>
+                    </div>
+
+                    <!-- Review 10 -->
+                    <div class="glass-card" style="min-width: 300px; padding: 2rem; scroll-snap-align: center;">
+                        <div style="color: #FFD700; margin-bottom: 0.5rem;"><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i><i data-lucide="star"
+                                style="width: 16px; height: 16px; fill: #FFD700;"></i></div>
+                        <p style="font-style: italic; margin-bottom: 1rem;">"Dużo śmiechu, dużo nauki. Tak powinny
+                            wyglądać lekcje języka."</p>
+                        <strong>- Robert, Przedsiębiorca</strong>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 1rem; color: var(--color-text-secondary); font-size: 0.9rem;">
+                    Przesuń, aby zobaczyć więcej →</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section (Helpful Content) -->
+        <section class="section">
+            <div class="container" style="max-width: 800px;">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Częste pytania (FAQ)</h2>
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <details class="glass-card" style="padding: 1rem; cursor: pointer;">
+                        <summary style="font-weight: bold; color: var(--color-primary);">Czy uczysz osoby początkujące?
+                        </summary>
+                        <p style="margin-top: 1rem;">Tak, specjalizuję się w przełamywaniu barier językowych, również u
+                            osób, które zaczynają od zera lub miały długą przerwę.</p>
+                    </details>
+                    <details class="glass-card" style="padding: 1rem; cursor: pointer;">
+                        <summary style="font-weight: bold; color: var(--color-primary);">Czy wystawiasz faktury?
+                        </summary>
+                        <p style="margin-top: 1rem;">Oczywiście. Prowadzę legalną działalność gospodarczą i wystawiam
+                            faktury (zwolnione z VAT).</p>
+                    </details>
+                    <details class="glass-card" style="padding: 1rem; cursor: pointer;">
+                        <summary style="font-weight: bold; color: var(--color-primary);">Jak wyglądają lekcje online?
+                        </summary>
+                        <p style="margin-top: 1rem;">Korzystamy z Google Meet/Zoom oraz wirtualnej tablicy Miro. To
+                            pełnoprawna lekcja, tylko bez dojazdów.</p>
+                    </details>
+                    <details class="glass-card" style="padding: 1rem; cursor: pointer;">
+                        <summary style="font-weight: bold; color: var(--color-primary);">Czy dojeżdżasz do ucznia?
+                        </summary>
+                        <p style="margin-top: 1rem;">Tak, na terenie Wrocławia (Krzyki, Śródmieście, Fabryczna, Oporów,
+                            Klecina). Dojazd jest wliczony w cenę lekcji.</p>
+                    </details>
+                    <details class="glass-card" style="padding: 1rem; cursor: pointer;">
+                        <summary style="font-weight: bold; color: var(--color-primary);">Czy uczysz w kawiarniach?
+                        </summary>
+                        <p style="margin-top: 1rem;">Tak! Nauka przy kawie to jeden z moich ulubionych formatów.
+                            Spotykamy się w Twoim ulubionym lokalu we Wrocławiu.</p>
+                    </details>
+                    <details class="glass-card" style="padding: 1rem; cursor: pointer;">
+                        <summary style="font-weight: bold; color: var(--color-primary);">Jak wygląda lekcja próbna?
+                        </summary>
+                        <p style="margin-top: 1rem;">Trwa 30 minut i jest bezpłatna. Sprawdzamy Twój poziom, omawiam
+                            metody pracy i planuję dalszą naukę.</p>
+                    </details>
+                    <details class="glass-card" style="padding: 1rem; cursor: pointer;">
+                        <summary style="font-weight: bold; color: var(--color-primary);">Czy przygotowujesz do
+                            IELTS/TOEFL?</summary>
+                        <p style="margin-top: 1rem;">Tak, specjalizuję się w przygotowaniu do egzaminów: IELTS, TOEFL,
+                            TOEIC, Matura i CET. Korzystam z autentycznych materiałów egzaminacyjnych.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="section" id="kontakt" style="background: var(--color-bg-light); text-align: center;">
+            <div class="container">
+                <h2 style="margin-bottom: 1rem;">Gotowy, by zacząć mówić?</h2>
+                <p style="color: var(--color-text-secondary); max-width: 600px; margin: 0 auto 2rem;">
+                    Napisz do mnie lub zadzwoń. Pierwsza lekcja próbna jest bezpłatna!
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="mailto:kontakt@angielskikorepetycje.pl" class="btn btn-success"
+                        style="font-size: 1.2rem; padding: 1rem 2.5rem;">📧 Napisz e-mail</a>
+                    <a href="tel:+48571055039" class="btn btn-primary"
+                        style="font-size: 1.2rem; padding: 1rem 2.5rem;">📞 Zadzwoń</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h5 style="margin-bottom: 1rem; color: var(--color-primary);">Angielskie Korepetycje</h5>
+                    <p>Adrian Ekrem Abdulkerim</p>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Oferta</h5>
+                    <ul style="line-height: 2;">
+                        <li><a href="/angielski-wroclaw.html">Angielski Wrocław</a></li>
+                        <li><a href="/angielski-online.html">Angielski Online</a></li>
+                        <li><a href="/o-mnie.html">O Mnie</a></li>
+                        <li><a href="/metodologia.html">Metodologia</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Kursy</h5>
+                    <ul style="line-height: 2;">
+                        <li><a href="/kurs-speaking.html">Speaking & Konwersacje</a></li>
+                        <li><a href="/kurs-ielts.html">Kurs IELTS</a></li>
+                        <li><a href="/kurs-toefl.html">Kurs TOEFL</a></li>
+                        <li><a href="/kurs-toeic.html">Kurs TOEIC</a></li>
+                        <li><a href="/matura-angielski.html">Matura Rozszerzona</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Kontakt</h5>
+                    <p><a href="mailto:kontakt@angielskikorepetycje.pl">kontakt@angielskikorepetycje.pl</a></p>
+                    <p>+48 571 055 039</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adrian Ekrem Abdulkerim. Wszelkie prawa zastrzeżone.</p>
+                <div>
+                    <a href="#" style="margin-right: 1rem;">Polityka Prywatności</a>
+                    <a href="#">Regulamin</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Umów się na lekcję | Adrian Ekrem</title>
+    <meta name="description"
+        content="Skontaktuj się i umów na lekcję angielskiego. Wrocław lub Online. Telefon: +48 571 055 039.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="/" class="logo">Adrian<span>Ekrem</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/" class="nav-link">Start</a></li>
+                    <li><a href="/angielski-wroclaw.html" class="nav-link">Wrocław</a></li>
+                    <li><a href="/angielski-online.html" class="nav-link">Online</a></li>
+                    <li><a href="/o-mnie.html" class="nav-link">O mnie</a></li>
+                    <li><a href="/metodologia.html" class="nav-link">Metodologia</a></li>
+                    <li><a href="/blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="/kontakt.html" class="nav-link active" style="color: var(--color-primary);">Kontakt</a>
+                    </li>
+                    <li><a href="/kontakt.html" class="nav-cta">Umów Lekcję</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" style="padding-top: 140px;">
+            <div class="container">
+                <div class="split-section">
+
+                    <!-- Contact Info -->
+                    <div>
+                        <h1 style="margin-bottom: 2rem;">Porozmawiajmy o Twoim angielskim</h1>
+                        <p style="margin-bottom: 3rem; color: var(--color-text-secondary); font-size: 1.1rem;">
+                            Masz pytania? Chcesz ustalić termin lekcji próbnej? Jesteś o jeden krok od płynnego
+                            mówienia.
+                        </p>
+
+                        <div style="margin-bottom: 2rem;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <div style="background: var(--color-bg-light); padding: 1rem; border-radius: 50%;">
+                                    <i data-lucide="phone"
+                                        style="width: 24px; height: 24px; color: var(--color-primary);"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 0.2rem;">Telefon</h4>
+                                    <a href="tel:+48571055039"
+                                        style="font-size: 1.1rem; color: var(--color-text-main);">+48 571 055 039</a>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <div style="background: var(--color-bg-light); padding: 1rem; border-radius: 50%;">
+                                    <i data-lucide="mail"
+                                        style="width: 24px; height: 24px; color: var(--color-primary);"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 0.2rem;">Email</h4>
+                                    <a href="mailto:kontakt@angielskikorepetycje.pl"
+                                        style="font-size: 1.1rem; color: var(--color-text-main);">kontakt@angielskikorepetycje.pl</a>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <div style="background: var(--color-bg-light); padding: 1rem; border-radius: 50%;">
+                                    <i data-lucide="map-pin"
+                                        style="width: 24px; height: 24px; color: var(--color-primary);"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 0.2rem;">Lokalizacja</h4>
+                                    <p style="color: var(--color-text-secondary);">Wrocław (Krzyki, Centrum) lub Online
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Mini -->
+                        <div class="glass-card"
+                            style="padding: 1.5rem; margin-top: 2rem; background: rgba(0,212,126,0.1);">
+                            <h4 style="margin-bottom: 0.5rem;"><i data-lucide="clock"
+                                    style="width: 18px; height: 18px; display: inline;"></i> Szybka odpowiedź?</h4>
+                            <p style="font-size: 0.9rem;">Odpisuję zazwyczaj w ciągu 2 godzin (w dni robocze).</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="glass-card" style="padding: 2rem;">
+                        <h3 style="margin-bottom: 1.5rem;">Napisz wiadomość</h3>
+                        <form action="mailto:kontakt@angielskikorepetycje.pl" method="GET" enctype="text/plain"
+                            style="display: grid; gap: 1rem;">
+
+                            <div>
+                                <label for="subject"
+                                    style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Temat</label>
+                                <select id="subject" name="subject"
+                                    style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid #ddd; background: white;">
+                                    <option value="Lekcja Próbna">Chcę umówić lekcję próbną</option>
+                                    <option value="Kurs IELTS/TOEFL">Przygotowanie do egzaminu (IELTS/TOEFL)</option>
+                                    <option value="Business English">Business English</option>
+                                    <option value="Inne">Inne pytanie</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="body"
+                                    style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Wiadomość</label>
+                                <textarea id="body" name="body" rows="6"
+                                    placeholder="Cześć Adrian, chciałbym zapytać o..."
+                                    style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid #ddd; font-family: inherit;"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary"
+                                style="width: 100%; justify-content: center; margin-top: 1rem;">
+                                <i data-lucide="send" style="width: 18px; height: 18px; margin-right: 0.5rem;"></i>
+                                Wyślij Wiadomość
+                            </button>
+
+                            <p
+                                style="font-size: 0.8rem; color: var(--color-text-secondary); text-align: center; margin-top: 1rem;">
+                                *Formularz otworzy Twój program pocztowy.
+                            </p>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h5 style="margin-bottom: 1rem; color: var(--color-primary);">Angielskie Korepetycje</h5>
+                    <p>Adrian Ekrem Abdulkerim</p>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Oferta</h5>
+                    <ul style="line-height: 2;">
+                        <li><a href="/angielski-wroclaw.html">Angielski Wrocław</a></li>
+                        <li><a href="/angielski-online.html">Angielski Online</a></li>
+                        <li><a href="/o-mnie.html">O Mnie</a></li>
+                        <li><a href="/metodologia.html">Metodologia</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Kursy</h5>
+                    <ul style="line-height: 2;">
+                        <li><a href="/kurs-speaking.html">Speaking & Konwersacje</a></li>
+                        <li><a href="/kurs-ielts.html">Kurs IELTS</a></li>
+                        <li><a href="/kurs-toefl.html">Kurs TOEFL</a></li>
+                        <li><a href="/kurs-toeic.html">Kurs TOEIC</a></li>
+                        <li><a href="/matura-angielski.html">Matura Rozszerzona</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Kontakt</h5>
+                    <p><a href="mailto:kontakt@angielskikorepetycje.pl">kontakt@angielskikorepetycje.pl</a></p>
+                    <p>+48 571 055 039</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adrian Ekrem Abdulkerim. Wszelkie prawa zastrzeżone.</p>
+                <div>
+                    <a href="#" style="margin-right: 1rem;">Polityka Prywatności</a>
+                    <a href="#">Regulamin</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
