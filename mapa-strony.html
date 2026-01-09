@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Strony (HTML Sitemap) | Adrian Ekrem</title>
+    <meta name="description" content="Pełna lista stron i artykułów na blogu. Znajdź to, czego szukasz szybciej.">
+    <meta name="robots" content="noindex, follow">
+    <!-- Noindex for HTML sitemap usually preferred, or index it. User said UI sitemap, usually for users. Let's start with indexable but maybe strict. -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        .sitemap-container {
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .sitemap-section {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .sitemap-section h2 {
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .sitemap-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .sitemap-list li a {
+            text-decoration: none;
+            color: #334155;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.2s;
+            font-size: 1rem;
+        }
+
+        .sitemap-list li a:hover {
+            color: var(--color-accent);
+        }
+
+        .sitemap-list li a::before {
+            content: "•";
+            color: var(--color-accent);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="/" class="logo">Adrian<span>Ekrem</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/" class="nav-link">Start</a></li>
+                    <li><a href="/pages/angielski-wroclaw" class="nav-link">Wrocław</a></li>
+                    <li><a href="/pages/angielski-online" class="nav-link">Online</a></li>
+                    <li><a href="/baza-wiedzy" class="nav-link">Baza Wiedzy</a></li>
+                    <li><a href="/pages/kontakt" class="nav-cta">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="sitemap-container">
+        <h1>Mapa Strony</h1>
+        <p style="margin-bottom: 2rem; color: #64748b;">Wszystkie podstrony i artykuły w jednym miejscu.</p>
+
+        <div class="sitemap-section">
+            <h2>🏠 Główne Strony</h2>
+            <ul class="sitemap-list">
+                <li><a href="/">Strona Główna</a></li>
+                <li><a href="/pages/angielski-wroclaw">Korepetycje we Wrocławiu</a></li>
+                <li><a href="/pages/angielski-online">Nauka Online</a></li>
+                <li><a href="/pages/o-mnie">O mnie</a></li>
+                <li><a href="/pages/metodologia">Moja Metodologia</a></li>
+                <li><a href="/pages/kontakt">Kontakt</a></li>
+                <li><a href="/pages/rezerwacja">Rezerwacja Lekcji</a></li>
+            </ul>
+        </div>
+
+        <div class="sitemap-section">
+            <h2>🎓 Kursy i Oferta</h2>
+            <ul class="sitemap-list">
+                <li><a href="/courses/kurs-speaking">Kurs Speaking</a></li>
+                <li><a href="/courses/kurs-ielts">Przygotowanie do IELTS</a></li>
+                <li><a href="/courses/kurs-toefl">Przygotowanie do TOEFL</a></li>
+                <li><a href="/courses/kurs-toeic">Przygotowanie do TOEIC</a></li>
+                <li><a href="/courses/matura-angielski">Matura z Angielskiego</a></li>
+            </ul>
+        </div>
+
+        <div class="sitemap-section">
+            <h2>📚 Baza Wiedzy (Blog)</h2>
+
+            <h3 style="margin: 1.5rem 0 1rem; color: #475569; font-size: 1.1rem;">Egzaminy i Certyfikaty</h3>
+            <ul class="sitemap-list">
+                <li><a href="/wiedza/egzaminy/toefl-vs-ielts-dla-polakow">TOEFL vs IELTS dla Polaków</a></li>
+                <li><a href="/wiedza/egzaminy/ielts-writing-task-2-formula">IELTS Writing Task 2</a></li>
+                <li><a href="/wiedza/egzaminy/matura-ustna-pytania-impulsowe">Matura Ustna - Pytania Impulsowe</a></li>
+                <li><a href="/blog/matura/10-bledow-matura-angielski">10 Błędów na Maturze</a></li>
+            </ul>
+
+            <h3 style="margin: 1.5rem 0 1rem; color: #475569; font-size: 1.1rem;">Praca i Biznes (IT/Corporate)</h3>
+            <ul class="sitemap-list">
+                <li><a href="/wiedza/praca/angielski-dla-programistow-scrum-daily">Angielski dla Programistów
+                        (Scrum)</a></li>
+                <li><a href="/wiedza/praca/biznesowy-email-angielski">Biznesowy Email po Angielsku</a></li>
+                <li><a href="/wiedza/praca/small-talk-angielski-praca">Small Talk w Pracy</a></li>
+                <li><a href="/wiedza/praca/toeic-czy-warto-2026">Certyfikat TOEIC - Czy warto?</a></li>
+            </ul>
+
+            <h3 style="margin: 1.5rem 0 1rem; color: #475569; font-size: 1.1rem;">Metody i Porady</h3>
+            <ul class="sitemap-list">
+                <li><a href="/blog/metodologia/fonetyka-wymowa-polakow">Fonetyka i Wymowa</a></li>
+                <li><a href="/blog/online/angielski-online-vs-stacjonarnie">Online vs Stacjonarnie</a></li>
+                <li><a href="/blog/porady/jak-wybrac-korepetytora">Jak wybrać korepetytora?</a></li>
+                <li><a href="/blog/wroclaw/kawiarnie-wroclaw-nauka-jezyka">Kawiarnie we Wrocławiu do nauki</a></li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Adrian Ekrem Abdulkerim.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
