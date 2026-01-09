@@ -1,0 +1,184 @@
+/* 
+ * blog.css - Standardized design for blog posts
+ */
+
+.blog-post-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-header {
+    padding-top: 140px;
+    padding-bottom: 3rem;
+}
+
+.blog-category-label {
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.blog-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: var(--color-text-main);
+}
+
+.blog-author-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.blog-author-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.blog-author-name {
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.blog-post-date {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+}
+
+.blog-hero-image {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 3rem;
+    box-shadow: var(--shadow-md);
+    display: block;
+}
+
+.blog-article-body {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--color-text-main);
+}
+
+.blog-article-body p {
+    margin-bottom: 1.5rem;
+}
+
+.blog-article-body h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+    font-size: 1.8rem;
+}
+
+.blog-article-body h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-main);
+}
+
+/* Callout Boxes */
+.blog-pro-tip {
+    background: linear-gradient(135deg, rgba(101, 123, 230, 0.08) 0%, rgba(142, 158, 252, 0.05) 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 5px solid var(--color-primary);
+    margin: 3rem 0;
+}
+
+.blog-pro-tip h4 {
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.blog-example-box {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+}
+
+.blog-example-wrong {
+    color: #e53935;
+    background: rgba(229, 57, 53, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.blog-example-correct {
+    color: #2e7d32;
+    background: rgba(46, 125, 50, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+.blog-divider {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 3rem 0;
+}
+
+.blog-cta-section {
+    background: var(--color-bg-light);
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .blog-title {
+        font-size: 2rem;
+    }
+
+    .blog-article-body {
+        font-size: 1.05rem;
+    }
+
+    .blog-pro-tip {
+        padding: 1.5rem;
+    }
+}
+
+/* Badge for Newest Article */
+.badge-new {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #00d47e;
+    /* Bright accent green */
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

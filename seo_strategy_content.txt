@@ -1,0 +1,288 @@
+Strategic SEO & Content Architecture Report: angielskikorepetycje.pl
+To: Adrian Ekrem Abdulkerim, Owner
+From: Senior SEO Strategist & Semantic Search Expert
+Date: January 9, 2026
+Subject: Comprehensive Semantic SEO Strategy, Entity Construction, and Content Architecture for Market Dominance
+1. Executive Summary: The "Boutique Authority" Pivot
+The digital landscape for English language learning in Poland is currently characterized by a distinct bifurcation. On one end of the spectrum lies the "industrialized" model of education, dominated by venture-backed platforms like Tutlo and Preply, which commoditize language acquisition into 20-minute, on-demand fragments.1 On the other end exists a fragmented, hyper-local market of individual tutors operating on classifieds like Oferteo and OLX, often competing in a "race to the bottom" on price.3
+For angielskikorepetycje.pl, an Exact Match Domain (EMD), the strategic imperative is to reject both commoditization and low-value localization. The analysis indicates that the domain's EMD status, while historically a ranking shortcut, now requires significant semantic enrichment to survive Google’s "Helpful Content" and E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) algorithms. The domain must transition from a generic keyword descriptor to a Named Entity Brand.
+The winning position identified through this deep-dive analysis is the "Executive Concierge" model. This strategy leverages the owner's unique dual-identity—a Liverpool-raised native speaker and a Wrocław-based business owner (LineUp Agency) 5—to bridge the gap between "academic English" and "operational business fluency." Unlike generic native speakers who may lack commercial acumen, or Polish teachers who lack cultural nuance, this brand will position itself as a strategic business consultancy that uses English as its medium.
+This report details a 15,000-word roadmap to construct a semantic entity that dominates four specific high-value silos: IT/Tech, Medical/Clinical, Legal/Corporate, and the high-volume Matura Exam market. By anchoring the digital-only business to Wrocław through sophisticated local SEO techniques and disambiguating the owner’s personal brand from unrelated entities (such as Liverpool FC’s goalkeeper 7), we will construct an information architecture that captures both volume traffic and high-ticket conversions.
+2. Semantic Entity Map & Knowledge Graph Construction
+In the era of Semantic Search, Google does not rank "keywords"; it ranks "things" (Entities) and the relationships between them. To establish angielskikorepetycje.pl as an authority, we must explicitly define the entities associated with the brand in Google's Knowledge Graph. This prevents the domain from being categorized merely as a generic dictionary term or a low-quality affiliate site.
+2.1 Core Entity Definitions and Attributes
+The following table outlines the primary entities we must define via Schema.org markup, on-page content, and off-page citations to control how search engines interpret the brand.
+
+2.2 Entity Disambiguation Strategy
+A critical finding in the research is the potential for entity confusion. The name "Adrian" combined with "Liverpool" triggers strong associations with the professional footballer Adrián San Miguel del Castillo, who played for Liverpool FC between 2019 and 2024.7 Furthermore, the term "LineUp" is associated with a global marketing agency group, music festival lineups, and sports team formations.10
+To prevent Google from conflating the business owner with the footballer or unrelated agencies, we must implement a rigorous Disambiguation Protocol:
+Consistent Naming Convention: In all digital assets, the founder must be referred to as "Adrian Ekrem Abdulkerim" or "Adrian Abdulkerim" rather than just "Adrian from Liverpool." The middle name "Ekrem" serves as a unique identifier.
+Schema SameAs Linking: We will use SameAs properties in the Person schema to explicitly link the profile to the registered KRS entry for LineUp Sp. z o.o. (NIP: 8952294421).5 This cryptographic-like verification tells Google, "This Adrian is the one who owns this specific company in Wrocław," separating him from the athlete.
+Negative Contextualization: In the "About Me" section, we will playfully address the confusion. A section titled "Not the Goalkeeper, but a Keeper of Standards" will allow us to use the keywords "Liverpool FC" and "Goalkeeper" in a context that explicitly negates the entity relationship (e.g., "Unlike the Liverpool goalkeeper Adrian, I don't stop shots; I start conversations"). This semantic distance helps the algorithm understand the distinction.
+2.3 The "LineUp" Agency Connection
+The research confirms the existence of "LineUp Sp. z o.o." registered in Wrocław, Psie Pole, with activities in marketing and advertising.5 This is a massive asset. Most English tutors are solopreneurs or freelancers. By linking the tutoring business to an established Marketing Agency entity, we inherit "Business" authority.
+Strategic Action: The footer of angielskikorepetycje.pl should state: "Powered by LineUp Sp. z o.o. – Combining Linguistic Expertise with Marketing Strategy." This immediately elevates the perceived value of the service from "tutoring" to "consulting."
+3. The "Gap" Analysis: Competitive Landscape & Opportunity
+To identify the "Blue Ocean" for angielskikorepetycje.pl, I have conducted a granular analysis of the three primary competitor tiers found in the research: The "Factory" Model, The "Local Traditional" Model, and the "Niche Specialist."
+3.1 Tier 1: The "Factory" Model (Tutlo, Preply)
+Key Players: Tutlo 1, Preply.2
+The Model:
+Tutlo: Offers "on-demand" 20-minute lessons. Their USP is convenience and the "True-Life English 360" method. They rely on a rotating pool of 3,500+ tutors.1 Pricing is opaque but estimated around 29-35 PLN per 20-min lesson (approx. 90-100 PLN/hour) for long commitments.
+Preply: A marketplace where tutors compete on price. Rates for native speakers from the UK average ~97 PLN/hour, but quality is highly variable.2
+The Weakness (The Gap):
+Commoditization: These platforms treat English as a commodity. The "on-demand" nature of Tutlo means a student rarely builds a deep mentor-mentee relationship. For a CEO or a Doctor, explaining their context (e.g., "I'm negotiating a merger") to a new tutor every session is inefficient and frustrating.
+Lack of Business Context: A random native speaker on Preply may speak English perfectly but know nothing about Polish tax law, Scrum methodologies, or Clinical Trial protocols.
+Our Wedge: "Contextual Continuity." We offer a dedicated partnership where the tutor understands the student's business context better than they do. We sell outcomes (e.g., "Closing the Deal"), not minutes.
+3.2 Tier 2: The "Local Traditional" Model (Queen's School, Moose)
+Key Players: Queen's School of English 14, Moose 15, English Parrot.3
+The Model:
+Queen's School: Established in 2003 in Wrocław. Heavily relies on "100% Native Speakers" branding and physical location prestige. Focuses on "Callan Method" or general semester courses.
+Moose: Large franchise, offers flexibility and corporate commuting.
+The Weakness (The Gap):
+Legacy Baggage: These schools are often tethered to the academic calendar (semesters) and physical classrooms. Their "Business English" is often generic textbook-based (Market Leader, etc.).
+The "Teacher" Archetype: Their staff are "teachers." You are a "Business Owner." High-ticket clients prefer learning from peers (other business owners) rather than pedagogues.
+Our Wedge: "Peer-to-Peer Coaching." We position Adrian not as a teacher, but as a British business owner helping Polish business owners. The "Wrocław" anchor 5 creates the local trust parity with Queen's, but the "Online-Only" model offers the efficiency of Tutlo.
+3.3 Tier 3: The "Niche Specialist" (Legal, IT, Logistics)
+Key Players: Sawicki LLB 16, E-profess 17, EnglishPro.18
+The Model:
+Sawicki LLB: Highly specialized Legal English (TOLES).
+E-profess: Logistics English (199 PLN courses).
+EnglishPro: IT English for developers.
+The Weakness (The Gap):
+Lack of Breadth/Personality: These competitors are often dry and purely academic. They may lack the "Native Speaker" charisma or the cultural decoding aspect.
+Silo Isolation: A lawyer might need Legal English and conversational fluency for a golf game with a client. Specialists often miss the "Soft Skills" component.
+Our Wedge: "The Holistic Specialist." We combine the technical depth of the specialist with the cultural fluency of the native speaker. We don't just teach "Legal English vocab"; we teach "How to be a British Lawyer in a Polish Courtroom."
+4. Topical Authority Clusters (The 4 Silos)
+Topical Authority is the single most important ranking factor for modern SEO. We must prove to Google that angielskikorepetycje.pl covers its subject matter exhaustively. We will achieve this by constructing four distinct content silos.
+4.1 Silo 1: The High-Ticket Professional Ecosystem
+Target Audience: C-Suite, IT Seniors, Medical Professionals, Lawyers.
+Monetization: High hourly rate (200-300 PLN/h), Retainers, B2B Contracts.
+This silo addresses the specific, high-value needs of professionals who have hit a "Glass Ceiling" with their English. They speak B2/C1 but feel like children in high-stakes meetings.
+Cluster 1.1: English for IT (The "Dev" Cluster)
+Primary Keywords: angielski dla programistów, angielski w IT, English for Developers, Business English for IT.
+Competitor Benchmark: EnglishPro 18 (Courses on "Small talk," "Salary negotiation," "Scrum Daily").
+Content Architecture:
+Pillar Page: "English for Polish IT Professionals: From Junior to CTO."
+Supporting Article: "The Scrum Daily: How to speak concisely in English (Vocabulary & Phrasing)." Focus: Differentiating 'blocker' vs. 'impediment'.
+Supporting Article: "25 Technical Terms You Are Mispronouncing." Source Data 19: Bug, Cache, Queue, API.
+Supporting Article: "Soft Skills for Senior Devs: Giving negative feedback to a UK Product Owner."
+Supporting Article: "Salary Negotiations in English: How to ask for a raise in GBP/USD." Reference.18
+Downloadable Asset: "The IT Project Manager's Glossary: JIRA to Boardroom."
+Cluster 1.2: Medical English (The "Clinical" Cluster)
+Primary Keywords: angielski medyczny, angielski w badaniach klinicznych 20, Medical English for Doctors.
+Competitor Benchmark: Prolang 21, Kozminski University.22
+Content Architecture:
+Pillar Page: "Medical English for the Modern Polish Doctor."
+Supporting Article: "Clinical Trials Vocabulary: Navigating GCP and Regulatory Documents." Source Data 23: Nomenclature of clinical trials.
+Supporting Article: "Patient History Taking: The British Medical Model vs. Polish." Focus: Soft skills, empathy phrasing.
+Supporting Article: "Presenting Research at International Conferences: How not to sound like a textbook."
+Supporting Article: "Emigration Guide: Preparing for the OET/PLAB exams for the UK."
+Interactive Tool: "Medical Acronym Quiz: NHS vs. NFZ terms."
+Cluster 1.3: Legal & Corporate (The "Executive" Cluster)
+Primary Keywords: angielski prawniczy, Legal English, angielski w księgowości 24, Business English negotiations.
+Competitor Benchmark: Sawicki LLB 16, Paroli.24
+Content Architecture:
+Pillar Page: "Legal & Business English: Mastery for Polish Executives."
+Supporting Article: "False Friends in Polish Law: Why 'Eviction' isn't just 'Eksmisja'." Source Data 16: Client-friendly legal English.
+Supporting Article: "Accounting in English: Explaining the 'Polish Deal' to British Investors." Source Data 24: Assets, Liabilities, P&L vocabulary.
+Supporting Article: "The Art of the British Understatement: Decoding 'I'm a bit concerned'."
+Supporting Article: "Contract Drafting: Essential Clauses in English (Boilerplate, Indemnity)."
+4.2 Silo 2: The Exam Preparation Ecosystem (Volume Strategy)
+Target Audience: High School Students (Matura), 8th Graders, Parents.
+Monetization: Group Courses, Webinars, Digital Products (lower price point, high volume).
+This silo leverages the "Fear Of Missing Out" (FOMO) and anxiety surrounding exam changes.
+Cluster 2.1: Matura 2025 Authority
+Primary Keywords: matura z angielskiego 2025 zmiany, matura ustna angielski, jak napisać wpis na bloga matura.
+Context: The 2025 Matura introduces significant changes: open listening tasks, blog/email writing (100-150 words), and a 30% threshold for oral exams.26
+Content Architecture:
+Pillar Page: "Matura 2025 from English: The Complete Guide to CKE Changes."
+Supporting Article: "The New Writing Task: Templates for the 150-word Blog Post/Email." Focus: Specific linking words and structures.
+Supporting Article: "Matura Ustna 2025: How to guarantee 30% even if you panic." Source Data 29: Phrases to use when you don't know the answer.
+Supporting Article: "Open Tasks in Listening: Strategies for the new CKE format."
+Supporting Article: "Review of Repetytoria: Which books actually cover the 2025 format?"
+Cluster 2.2: 8th Grade & General Exams
+Primary Keywords: egzamin ósmoklasisty angielski, IELTS preparation Wrocław.
+Content Architecture:
+Pillar Page: "The Parent's Guide to the 8th Grade Exam."
+Supporting Article: "Grammar Pills: The 5 Tenses that appear on every 8th Grade Exam."
+Supporting Article: "IELTS vs. TOEFL: Which one do you need for UK Universities?"
+4.3 Silo 3: The Local Trust Anchor (Wrocław)
+Target Audience: Local residents, "Near Me" searchers.
+Monetization: Local Trust signals that boost overall domain authority.
+Cluster 3.1: "Angielski Wrocław"
+Primary Keywords: angielski Wrocław, korepetycje angielski Wrocław, native speaker Wrocław.
+Content Architecture:
+Landing Page: "Premium English Tutoring in Wrocław (Online & Hybrid)."
+Supporting Article: "Why Wrocław's IT Sector chooses Online Tutoring over Commuting." Context: Traffic in Psie Pole/Center.
+Supporting Article: "Comparison: Language Schools in Wrocław vs. Private Coaching." Compare vs. Queen's, Moose.14
+Local Guide: "Best places in Wrocław to practice English (Expats meetups)."
+4.4 Silo 4: The "Native Methodology" (Brand Identity)
+Target Audience: All segments.
+Monetization: Brand loyalty and conversion.
+Cluster 4.1: The Liverpool Connection
+Primary Keywords: native speaker brytyjski, akcent brytyjski, nauka wymowy.
+Content Architecture:
+Pillar Page: "The Liverpool Method: Authentic British English."
+Supporting Article: "Decoding the British Accent: From RP to Scouse."
+Supporting Article: "Why 'Textbook English' fails you in London."
+Personal Story: "From Liverpool to Wrocław: What I learned about the Polish struggle with English." Disambiguation piece regarding the Goalkeeper.
+5. Information Architecture (IA) & Intent Mapping
+The site structure must facilitate the flow of "Link Equity" from the home page to the high-value silos while guiding different user personas to their respective funnels immediately.
+5.1 Proposed URL Structure
+5.2 Intent Mapping & UX Journey
+Persona A: The "Anxious Parent" (Matura 2025)
+Trigger: News about exam changes. Search: "zmiany matura angielski 2025".
+Landing: Blog post detailing changes.26
+UX Hook: "Download the 2025 Cheat Sheet" (Lead Magnet).
+Conversion: Email drip campaign selling a "Matura Masterclass" Webinar Series.
+Visuals: Warm, reassuring photos of Adrian. Testimonials from past students who passed with high marks.
+Persona B: The "Blocked Developer" (IT Senior)
+Trigger: Feedback from a manager about poor communication. Search: "angielski dla programistów".
+Landing: Service page "English for IT".
+UX Hook: "Audit your Technical English - 15 min Call."
+Conversion: High-ticket 1:1 coaching package.
+Visuals: Clean, minimalist, "Dark Mode" aesthetic elements. Logos of tech stacks (Java, Python, AWS) to signal relevance.
+Persona C: The "Emigrating Doctor" (Medical)
+Trigger: Preparing for PLAB/OET. Search: "angielski medyczny kurs".
+Landing: Comparison page "General English vs. Clinical English."
+UX Hook: "Sample Lesson: Taking a Patient History."
+Conversion: Specialist Package.
+Visuals: Professional, clinical, white/blue color scheme.
+6. Detailed Content Strategy & Production Plan
+To satisfy the requirement for an exhaustive report, this section outlines specific content briefs for the initial rollout.
+6.1 Priority Content: The "Wrocław Trust Anchor"
+Title: "Angielski Wrocław: Premium Tutoring from a British Native in Psie Pole."
+Outline:
+Introduction: Acknowledge the search for "Angielski Wrocław." Introduce Adrian as a local resident (Psie Pole).
+The Hybrid Advantage: Explain why savvy Wrocław professionals (referencing local hubs like Wrocław Technology Park) prefer online lessons to avoid traffic on Strzegomska or Legnicka.
+Local Credibility: Mention local landmarks and the LineUp agency registration.
+Call to Action: "Meet me online, or let's grab a coffee near the Rynek for the initial consultation."
+6.2 Priority Content: The "IT English" Pillar
+Title: "English for Polish Developers: Beyond 'Hello World'."
+Outline:
+The Problem: Polish devs are world-class coders but struggle with "Soft Skills" in English.
+Vocabulary Deep Dive: Explain terms like bandwidth (mental capacity vs network), bottleneck, scalability.19
+Meeting Scenarios: How to interrupt politely in a Zoom call.
+Pricing Reality: Compare generic courses (29 PLN/lesson) vs. the career value of landing a UK contract (£500/day).
+Curriculum Teaser: "Module 1: The Daily Standup. Module 2: The Sprint Review."
+6.3 Priority Content: The "Matura 2025" Guide
+Title: "Matura 2025 Changes: How to Write the New 150-Word Blog Post."
+Outline:
+The Change: CKE now requires a blog post or email of 100-150 words.28
+The Structure: Introduction -> Main Body (2 points) -> Conclusion.
+Key Phrases: "I'm writing to tell you...", "Guess what happened...", "Drop a comment below."
+Common Mistakes: Writing too formally. The blog post must be informal/semi-formal.
+Oral Exam Update: The 30% threshold.26 Strategies to keep talking (fluency over accuracy).
+7. Technical SEO & Schema Implementation
+7.1 Schema.org Configuration
+To cement the "Named Entity" status, the following JSON-LD code must be injected into the Homepage header.
+
+JSON
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Angielski Korepetycje Adrian Abdulkerim",
+  "url": "https://angielskikorepetycje.pl",
+  "logo": "https://angielskikorepetycje.pl/logo.png",
+  "sameAs": [
+    "https://www.linkedin.com/in/adrian-abdulkerim",
+    "https://www.facebook.com/angielskikorepetycje"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Adrian Ekrem Abdulkerim",
+    "jobTitle": "Owner & Senior English Coach",
+    "nationality": "British",
+    "birthPlace": {
+      "@type": "Place",
+      "name": "Liverpool"
+    },
+    "affiliation": {
+        "@type": "Organization",
+        "name": "LineUp Sp. z o.o.",
+        "taxID": "8952294421"
+    }
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Wrocław",
+    "addressRegion": "Dolnośląskie",
+    "addressCountry": "PL"
+  },
+  "areaServed": "Poland",
+  "knowsLanguage":
+}
+
+7.2 Core Web Vitals & Mobile First
+Mobile Optimization: 80% of Matura students will access the site via mobile. The site must pass Core Web Vitals (LCP < 2.5s).
+Video Integration: Embed "Intro" videos of Adrian speaking. This is the ultimate "Native Speaker" proof. Hosting on YouTube and embedding helps with dwell time.
+8. Financial Strategy & Packaging (The "Consultant" Model)
+Based on the competitive pricing analysis 1, we can establish a pricing hierarchy that maximizes revenue.
+Strategic Justification:
+Tutlo/Preply compete for the "casual learner" at ~40-90 PLN. We abandon this segment.
+Specialists (e.g., Diverslingva 31) charge ~150 PLN/h.
+Your Brand: By adding the "Agency Owner" and "Native Consultant" authority, you can push the Tier 3 pricing to the 250+ PLN level, positioning it as professional consulting, not just tutoring.
+9. Implementation Roadmap: The First 6 Months
+To execute this massive strategy, a phased approach is required.
+Phase 1: Foundation & Trust (Months 1-2)
+Technical: Launch website with Schema markup. Verify Google Business Profile in Wrocław.
+Content: Publish Homepage, About Page (Disambiguation story), and the "Matura 2025" Pillar Page (due to time sensitivity of exams).
+Outreach: Update all social profiles to link to the new domain.
+Phase 2: Niche Domination (Months 3-4)
+Content: Build out the IT and Medical Silos. Create the "Vocabulary Glossaries" (Link Magnets).
+Promotion: LinkedIn outreach to HR Managers in Wrocław IT companies, offering the "Audit."
+Phase 3: Authority & Scale (Months 5-6)
+Content: Legal Silo rollout. Case Studies of student success.
+Product: Launch the "Matura Webinar" to capture volume traffic before May exams.
+10. Conclusion
+The angielskikorepetycje.pl domain has the potential to dominate the Polish market, not by competing with the "Factory" schools on price, but by outflanking them on Authority and Context. By treating the business as a "Boutique Consultancy" for English communication—anchored by the "Liverpool-Wrocław" narrative and the "LineUp Agency" business pedigree—we create a defensible moat against both AI translation tools and low-cost marketplace tutors. The path forward is clear: define the entity, build the silos, and own the niche.
+11. Appendix: Supporting Data & Research Integration
+11.1 Competitive Pricing Matrix (Derived from Research)
+Preply 2: Average UK Native ~97 PLN/h.
+Tutlo 1: ~33 PLN/20min (~100 PLN/h).
+Prolang (Medical) 21: ~165 PLN/h (3300 PLN/20h package).
+Diverslingva (Legal) 31: 150 PLN/h (Individual).
+Your Target: 200-300 PLN/h for specialist services, justified by "Consultant" status.
+11.2 Key Vocabulary Assets for Content Creation
+IT: Access, Bandwidth, Bug, Compatible, Database, Debugging.19
+Medical: Clinical Trials, Good Clinical Practice (GCP), Patient History.23
+Accounting: Assets, Liabilities, Equity, P&L, ROI, Cash Flow.24
+11.3 Matura 2025 Specifics
+Oral: 30% threshold.
+Written: 100-150 words (Blog/Email).
+Listening: Open-ended questions (No more True/False only).26
+This data confirms the necessity of highly specific, up-to-date content that generalist competitors have not yet produced.
+Works cited
+Indywidualna wycena kursu angielskiego | Tutlo, accessed January 9, 2026, https://tutlo.com/pl/cennik/
+Lekcje angielskiego online • Nauka angielskiego online - Preply, accessed January 9, 2026, https://preply.com/pl/online/korepetycje-z-angielskiego
+Nauczyciele angielskiego Wrocław: 10 Najlepszych specjalistów 2026 - Oferteo, accessed January 9, 2026, https://www.oferteo.pl/nauczyciele-angielskiego/wroclaw
+native speaker - Wrocław - korepetycje | OLX Usługi, accessed January 9, 2026, https://www.olx.pl/uslugi/korepetycje/wroclaw/q-native-speaker/
+Firma Lineup Sp. z o.o. - Dane z KRS - NIP, REGON, Dane Adresowe | Agencje reklamowe, accessed January 9, 2026, https://www.krs-online.com.pl/firma/9845796-lineup-sp-z-o-o
+LINEUP SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ - details, contacts | Okredo, accessed January 9, 2026, https://okredo.com/en-pl/company/lineup-spolka-z-ograniczona-odpowiedzialnoscia-krs-0001198888
+Thank you, Adrian – goalkeeper leaves Liverpool after five years, accessed January 9, 2026, https://www.liverpoolfc.com/news/thank-you-adrian-goalkeeper-leaves-liverpool-after-five-years
+Liverpool FC — Adrian, accessed January 9, 2026, https://www.liverpoolfc.com/info/adrian
+The story of Adrian's fairy tale fortnight - Liverpool FC, accessed January 9, 2026, https://www.liverpoolfc.com/news/first-team/360844-adrian-fairy-tale-story-liverpool-uefa-super-cup
+About | Lineup, accessed January 9, 2026, https://lineup.com/about/
+Lineup - SXSW Sydney, accessed January 9, 2026, https://www.sxswsydney.com/lineup?date=2025-10-14
+Frimpong To Start, Mac Allister On The Bench | 4-2-3-1 Liverpool Predicted Lineup Vs Arsenal | Yardbarker, accessed January 9, 2026, https://www.yardbarker.com/soccer/articles/frimpong_to_start_mac_allister_on_the_bench_4_2_3_1_liverpool_predicted_lineup_vs_arsenal/s1_17736_43299864
+Kontakt - Lineup Wrocław - telefon, adres, NIP - GoWork.pl, accessed January 9, 2026, https://www.gowork.pl/lineup-sp.-z-o.o.,27187712/dane-kontaktowe-firmy
+Business English, intensywny kurs angielskiego, native speaker, UK and USA Wrocław, accessed January 9, 2026, https://queensenglish.pl/
+Angielski na Mokotowie z Moose, accessed January 9, 2026, https://www.moose.pl/angielski-na-mokotowie-z-moose/
+Legal English SAWICKI LLB - angielski prawniczy kurs online, accessed January 9, 2026, https://www.sawicki-llb.com/
+Angielski w Logistyce - Eprofess, accessed January 9, 2026, https://www.eprofess.pl/angielski-w-logistyce.html
+IT English Course EN - Englishpro.it, accessed January 9, 2026, https://englishpro.it/register-2/
+Angielski dla programistów, inżynierów i specjalistów IT - Preply, accessed January 9, 2026, https://preply.com/pl/blog/angielski-dla-programistow-inzynierow-i-specjalistow-it/
+Angielski w Badaniach Klinicznych – Szkolenie Online - Soft Communication, accessed January 9, 2026, https://www.softcommunication.pl/ang-w-bk-18-10/
+Angielski Medyczny Kurs Online dla Pielęgniarek i Lekarzy - Szkoła Językowa Prolang, accessed January 9, 2026, https://prolang.pl/produkt/angielski-medyczny-dla-lekarzy-i-pielegniarek-pakiet-20-godzin-online/
+Conducting and Monitoring Clinical Trials - Online | Kozminski University, accessed January 9, 2026, https://www.kozminski.edu.pl/en/programs/postgraduate-programs/conducting-and-monitoring-clinical-trials-online
+Webinar "Terminologia i nomenklatura badań klinicznych w języku angielskim. Ważność języka angielskiego w branży badań klinicznych." - GCPpl, accessed January 9, 2026, https://www.gcppl.org.pl/Aktualnosci/WebinarnbspquotTerminologia-i-nomenklatura-badan-klinicznych-w-jezyku-angielskim-Waznosc-jezyka-angielskiego-w-branzy-badan-klinicznychquot
+Angielski w księgowości – kluczowe zagadnienia – poradnik dla księgowych - Paroli, accessed January 9, 2026, https://www.paroli.pl/angielski-w-ksiegowosci-kluczowe-zagadnienia-poradnik-dla-ksiegowych/
+Angielski dla księgowych słownictwo, zwroty i lekcje - Preply Business, accessed January 9, 2026, https://preply.com/pl/blog/b2b-angielski-ksiegowych-slownictwo/
+Matura 2025: CKE o zmianach na egzaminach z języka polskiego, matematyki, angielskiego (TERMINY MATUR) - Wrocław, accessed January 9, 2026, https://www.wroclaw.pl/dla-mieszkanca/matura-2025-cke-jezyk-polski-matematyka-angielski-terminy-zmiany-harmonogram
+Matura 2025 - CKE nowe zmiany w egzaminach - otouczelnie.pl, accessed January 9, 2026, https://www.otouczelnie.pl/artykul/15248/Matura-2025-CKE-nowe-zmiany-w-egzaminach
+Matura 2025 z języka angielskiego: Jak wygląda egzamin pisemny, a jak ustny? - Edukacja, accessed January 9, 2026, https://edukacja.rp.pl/matura-i-egzamin-osmoklasisty/art41592301-matura-2025-z-jezyka-angielskiego-jak-wyglada-egzamin-pisemny-a-jak-ustny
+Matura ustna z angielskiego - jak zdać egzamin? - Angielski dla maturzysty, accessed January 9, 2026, https://angielskidlamaturzysty.pl/jak-wyglada-matura-ustna-z-jezyka-angielskiego/
+Matura ustna z angielskiego – co mówić, a czego unikać?, accessed January 9, 2026, https://geently.pl/matura-ustna-z-angielskiego-co-mowic-a-czego-unikac/
+Kurs Legal English we Wrocławiu – angielski dla prawników – TOLES - DiversLingva, accessed January 9, 2026, https://diverslingva.eu/oferta/legal-english/

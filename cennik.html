@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cennik Korepetycji z Angielskiego | Adrian Ekrem</title>
+    <meta name="description"
+        content="Cennik lekcji angielskiego online i we Wrocławiu. Sprawdź ceny, pakiety z rabatami i zarezerwuj termin. Lekcje od 110 PLN.">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .booking-container {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            min-height: 600px;
+        }
+
+        .calendar-embed {
+            min-height: 550px;
+            width: 100%;
+            overflow: scroll;
+        }
+
+        /* Toggle Switch Styles */
+        .toggle-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            gap: 0;
+            flex-wrap: wrap;
+        }
+
+        .toggle-btn {
+            padding: 1rem 2.5rem;
+            border: 2px solid var(--color-primary);
+            background: transparent;
+            color: var(--color-primary);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-btn:first-child {
+            border-radius: 50px 0 0 50px;
+            border-right: 1px solid var(--color-primary);
+        }
+
+        .toggle-btn:last-child {
+            border-radius: 0 50px 50px 0;
+            border-left: 1px solid var(--color-primary);
+        }
+
+        .toggle-btn.active {
+            background: var(--color-primary);
+            color: white;
+        }
+
+        .toggle-btn:hover:not(.active) {
+            background: rgba(101, 123, 230, 0.1);
+        }
+
+        @media (max-width: 480px) {
+            .toggle-btn {
+                padding: 0.8rem 1.2rem;
+                font-size: 0.9rem;
+            }
+
+            .toggle-container {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .toggle-btn:first-child,
+            .toggle-btn:last-child {
+                border-radius: 50px;
+                border: 2px solid var(--color-primary);
+            }
+        }
+
+        .calendar-view {
+            display: none;
+        }
+
+        .calendar-view.active {
+            display: block;
+        }
+
+        /* Pricing Tiers */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .pricing-card.featured {
+            border: 2px solid var(--color-primary);
+        }
+
+        .pricing-card.featured::before {
+            content: "Najpopularniejszy";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--color-primary);
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-card .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin: 1rem 0;
+        }
+
+        .pricing-card .price span {
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+            font-weight: 400;
+        }
+
+        .pricing-card ul {
+            text-align: left;
+            margin: 1.5rem 0;
+        }
+
+        .pricing-card ul li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pricing-card ul li:last-child {
+            border-bottom: none;
+        }
+
+        /* Package Table */
+        .package-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .package-table th,
+        .package-table td {
+            padding: 1rem 1.5rem;
+            text-align: center;
+        }
+
+        .package-table th {
+            background: var(--color-primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        .package-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .package-table .discount-badge {
+            background: var(--color-accent);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* Terms Accordion */
+        .terms-section {
+            margin-top: 2rem;
+        }
+
+        .term-item {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .term-header {
+            padding: 1.25rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .term-header:hover {
+            background: #f8f9fa;
+        }
+
+        .term-content {
+            padding: 0 1.5rem 1.25rem;
+            color: var(--color-text-secondary);
+            display: none;
+        }
+
+        .term-item.open .term-content {
+            display: block;
+        }
+
+        .term-item.open .term-header i {
+            transform: rotate(180deg);
+        }
+
+        /* Payment Methods */
+        .payment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .payment-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .payment-card i {
+            width: 40px;
+            height: 40px;
+            color: var(--color-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .payment-card h4 {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .payment-card p {
+            font-size: 0.85rem;
+            color: var(--color-text-secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="/" class="logo">Adrian<span>Ekrem</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/" class="nav-link">Start</a></li>
+                    <li><a href="/landing/tutor-wroclaw" class="nav-link">Wrocław</a></li>
+                    <li><a href="/oferta-online" class="nav-link">Online</a></li>
+                    <li><a href="/o-mnie" class="nav-link">O mnie</a></li>
+                    <li><a href="/metodologia" class="nav-link">Metodologia</a></li>
+                    <li><a href="/baza-wiedzy" class="nav-link">Baza Wiedzy</a></li>
+                    <li><a href="/kontakt" class="nav-link">Kontakt</a></li>
+                    <li><a href="/cennik" class="nav-cta">Umów Lekcję</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section" style="padding-top: 140px; text-align: center; background: var(--color-bg-light);">
+            <div class="container">
+                <p style="color: var(--color-primary); font-weight: 600; margin-bottom: 1rem;">Cennik Lekcji</p>
+                <h1 style="font-size: 3rem; margin-bottom: 1.5rem;">Inwestycja w Twój Angielski</h1>
+                <p
+                    style="font-size: 1.25rem; color: var(--color-text-secondary); max-width: 700px; margin: 0 auto 2rem;">
+                    Przejrzyste ceny, pakiety z rabatami i elastyczne warunki. Wybierz opcję dopasowaną do Twoich celów.
+                </p>
+            </div>
+        </section>
+
+        <!-- Pricing Tiers Section -->
+        <section class="section">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 0.5rem;">Wybierz Typ Lekcji</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 2rem;">Każda lekcja
+                    trwa 60 minut</p>
+
+                <div class="pricing-grid">
+                    <!-- Speaking & Konwersacje -->
+                    <div class="pricing-card featured">
+                        <h3>Speaking & Konwersacje</h3>
+                        <p style="color: var(--color-text-secondary);">Ogólny angielski, płynność, pewność siebie</p>
+                        <div class="price">110 PLN <span>/ 60 min</span></div>
+                        <ul>
+                            <li><i data-lucide="check"
+                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> Konwersacje na
+                                żywo</li>
+                            <li><i data-lucide="check"
+                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> Korekta wymowy
+                            </li>
+                            <li><i data-lucide="check"
+                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> Materiały w
+                                cenie</li>
+                            <li><i data-lucide="check"
+                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> Elastyczny
+                                harmonogram</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-primary" style="width: 100%;">Zarezerwuj</a>
+                    </div>
+
+                    <!-- Egzaminy -->
+                    <div class="pricing-card">
+                        <h3>Egzaminy IELTS / TOEFL / TOEIC</h3>
+                        <p style="color: var(--color-text-secondary);">Intensywne przygotowanie egzaminacyjne</p>
+                        <div class="price">130 PLN <span>/ 60 min</span></div>
+                        <ul>
+                            <li><i data-lucide="check"
+                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> Strategia
+                                egzaminacyjna</li>
+                            <li><i data-lucide="check"
+                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> Testy próbne
+                            </li>
+                            <li><i data-lucide="check"
+                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> Feedback na
+                                piśmie</li>
+                            <li><i data-lucide="check"
+                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> Dostęp do
+                                zasobów</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-outline" style="width: 100%;">Zarezerwuj</a>
+                    </div>
+
+                    <!-- Matura -->
+                    <div class="pricing-card">
+                        <h3>Matura Rozszerzona</h3>
+                        <p style="color: var(--color-text-secondary);">Przygotowanie do matury z angielskiego</p>
+                        <div class="price">120 PLN <span>/ 60 min</span></div>
+                        <ul>
+                            <li><i data-lucide="check"
+                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> Arkusze z
+                                poprzednich lat</li>
+                            <li><i data-lucide="check"
+                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> Techniki czasowe
+                            </li>
+                            <li><i data-lucide="check"
+                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> Pisanie i ustny
+                            </li>
+                            <li><i data-lucide="check"
+                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> Symulacja
+                                egzaminu</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-outline" style="width: 100%;">Zarezerwuj</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Package Discounts Section -->
+        <section class="section" style="background: var(--color-bg-light);">
+            <div class="container" style="max-width: 900px;">
+                <h2 style="text-align: center; margin-bottom: 0.5rem;">Pakiety z Rabatem</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 2rem;">
+                    Im więcej godzin, tym więcej oszczędzasz. Pakiety nie przepadają.
+                </p>
+
+                <table class="package-table">
+                    <thead>
+                        <tr>
+                            <th>Pakiet</th>
+                            <th>Godziny</th>
+                            <th>Rabat</th>
+                            <th>Cena (Speaking)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Starter</strong></td>
+                            <td>5h</td>
+                            <td><span class="discount-badge">5% taniej</span></td>
+                            <td>523 PLN <small style="color: var(--color-text-secondary);">(zamiast 550)</small></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Standard</strong></td>
+                            <td>10h</td>
+                            <td><span class="discount-badge">10% taniej</span></td>
+                            <td>990 PLN <small style="color: var(--color-text-secondary);">(zamiast 1100)</small></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pro</strong></td>
+                            <td>20h</td>
+                            <td><span class="discount-badge">15% taniej</span></td>
+                            <td>1870 PLN <small style="color: var(--color-text-secondary);">(zamiast 2200)</small></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p
+                    style="text-align: center; margin-top: 1.5rem; font-size: 0.9rem; color: var(--color-text-secondary);">
+                    💡 <em>Rabaty dotyczą ceny bazowej (Speaking). Egzaminy i Matura – rabat obliczany od wyższej
+                        stawki.</em>
+                </p>
+            </div>
+        </section>
+
+        <!-- Terms & Conditions Section -->
+        <section class="section">
+            <div class="container" style="max-width: 800px;">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Warunki Współpracy</h2>
+
+                <div class="terms-section">
+                    <div class="term-item open">
+                        <div class="term-header" onclick="this.parentElement.classList.toggle('open')">
+                            <span>📅 Odwoływanie lekcji</span>
+                            <i data-lucide="chevron-down" style="width: 20px; height: 20px;"></i>
+                        </div>
+                        <div class="term-content">
+                            Lekcję można odwołać bezpłatnie do 24 godzin przed planowanym terminem. Późniejsze odwołanie
+                            lub nieobecność bez informacji skutkuje utratą lekcji z pakietu lub koniecznością zapłaty
+                            100% stawki.
+                        </div>
+                    </div>
+
+                    <div class="term-item">
+                        <div class="term-header" onclick="this.parentElement.classList.toggle('open')">
+                            <span>⏰ Spóźnienia</span>
+                            <i data-lucide="chevron-down" style="width: 20px; height: 20px;"></i>
+                        </div>
+                        <div class="term-content">
+                            Lekcja kończy się o ustalonej godzinie, niezależnie od spóźnienia ucznia. W przypadku
+                            spóźnienia lektora – nadrabiamy czas lub umawiamy dodatkową sesję.
+                        </div>
+                    </div>
+
+                    <div class="term-item">
+                        <div class="term-header" onclick="this.parentElement.classList.toggle('open')">
+                            <span>📚 Materiały</span>
+                            <i data-lucide="chevron-down" style="width: 20px; height: 20px;"></i>
+                        </div>
+                        <div class="term-content">
+                            Wszystkie materiały (PDF, linki, ćwiczenia, nagrania) są wliczone w cenę lekcji. Nie musisz
+                            nic kupować dodatkowo.
+                        </div>
+                    </div>
+
+                    <div class="term-item">
+                        <div class="term-header" onclick="this.parentElement.classList.toggle('open')">
+                            <span>🖥️ Format lekcji</span>
+                            <i data-lucide="chevron-down" style="width: 20px; height: 20px;"></i>
+                        </div>
+                        <div class="term-content">
+                            Lekcje online odbywają się przez Zoom lub Google Meet (link wysyłany automatycznie). Lekcje
+                            stacjonarne we Wrocławiu – miejsce do ustalenia indywidualnie.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Methods Section -->
+        <section class="section" style="background: var(--color-bg-light);">
+            <div class="container" style="max-width: 800px;">
+                <h2 style="text-align: center; margin-bottom: 0.5rem;">Metody Płatności</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 2rem;">
+                    Płatność za lekcję lub pakiet z góry, przed rozpoczęciem.
+                </p>
+
+                <div class="payment-grid">
+                    <div class="payment-card">
+                        <i data-lucide="smartphone"></i>
+                        <h4>BLIK</h4>
+                        <p>Szybko i wygodnie</p>
+                    </div>
+                    <div class="payment-card">
+                        <i data-lucide="building-2"></i>
+                        <h4>Przelew bankowy</h4>
+                        <p>Tradycyjnie</p>
+                    </div>
+                    <div class="payment-card">
+                        <i data-lucide="globe"></i>
+                        <h4>Revolut / PayPal</h4>
+                        <p>Dla klientów zagranicznych</p>
+                    </div>
+                    <div class="payment-card">
+                        <i data-lucide="file-text"></i>
+                        <h4>Faktura VAT</h4>
+                        <p>Na życzenie</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Calendar Section -->
+        <section class="section" id="booking">
+            <div class="container" style="max-width: 900px;">
+                <h2 style="text-align: center; margin-bottom: 0.5rem;">Zarezerwuj Termin</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 2rem;">
+                    Wybierz lekcję próbną (30 min, bezpłatna) lub regularną sesję (60 min).
+                </p>
+
+                <!-- Toggle Switch -->
+                <div class="toggle-container">
+                    <button class="toggle-btn active" id="btn-probna" onclick="showCalendar('probna')">
+                        🎯 Lekcja Próbna (30 min)
+                    </button>
+                    <button class="toggle-btn" id="btn-lekcja" onclick="showCalendar('lekcja')">
+                        📚 Regularna Lekcja (60 min)
+                    </button>
+                </div>
+
+                <div class="booking-container">
+
+                    <!-- Trial Lesson Calendar -->
+                    <div id="calendar-probna" class="calendar-view active">
+                        <div class="calendar-embed" id="my-cal-inline-lekcja-probna-30-min"></div>
+                    </div>
+
+                    <!-- Regular Lesson Calendar -->
+                    <div id="calendar-lekcja" class="calendar-view">
+                        <div class="calendar-embed" id="my-cal-inline-lekcja"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Signals -->
+        <section class="section" style="background: var(--color-bg-light);">
+            <div class="container">
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+                    <div>
+                        <i data-lucide="shield-check"
+                            style="width: 40px; height: 40px; color: var(--color-accent); margin-bottom: 1rem;"></i>
+                        <h4>Bezpłatna rezygnacja</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.9rem;">Do 24h przed lekcją możesz
+                            odwołać bez konsekwencji.</p>
+                    </div>
+                    <div>
+                        <i data-lucide="mail-check"
+                            style="width: 40px; height: 40px; color: var(--color-primary); margin-bottom: 1rem;"></i>
+                        <h4>Automatyczne przypomnienie</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.9rem;">Dostaniesz maila z linkiem i
+                            przypomnieniem.</p>
+                    </div>
+                    <div>
+                        <i data-lucide="video"
+                            style="width: 40px; height: 40px; color: var(--color-accent); margin-bottom: 1rem;"></i>
+                        <h4>Lekcja Online lub Wrocław</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.9rem;">Wybierzesz format podczas
+                            rezerwacji.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h5 style="margin-bottom: 1rem; color: var(--color-primary);">Angielskie Korepetycje</h5>
+                    <p>Adrian Ekrem Abdulkerim</p>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Oferta</h5>
+                    <ul style="line-height: 2;">
+                        <li><a href="/landing/tutor-wroclaw">Angielski Wrocław</a></li>
+                        <li><a href="/oferta-online">Angielski Online</a></li>
+                        <li><a href="/o-mnie">O Mnie</a></li>
+                        <li><a href="/metodologia">Metodologia</a></li>
+                        <li><a href="/baza-wiedzy">Baza Wiedzy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Kursy</h5>
+                    <ul style="line-height: 2;">
+                        <li><a href="/kursy/speaking">Speaking & Konwersacje</a></li>
+                        <li><a href="/kursy/ielts">Kurs IELTS</a></li>
+                        <li><a href="/kursy/toefl">Kurs TOEFL</a></li>
+                        <li><a href="/kursy/toeic">Kurs TOEIC</a></li>
+                        <li><a href="/kursy/matura">Matura Rozszerzona</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Kontakt</h5>
+                    <p><a href="mailto:kontakt@angielskikorepetycje.pl">kontakt@angielskikorepetycje.pl</a></p>
+                    <p>+48 571 055 039</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adrian Ekrem Abdulkerim. Wszelkie prawa zastrzeżone.</p>
+                <div>
+                    <a href="#" style="margin-right: 1rem;">Polityka Prywatności</a>
+                    <a href="#">Regulamin</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cal.com Scripts -->
+    <script type="text/javascript">
+        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+
+        // Trial Lesson (30 min)
+        Cal("init", "lekcja-probna-30-min", { origin: "https://app.cal.com" });
+        Cal.ns["lekcja-probna-30-min"]("inline", {
+            elementOrSelector: "#my-cal-inline-lekcja-probna-30-min",
+            config: { "layout": "month_view" },
+            calLink: "adrian-ekrem-a-jzkc5k/lekcja-probna-30-min",
+        });
+        Cal.ns["lekcja-probna-30-min"]("ui", { "cssVarsPerTheme": { "light": { "cal-brand": "#6F83EB" }, "dark": { "cal-brand": "#6F83EB" } }, "hideEventTypeDetails": false, "layout": "month_view" });
+
+        // Regular Lesson (60 min)
+        Cal("init", "lekcja", { origin: "https://app.cal.com" });
+        Cal.ns.lekcja("inline", {
+            elementOrSelector: "#my-cal-inline-lekcja",
+            config: { "layout": "month_view", "theme": "light" },
+            calLink: "adrian-ekrem-a-jzkc5k/lekcja",
+        });
+        Cal.ns.lekcja("ui", { "theme": "light", "cssVarsPerTheme": { "light": { "cal-brand": "#6F83EB" }, "dark": { "cal-brand": "#6F83EB" } }, "hideEventTypeDetails": false, "layout": "month_view" });
+    </script>
+
+    <script>
+        lucide.createIcons();
+
+        // Toggle Calendar Function
+        function showCalendar(type) {
+            // Update buttons
+            document.getElementById('btn-probna').classList.remove('active');
+            document.getElementById('btn-lekcja').classList.remove('active');
+            document.getElementById('btn-' + type).classList.add('active');
+
+            // Update calendar views
+            document.getElementById('calendar-probna').classList.remove('active');
+            document.getElementById('calendar-lekcja').classList.remove('active');
+            document.getElementById('calendar-' + type).classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>
