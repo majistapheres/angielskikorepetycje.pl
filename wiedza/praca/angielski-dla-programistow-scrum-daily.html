@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angielski dla Programistów: Kompletny Przewodnik po Scrumie (Daily, Planning, Review) | Adrian Ekrem</title>
+    <meta name="description"
+        content="Nie tylko Daily. Poznaj angielski na Code Review, Sprint Planning i Demo. Strategie językowe dla Senior Deweloperów i Tech Leadów.">
+    <meta name="keywords"
+        content="angielski dla programistów, scrum vocabulary, code review english, sprint planning, techniczny angielski, soft skills it">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/knowledge-base.css">
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Angielski dla Programistów: Kompletny Przewodnik po Scrumie">
+    <meta property="og:description"
+        content="Od Code Review po Sprint Demo. Kompletny przewodnik językowy dla programistów, którzy chcą awansować.">
+    <meta property="og:type" content="article">
+    <meta property="og:url"
+        content="https://angielskikorepetycje.pl/wiedza/praca/angielski-dla-programistow-scrum-daily">
+    <meta property="og:image" content="https://angielskikorepetycje.pl/images/blog/blog-it-english-hero.png">
+
+    <!-- Schema: Article & FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "headline": "Angielski dla Programistów: The Scrum Daily Guide – Jak Mówić Konkretnie?",
+          "author": {
+            "@type": "Person",
+            "name": "Adrian Ekrem Abdulkerim",
+            "url": "https://angielskikorepetycje.pl/o-mnie"
+          },
+          "datePublished": "2026-01-09",
+          "dateModified": "2026-01-09",
+          "image": "https://angielskikorepetycje.pl/images/blog/blog-it-english-hero.png",
+          "wordCount": "1800",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Angielskie Korepetycje Adrian Ekrem",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://angielskikorepetycje.pl/favicon.png"
+            }
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Jak powiedzieć, że nic nie zrobiłem wczoraj?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nigdy nie mów 'I did nothing'. Użyj: 'I was researching the documentation' lub 'I was investigating a blocker'."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jaka jest różnica między blocker a impediment?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Blocker całkowicie zatrzymuje pracę. Impediment to przeszkoda, która spowalnia, ale nie zatrzymuje (np. wolne API)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Co jeśli nie rozumiem pytania na Daily?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nie panikuj. Powiedz: 'Just to align / double check - are you asking about X or Y?'"
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* Article-specific styles */
+        .tldr-box {
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .tldr-title {
+            color: #166534;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+        }
+
+        .toc-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc-box h3 {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: var(--color-primary);
+        }
+
+        .toc-box ol {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+
+        .toc-box li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc-box a {
+            color: var(--color-text-main);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc-box a:hover {
+            color: var(--color-primary);
+            text-decoration: underline;
+        }
+
+        .scenario-box {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+        }
+
+        .scenario-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .scenario-avatar {
+            width: 50px;
+            height: 50px;
+            background: var(--color-bg-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-primary);
+        }
+
+        .code-snippet {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+            border-left: 4px solid var(--color-accent);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .comparison-table th {
+            background: var(--color-primary);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: #f9fafb;
+        }
+
+        .junior-tag {
+            background: #fee2e2;
+            color: #991b1b;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .senior-tag {
+            background: #dcfce7;
+            color: #166534;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .tip-box {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border-left: 4px solid #3b82f6;
+            border-radius: 0 12px 12px 0;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tip-box h4 {
+            color: #1d4ed8;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .step-framework {
+            background: #fafafa;
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--color-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="/" class="logo">Adrian<span>Ekrem</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/" class="nav-link">Start</a></li>
+                    <li><a href="/landing/tutor-wroclaw" class="nav-link">Wrocław</a></li>
+                    <li><a href="/oferta-online" class="nav-link">Online</a></li>
+                    <li><a href="/o-mnie" class="nav-link">O mnie</a></li>
+                    <li><a href="/metodologia" class="nav-link">Metodologia</a></li>
+                    <li><a href="/baza-wiedzy" class="nav-link">Baza Wiedzy</a></li>
+                    <li><a href="/kontakt" class="nav-link">Kontakt</a></li>
+                    <li><a href="/cennik" class="nav-cta" data-cal-link="adrian-ekrem-a-jzkc5k/lekcja"
+                            data-cal-namespace="lekcja" data-cal-config='{"layout":"month_view","theme":"light"}'>Umów
+                            Lekcję</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Article Hero -->
+        <section class="blog-header">
+            <div class="container blog-post-container">
+                <p class="blog-category-label">Baza Wiedzy / Praca & IT</p>
+                <h1 class="blog-title">Angielski dla Programistów: Kompletny Przewodnik po Scrumie (Daily, Planning,
+                    Review)</h1>
+
+                <div class="blog-author-meta">
+                    <img src="../../favicon.png" alt="Adrian Ekrem" class="blog-author-avatar">
+                    <div>
+                        <p class="blog-author-name">Adrian Ekrem Abdulkerim</p>
+                        <p class="blog-post-date">9 Stycznia 2026 • 15 min czytania</p>
+                    </div>
+                </div>
+
+                <div class="glass-card"
+                    style="padding: 2rem; background: #1e1e1e; color: #fff; margin: 2rem 0; border: 1px solid #333;">
+                    <code style="color: #6a9955;">// Daily Standup Status:</code><br>
+                    <code style="color: #569cd6;">if</code> (<code>vocab.length</code>
+                    < 3) {<br>
+                        &nbsp;&nbsp;<code>panic()</code>;<br>
+                        } <code style="color: #569cd6;">else</code> {<br>
+                        &nbsp;&nbsp;<code>speak_confidently()</code>;<br>
+                        }
+                </div>
+
+                <!-- Article Body -->
+                <div class="blog-article-body">
+
+                    <!-- Hook Intro -->
+                    <p>
+                        <strong>Godzina 9:45. Logujesz się na Teams/Google Meet.</strong> Za 15 minut Twoja kolej na
+                        Daily.
+                        W głowie układasz zdania: "Yesterday I did...", "Today I will do...". Brzmi znajomo?
+                        To klasyczny schemat, który sprawia, że brzmisz jak Junior, nawet jeśli masz 10 lat
+                        doświadczenia w Java czy Pythonie.
+                    </p>
+                    <p>
+                        Wielu polskich programistów ma świetny warsztat techniczny (kodują lepiej niż ich koledzy z US),
+                        ale na spotkaniach zapadają się pod ziemię. Zamiast profesjonalnego update'u, jest ciche
+                        "Eee..."
+                        i szukanie słów. A wystarczy znać <strong>3 proste struktury</strong>, żeby brzmieć jak Senior,
+                        który panuje nad projektem.
+                    </p>
+
+                    <!-- TL;DR -->
+                    <div class="tldr-box">
+                        <div class="tldr-title"><i data-lucide="zap" width="16"></i> TL;DR — W Skrócie</div>
+                        <p style="margin: 0; color: #333;">
+                            Błąd większości devów to używanie "I did / I will do". Zamiast tego używaj precyzyjnych
+                            czasowników:
+                            <strong>"I implemented", "I refactored", "I'm tackling"</strong>. Jeśli masz problem, nie
+                            mów "I have a problem",
+                            tylko <strong>"I'm blocked by..."</strong>. Pamiętaj: Daily to nie spowiedź, to szybka
+                            synchronizacja dla zespołu.
+                        </p>
+                    </div>
+
+                    <!-- Table of Contents -->
+                    <div class="toc-box">
+                        <h3>📑 Spis Treści</h3>
+                        <ol>
+                            <li><a href="#yesterday">Daily Scrum: Yesterday & Today</a></li>
+                            <li><a href="#blockers">Blockers: Jak profesjonalnie zgłaszać problemy?</a></li>
+                            <li><a href="#code-review">Code Review: Jak krytykować kod, a nie człowieka?</a></li>
+                            <li><a href="#planning">Sprint Planning: Estymacje i negocjacje</a></li>
+                            <li><a href="#demo">Sprint Review (Demo): Jak sprzedać swoją pracę?</a></li>
+                            <li><a href="#tech-debt">Technical Debt: Jak rozmawiać z biznesem?</a></li>
+                            <li><a href="#porownanie">Tabela: Junior vs Senior Talk</a></li>
+                            <li><a href="#faq">FAQ – Najczęstsze pytania</a></li>
+                        </ol>
+                    </div>
+
+                    <!-- Section 1 -->
+                    <h2 id="yesterday">1. Yesterday: Jak mówić o tym, co zrobiłeś?</h2>
+                    <p>
+                        Najgorsze, co możesz powiedzieć to: <em>"Yesterday I was working on the ticket number
+                            1234."</em>
+                        To nic nie mówi zespołowi. Product Owner chce wiedzieć <strong>co dowiozłeś</strong>, a nie że
+                        byłeś zajęty.
+                    </p>
+                    <p>
+                        Używaj czasu <strong>Past Simple</strong> dla zadań zakończonych. Oto lista "Power Verbs" dla
+                        programisty:
+                    </p>
+
+                    <ul style="padding-left: 1.5rem; list-style: none;">
+                        <li style="margin-bottom: 0.5rem;">✅ <strong>implemented</strong> (wdrożyłem funkcję)</li>
+                        <li style="margin-bottom: 0.5rem;">✅ <strong>refactored</strong> (przeczyściłem kod)</li>
+                        <li style="margin-bottom: 0.5rem;">✅ <strong>investigated</strong> (badałem błąd)</li>
+                        <li style="margin-bottom: 0.5rem;">✅ <strong>deployed</strong> (wrzuciłem na produkcję/staging)
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">✅ <strong>patched</strong> (naprawiłem szybko)</li>
+                    </ul>
+
+                    <div class="code-snippet">
+                        // Słabo:<br>
+                        "Yesterday I made the login page."<br><br>
+                        // Profesjonalnie:<br>
+                        "Yesterday I <strong>implemented</strong> the OAuth authentication flow for the login module."
+                    </div>
+
+                    <div class="tip-box">
+                        <h4><i data-lucide="lightbulb" width="18"></i> Pro Tip: Kontekst Biznesowy</h4>
+                        <p style="margin: 0;">
+                            Senior zawsze dodaje "dlaczego". Zamiast "I fixed the bug", powiedz:
+                            "I fixed the memory leak <strong>to improve the app performance by 20%</strong>".
+                        </p>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <h2 id="today">2. Today: Plany na dziś (bez nudnego "I will")</h2>
+                    <p>
+                        "I will do..." jest gramatycznie poprawne, ale brzmi jak obietnica szkolna.
+                        W biznesie używamy czasu <strong>Present Continuous</strong> (dla pewnych planów) lub
+                        konkretnych zwrotów "zamiarowych".
+                    </p>
+
+                    <h3>Wybierz jeden z tych zwrotów:</h3>
+                    <ul style="padding-left: 1.5rem; list-style: disc;">
+                        <li style="margin-bottom: 0.5rem;"><strong>"I'm tackling..."</strong> – Biorę się za coś
+                            trudnego (świetne słowo!).</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>"I'm focusing on..."</strong> – Skupiam się na...
+                        </li>
+                        <li style="margin-bottom: 0.5rem;"><strong>"I'm aiming to finish..."</strong> – Celuję w
+                            skończenie...</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>"I'm continuing with..."</strong> – Kontynuuję pracę
+                            nad...</li>
+                    </ul>
+
+                    <div class="scenario-box">
+                        <div class="scenario-header">
+                            <div class="scenario-avatar"><i data-lucide="code"></i></div>
+                            <div>
+                                <h4 style="margin:0;">Przykład z życia</h4>
+                                <span style="font-size: 0.85rem; color: #777;">Michał, Backend Dev</span>
+                            </div>
+                        </div>
+                        <p style="font-style: italic; color: #555; margin-bottom: 0;">
+                            "Today, I'm <strong>tackling</strong> the database migration script. I'm aiming to have the
+                            PR ready by 2 PM."
+                        </p>
+                    </div>
+
+                    <!-- Section 3 -->
+                    <h2 id="blockers">3. Blockers: Jak profesjonalnie zgłaszać problemy?</h2>
+                    <p>
+                        Tutaj Polacy często popełniają błąd kulturowy. Mówimy "I have a problem", co brzmi jakbyśmy my
+                        byli problemem.
+                        W UK/USA problem jest <strong>zewnętrzny</strong>.
+                    </p>
+                    <p>
+                        Nie masz problemu. Masz <strong>Blocker</strong> lub <strong>Impediment</strong>.
+                    </p>
+
+                    <div class="warning-box">
+                        <h4><i data-lucide="alert-triangle" width="18"></i> Blocker vs Impediment</h4>
+                        <p style="margin: 0;">
+                            <strong>Blocker:</strong> Stoje w miejscu, nie mogę ruszyć. ("I'm blocked by the missing API
+                            key.")<br>
+                            <strong>Impediment:</strong> Mogę pracować, ale idzie wolno. ("The slow VPN is an
+                            impediment.")
+                        </p>
+                    </div>
+
+                    <!-- Section 4: Code Review -->
+                    <h2 id="code-review">4. Code Review: Jak krytykować kod, a nie człowieka?</h2>
+                    <p>
+                        Code Review to pole minowe. Jedno złe słowo i kolega z zespołu wchodzi w tryb defensywny.
+                        Kluczem jest <strong>Dyplomacja</strong>. Twoim celem jest poprawa jakości kodu, a nie
+                        udowodnienie, że jesteś mądrzejszy.
+                    </p>
+
+                    <h3>Technika "Kanapki" (The Sandwich Method)</h3>
+                    <p>
+                        W kulturze anglosaskiej bezpośrednia krytyka jest często odbierana jako agresja. Użyj metody:
+                        POCHWAŁA -> SUGESTIA ZMIANY -> POCHWAŁA.
+                    </p>
+
+                    <div class="code-snippet">
+                        // Zamiast pisać:<br>
+                        "This loop is inefficient. Fix it."<br><br>
+                        // Napisz:<br>
+                        "Great job on the logic here! <strong>I wonder if we could optimize</strong> this loop to
+                        strictly type variables? otherwise, the solution serves its purpose perfectly."
+                    </div>
+
+                    <h3>Sugestia vs Rozkaz</h3>
+                    <p>Unikaj trybu rozkazującego ("Change this", "Remove that"). Używaj pytań lub sugestii:</p>
+                    <ul style="padding-left: 1.5rem; list-style: none;">
+                        <li style="margin-bottom: 0.5rem;">👉 <strong>"Have you considered..."</strong> (Czy
+                            rozważałeś...)</li>
+                        <li style="margin-bottom: 0.5rem;">👉 <strong>"What do you think about..."</strong> (Co myślisz
+                            o...)</li>
+                        <li style="margin-bottom: 0.5rem;">👉 <strong>"It might be beneficial to..."</strong> (Mogłoby
+                            być korzystne...)</li>
+                        <li style="margin-bottom: 0.5rem;">👉 <strong>"Nitpick:"</strong> (Drobnostka – używaj tego
+                            prefixu dla małych uwag stylistycznych, żeby nie stresować autora).</li>
+                    </ul>
+
+                    <!-- Section 5: Sprint Planning -->
+                    <h2 id="planning">5. Sprint Planning: Estymacje i negocjacje</h2>
+                    <p>
+                        Planning to moment, w którym ważą się losy Twojego spokoju na najbliższe 2 tygodnie.
+                        Jeśli nie będziesz umiał walczyć o realne terminy po angielsku, skończysz z nadgodzinami.
+                    </p>
+
+                    <h3>Słownik Estymacji</h3>
+                    <ul style="padding-left: 1.5rem; list-style: disc;">
+                        <li style="margin-bottom: 0.5rem;"><strong>Underestimate:</strong> Niedoszacować (najczęstszy
+                            grzech).</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Overestimate:</strong> Przeszacować (rzadkość).</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Padding / Buffer:</strong> Bufor czasowy ("I added
+                            some padding for testing").</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Spike:</strong> Zadanie badawcze, gdy nie wiesz ile
+                            coś zajmie.</li>
+                    </ul>
+
+                    <div class="tip-box">
+                        <h4><i data-lucide="shield" width="18"></i> Jak profesjonalnie powiedzieć "To zależy"?</h4>
+                        <p style="margin: 0;">
+                            W IT "It depends" to mem. Rozwiń to:<br>
+                            <em>"It depends heavily on the legacy code stability in that module. I suggest we create a
+                                <strong>Spike</strong> task first to investigate."</em>
+                        </p>
+                    </div>
+
+                    <h3>Negocjowanie Zakresu (Scope Negotiation)</h3>
+                    <p>
+                        Gdy Product Owner chce wrzucić za dużo do Sprintu, musisz być asertywny:
+                    </p>
+                    <div class="scenario-box">
+                        <p style="font-style: italic; color: #555; margin-bottom: 0;">
+                            "We can commit to the MVP features, but the reporting module might be a stretch.
+                            <strong>Maybe we can descoping</strong> the PDF export for this sprint?"
+                        </p>
+                    </div>
+
+                    <!-- Section 6: Sprint Review (Demo) -->
+                    <h2 id="demo">6. Sprint Review (Demo): Jak sprzedać swoją pracę?</h2>
+                    <p>
+                        Demo to Twój moment chwały. Niestety, wielu programistów zanudza biznes szczegółami
+                        technicznymi.
+                        Interesariuszy (Stakeholders) nie obchodzi, czy użyłeś Redux czy Context API. Obchodzi ich
+                        <strong>Wartość Biznesowa (Business Value)</strong>.
+                    </p>
+
+                    <h3>Struktura idealnej prezentacji Demo:</h3>
+                    <ol style="padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>The Problem:</strong> Co nie działało? ("Previously,
+                            users struggled with...")</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>The Solution:</strong> Co zrobiłeś? ("We introduced a
+                            new dashboard...")</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>The Impact:</strong> Co to daje? ("Now, report
+                            generation is 50% faster.")</li>
+                    </ol>
+
+                    <div class="warning-box">
+                        <h4><i data-lucide="mic-off" width="18"></i> Zakazane słowa na Demo</h4>
+                        <p style="margin: 0;">
+                            Unikaj: Refactoring, Tech Stack, Database Schema, JSON endpoint.<br>
+                            Mów: Faster loading, Better user experience, More secure data, New capability.
+                        </p>
+                    </div>
+
+                    <!-- Section 7: Technical Debt -->
+                    <h2 id="tech-debt">7. Technical Debt: Jak rozmawiać z biznesem?</h2>
+                    <p>
+                        Dług techniczny (Technical Debt) jest niewidoczny dla biznesu, dopóki system nie padnie.
+                        Twoim zadaniem jest wytłumaczenie, dlaczego trzeba "zwolnić, żeby przyspieszyć".
+                    </p>
+
+                    <h3>Analogia finansowa</h3>
+                    <p>
+                        Użyj języka pieniędzy, który managerowie rozumieją. Dług techniczny to pożyczka. Płacisz odsetki
+                        (Interests) w postaci wolniejszego developmentu w przyszłości.
+                    </p>
+
+                    <div class="scenario-box">
+                        <div class="scenario-header">
+                            <div class="scenario-avatar"><i data-lucide="trending-up"></i></div>
+                            <div>
+                                <h4 style="margin:0;">Rozmowa z CTO</h4>
+                            </div>
+                        </div>
+                        <p style="font-style: italic; color: #555; margin-bottom: 0;">
+                            "If we don't address the refactoring now, strictly adding new features will become
+                            <strong>increasingly expensive</strong> (coraz droższe) due to the complexity.
+                            We need to pay off this debt to maintain our velocity."
+                        </p>
+                    </div>
+                    <!-- Section 8 Comparison -->
+                    <h2 id="porownanie">8. Junior Talk vs Senior Talk</h2>
+                    <p>Zobacz różnicę. To te same sytuacje, ale inne słownictwo.</p>
+
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Sytuacja</th>
+                                <th>Junior Talk <span class="junior-tag">Unikaj</span></th>
+                                <th>Senior Talk <span class="senior-tag">Używaj</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Czekam na kogoś</td>
+                                <td>"I am waiting for Tom."</td>
+                                <td>"I am <strong>dependant on</strong> Tom's input."</td>
+                            </tr>
+                            <tr>
+                                <td>Nie wiem jak to zrobić</td>
+                                <td>"I don't know."</td>
+                                <td>"I need to <strong>investigate</strong> further."</td>
+                            </tr>
+                            <tr>
+                                <td>Skończyłem to</td>
+                                <td>"It is done."</td>
+                                <td>"The feature is <strong>deployed</strong> to staging."</td>
+                            </tr>
+                            <tr>
+                                <td>Mam pytanie</td>
+                                <td>"I have a question."</td>
+                                <td>"I'd like to <strong>clarify</strong> one requirement."</td>
+                            </tr>
+                            <tr>
+                                <td>Spotkajmy się później</td>
+                                <td>"Let's talk later."</td>
+                                <td>"Let's take this <strong>offline</strong>."</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Section 9 -->
+                    <h2 id="questions">9. Jak radzić sobie z trudnymi pytaniami?</h2>
+                    <p>
+                        Scrum Master pyta: <em>"When will this be ready?"</em> A Ty nie wiesz. Presja rośnie.
+                        Zamiast panikować, użyj "Buying Time tactics".
+                    </p>
+                    <ul style="padding-left: 1.5rem; list-style: disc;">
+                        <li style="margin-bottom: 0.5rem;"><em>"That's a good question. Let me <strong>circle
+                                    back</strong> to you on that after the meeting."</em> (Wrócę do Ciebie)</li>
+                        <li style="margin-bottom: 0.5rem;"><em>"I need to <strong>dig deeper</strong> into the logs
+                                before I can give an estimate."</em> (Muszę sprawdzić głębiej)</li>
+                        <li style="margin-bottom: 0.5rem;"><em>"Ideally by Friday, but it <strong>depends on</strong>
+                                the QA testing speed."</em> (To zależy od...)</li>
+                    </ul>
+
+                    <!-- FAQ Section -->
+                    <h2 id="faq">FAQ – Najczęściej Zadawane Pytania</h2>
+
+                    <div style="margin-top: 2rem;">
+                        <details
+                            style="margin-bottom: 1rem; border: 1px solid #eee; border-radius: 8px; padding: 1rem;">
+                            <summary style="cursor: pointer; font-weight: 600; color: var(--color-primary);">Czy muszę
+                                mieć idealny akcent?</summary>
+                            <p style="margin-top: 0.5rem; color: #555;">Nie. W IT liczy się
+                                <strong>komunikatywność</strong> (clarity), nie akcent (accent). Jeśli mówisz wyraźnie
+                                "I deployed the fix", nikt nie dba o to, czy Twoje 'R' jest twarde.
+                            </p>
+                        </details>
+
+                        <details
+                            style="margin-bottom: 1rem; border: 1px solid #eee; border-radius: 8px; padding: 1rem;">
+                            <summary style="cursor: pointer; font-weight: 600; color: var(--color-primary);">Co jeśli
+                                nic wczoraj nie zrobiłem?</summary>
+                            <p style="margin-top: 0.5rem; color: #555;">Nigdy nie mów "I did nothing". Powiedz prawdę
+                                profesjonalnie: "I spent the day <strong>researching</strong> documentation" lub "I was
+                                <strong>troubleshooting</strong> environment issues". To też jest praca!
+                            </p>
+                        </details>
+
+                        <details
+                            style="margin-bottom: 1rem; border: 1px solid #eee; border-radius: 8px; padding: 1rem;">
+                            <summary style="cursor: pointer; font-weight: 600; color: var(--color-primary);">Jak
+                                przerwać komuś, kto gada za długo?</summary>
+                            <p style="margin-top: 0.5rem; color: #555;">Użyj magicznego zwrotu: "Sorry to interrupt, but
+                                in the interest of time, maybe we can <strong>park this topic</strong> for later?"</p>
+                        </details>
+                    </div>
+
+                    <!-- CTA Section -->
+                    <div class="blog-cta-section" style="margin-top: 4rem;">
+                        <h3 style="margin-bottom: 1rem; color: var(--color-accent);">Twój angielski Cię blokuje?</h3>
+                        <p style="margin-bottom: 2rem;">
+                            Jesteś Senioremm w kodzie, ale Juniorem w mowie? Zmień to.
+                            Pomagam programistom, CTO i Project Managerom wejść na poziom C1/C2 w biznesie.
+                        </p>
+                        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                            <a href="/oferta-online" class="btn btn-primary">Oferta dla IT (Online)</a>
+                            <a href="/kontakt" class="btn btn-outline"
+                                style="border: 2px solid var(--color-primary); color: var(--color-primary);">Audyt
+                                Językowy IT</a>
+                        </div>
+                    </div>
+
+                    <!-- Related Articles -->
+                    <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #eee;">
+                        <h3 style="margin-bottom: 1.5rem;">Przeczytaj również:</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.75rem;">💻 <a
+                                    href="/wiedza/metody/angielski-online-vs-stacjonarnie">Angielski Online vs
+                                    Stacjonarnie – co lepsze dla programisty?</a></li>
+                            <li style="margin-bottom: 0.75rem;">🗣️ <a href="/wiedza/metody/fonetyka-wymowa-polakow">Jak
+                                    poprawić wymowę techniczną?</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h5 style="margin-bottom: 1rem; color: var(--color-primary);">Angielskie Korepetycje</h5>
+                    <p>Adrian Ekrem Abdulkerim</p>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Oferta</h5>
+                    <ul style="line-height: 2;">
+                        <li><a href="/landing/tutor-wroclaw">Angielski Wrocław</a></li>
+                        <li><a href="/oferta-online">Angielski Online</a></li>
+                        <li><a href="/o-mnie">O Mnie</a></li>
+                        <li><a href="/metodologia">Metodologia</a></li>
+                        <li><a href="/baza-wiedzy">Baza Wiedzy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Kursy</h5>
+                    <ul style="line-height: 2;">
+                        <li><a href="/kursy/speaking">Speaking &amp; Konwersacje</a></li>
+                        <li><a href="/kursy/ielts">Kurs IELTS</a></li>
+                        <li><a href="/kursy/toefl">Kurs TOEFL</a></li>
+                        <li><a href="/kursy/toeic">Kurs TOEIC</a></li>
+                        <li><a href="/kursy/matura">Matura Rozszerzona</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1rem;">Kontakt</h5>
+                    <p><a href="mailto:kontakt@angielskikorepetycje.pl">kontakt@angielskikorepetycje.pl</a></p>
+                    <p>+48 571 055 039</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adrian Ekrem Abdulkerim. Wszelkie prawa zastrzeżone.</p>
+                <div>
+                    <a href="#" style="margin-right: 1rem;">Polityka Prywatności</a>
+                    <a href="#">Regulamin</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
