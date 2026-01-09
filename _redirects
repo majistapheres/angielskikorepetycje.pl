@@ -1,2 +1,3 @@
 # Redirects
+https://www.angielskikorepetycje.pl/* https://angielskikorepetycje.pl/:splat 301
 /blog /baza-wiedzy 301
