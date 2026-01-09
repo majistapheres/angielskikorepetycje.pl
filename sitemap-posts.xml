@@ -1,39 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Egzaminy -->
   <url>
-    <loc>https://angielskikorepetycje.pl/blog/matura/10-bledow-matura-angielski</loc>
+    <loc>https://angielskikorepetycje.pl/wiedza/egzaminy/10-bledow-matura-angielski</loc>
     <lastmod>2026-01-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://angielskikorepetycje.pl/blog/porady/jak-wybrac-korepetytora</loc>
-    <lastmod>2026-01-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://angielskikorepetycje.pl/blog/metodologia/fonetyka-wymowa-polakow</loc>
-    <lastmod>2026-01-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://angielskikorepetycje.pl/blog/online/angielski-online-vs-stacjonarnie</loc>
-    <lastmod>2026-01-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://angielskikorepetycje.pl/blog/wroclaw/kawiarnie-wroclaw-nauka-jezyka</loc>
-    <lastmod>2026-01-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://angielskikorepetycje.pl/wiedza/praca/angielski-dla-programistow-scrum-daily</loc>
-    <lastmod>2026-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -55,6 +26,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Praca -->
+  <url>
+    <loc>https://angielskikorepetycje.pl/wiedza/praca/angielski-dla-programistow-scrum-daily</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://angielskikorepetycje.pl/wiedza/praca/toeic-czy-warto-2026</loc>
     <lastmod>2026-01-09</lastmod>
@@ -69,6 +47,32 @@
   </url>
   <url>
     <loc>https://angielskikorepetycje.pl/wiedza/praca/small-talk-angielski-praca</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Metody -->
+  <url>
+    <loc>https://angielskikorepetycje.pl/wiedza/metody/fonetyka-wymowa-polakow</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://angielskikorepetycje.pl/wiedza/metody/angielski-online-vs-stacjonarnie</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Porady -->
+  <url>
+    <loc>https://angielskikorepetycje.pl/wiedza/porady/5-sygnalow-zlego-korepetytora</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://angielskikorepetycje.pl/wiedza/porady/kawiarnie-wroclaw-nauka-jezyka</loc>
     <lastmod>2026-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
