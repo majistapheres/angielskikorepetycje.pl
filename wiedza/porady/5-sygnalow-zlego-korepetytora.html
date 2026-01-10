@@ -9,9 +9,17 @@
     <meta name="description"
         content="Twój angielski stoi w miejscu? Sprawdź 7 sygnałów ostrzegawczych (Red Flags). Dowiedz się, jak rozpoznać słabego nauczyciela i nie tracić pieniędzy.">
     <link rel="stylesheet" href="../../css/styles.css">
+    <!-- Resource Hints for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com">
+    
+    <!-- Optimized Font Loading -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
+
     <link rel="stylesheet" href="../../css/knowledge-base.css">
     <link rel="icon" type="image/png" href="../../favicon.png">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest" defer></script>
 
     <!-- Open Graph -->
     <meta property="og:title" content="5 Sygnałów Złego Korepetytora (Red Flags)">
@@ -538,8 +546,13 @@
         </div>
     </footer>
 
+        <!-- Initialize Lucide Icons after DOM is ready -->
     <script>
-        lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
     </script>
 </body>
 

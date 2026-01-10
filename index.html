@@ -8,9 +8,26 @@
     <link rel="canonical" href="https://angielskikorepetycje.pl/" />
     <meta name="description"
         content="Ucz się angielskiego z Adrianem Ekremem Abdulkerimem. Lekcje z dojazdem we Wrocławiu, spotkania w kawiarniach lub nauka online. Przełam barierę językową już dziś.">
+
+    <!-- Resource Hints for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://app.cal.com">
+    <link rel="dns-prefetch" href="https://img.youtube.com">
+
+    <!-- Preload LCP Image -->
+    <link rel="preload" as="image" href="/images/profile/adrian-ekrem-zdecie.webp" fetchpriority="high">
+
+    <!-- Optimized Font Loading with font-display -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" href="favicon.png">
-    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Deferred Lucide Icons (non-blocking) -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
 
     <!-- Schema.org Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -187,8 +204,8 @@
                 <div class="hero-blob"></div>
                 <div class="hero-image-container glass-card">
                     <img src="/images/profile/adrian-ekrem-zdecie.webp"
-                        alt="Adrian Ekrem Abdulkerim - Nauczyciel Angielskiego"
-                        style="max-height: 500px; object-fit: cover;">
+                        alt="Adrian Ekrem Abdulkerim - Nauczyciel Angielskiego" width="500" height="500"
+                        style="max-height: 500px; object-fit: cover;" fetchpriority="high">
                 </div>
             </div>
         </section>
@@ -206,6 +223,7 @@
                     <a href="https://youtube.com/shorts/5Lasy8vJIKw" target="_blank" rel="noopener noreferrer"
                         style="display: block; position: relative;">
                         <img src="https://img.youtube.com/vi/5Lasy8vJIKw/hqdefault.jpg" alt="Adrian Ekrem - BBC News"
+                            width="480" height="360" loading="lazy" decoding="async"
                             style="width: 100%; border-radius: 12px;">
                         <div
                             style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.7); border-radius: 50%; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
@@ -331,8 +349,8 @@
                     <div style="text-align: center;">
                         <div class="glass-card" style="padding: 1.5rem; display: inline-block;">
                             <img src="/images/profile/fonetyka-diagram-mouth.webp"
-                                alt="Diagram fonetyczny - ułożenie języka i ust"
-                                style="border-radius: 12px; max-width: 350px;">
+                                alt="Diagram fonetyczny - ułożenie języka i ust" width="350" height="350" loading="lazy"
+                                decoding="async" style="border-radius: 12px; max-width: 350px;">
                             <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--color-text-secondary);">Diagram
                                 fonetyczny</p>
                         </div>
@@ -438,8 +456,8 @@
                     <div style="text-align: center;">
                         <div class="glass-card" style="padding: 1rem;">
                             <img src="/images/profile/landingpage-czystopis.webp"
-                                alt="System oceniania i feedbacku - przykład poprawionej pracy"
-                                style="border-radius: 12px; max-width: 400px;">
+                                alt="System oceniania i feedbacku - przykład poprawionej pracy" width="400" height="300"
+                                loading="lazy" decoding="async" style="border-radius: 12px; max-width: 400px;">
                             <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--color-text-secondary);">Przykład
                                 feedbacku na lekcji</p>
                         </div>
@@ -670,8 +688,8 @@
                     Napisz do mnie lub zadzwoń. Pierwsza lekcja próbna jest bezpłatna!
                 </p>
                 <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                    <a href="mailto:&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;" class="btn btn-success"
-                        style="font-size: 1.2rem; padding: 1rem 2.5rem;">📧 Napisz e-mail</a>
+                    <a href="mailto:&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;"
+                        class="btn btn-success" style="font-size: 1.2rem; padding: 1rem 2.5rem;">📧 Napisz e-mail</a>
                     <a href="tel:+48571055039" class="btn btn-primary"
                         style="font-size: 1.2rem; padding: 1rem 2.5rem;">📞 Zadzwoń</a>
                 </div>
@@ -710,7 +728,9 @@
                 </div>
                 <div>
                     <h5 style="margin-bottom: 1rem;">Kontakt</h5>
-                    <p><a href="mailto:&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;">&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;</a></p>
+                    <p><a
+                            href="mailto:&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;">&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;</a>
+                    </p>
                     <p>+48 571 055 039</p>
                 </div>
             </div>
@@ -724,21 +744,29 @@
         </div>
     </footer>
 
-    <!-- Cal.com Popup Script -->
+    <!-- Cal.com Popup Script (Deferred for Performance) -->
     <script type="text/javascript">
-        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+        // Defer Cal.com initialization until after page load
+        window.addEventListener('load', function () {
+            (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
 
-        // Regular Lesson Popup
-        Cal("init", "lekcja", { origin: "https://app.cal.com" });
-        Cal.ns.lekcja("ui", { "theme": "light", "cssVarsPerTheme": { "light": { "cal-brand": "#6F83EB" }, "dark": { "cal-brand": "#6F83EB" } }, "hideEventTypeDetails": false, "layout": "month_view" });
+            // Regular Lesson Popup
+            Cal("init", "lekcja", { origin: "https://app.cal.com" });
+            Cal.ns.lekcja("ui", { "theme": "light", "cssVarsPerTheme": { "light": { "cal-brand": "#6F83EB" }, "dark": { "cal-brand": "#6F83EB" } }, "hideEventTypeDetails": false, "layout": "month_view" });
 
-        // Trial Lesson Popup
-        Cal("init", "lekcja-probna-30-min", { origin: "https://app.cal.com" });
-        Cal.ns["lekcja-probna-30-min"]("ui", { "cssVarsPerTheme": { "light": { "cal-brand": "#6F83EB" }, "dark": { "cal-brand": "#6F83EB" } }, "hideEventTypeDetails": false, "layout": "month_view" });
+            // Trial Lesson Popup
+            Cal("init", "lekcja-probna-30-min", { origin: "https://app.cal.com" });
+            Cal.ns["lekcja-probna-30-min"]("ui", { "cssVarsPerTheme": { "light": { "cal-brand": "#6F83EB" }, "dark": { "cal-brand": "#6F83EB" } }, "hideEventTypeDetails": false, "layout": "month_view" });
+        });
     </script>
 
+    <!-- Initialize Lucide Icons after DOM is ready -->
     <script>
-        lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
     </script>
 
 </body>

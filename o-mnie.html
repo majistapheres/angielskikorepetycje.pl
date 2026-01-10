@@ -9,9 +9,17 @@
     <meta name="description"
         content="Poznaj Adriana Ekrema Abdulkerima. Wychowany w Liverpoolu, występował w BBC. 6+ lat doświadczenia w nauczaniu fonetyki, IELTS i konwersacji.">
     <link rel="stylesheet" href="/css/styles.css">
+    <!-- Resource Hints for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com">
+    
+    <!-- Optimized Font Loading -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
+
     <link rel="icon" type="image/png" href="/favicon.png">
     <!-- Person Schema -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest" defer></script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -417,8 +425,13 @@
         </div>
     </footer>
 
+        <!-- Initialize Lucide Icons after DOM is ready -->
     <script>
-        lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
     </script>
 
 </body>
