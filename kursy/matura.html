@@ -4,32 +4,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Przygotowanie do Matury z Angielskiego – Wrocław i Online | Adrian Ekrem</title>
+    <title>Matura z Angielskiego 2026 – Przygotowanie Podstawa & Rozszerzona | Adrian Ekrem</title>
     <link rel="canonical" href="https://angielskikorepetycje.pl/kursy/matura" />
     <meta name="description"
-        content="Korepetycje z angielskiego do matury podstawowej i rozszerzonej. Wrocław i Online. Ćwiczenia, arkusze maturalne, speaking.">
+        content="Boisz się matury z angielskiego? Przygotuj się bez stresu. Korepetycje z nastawieniem na praktykę, arkusze maturalne i speaking. Wrocław lub Online. Pierwsza lekcja gratis.">
     <link rel="stylesheet" href="/css/styles.css">
     <!-- Resource Hints for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://unpkg.com">
-    
+
     <!-- Optimized Font Loading -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
 
     <link rel="icon" type="image/png" href="/favicon.png">
     <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <style>
+        .pain-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border-left: 4px solid #ff6b6b;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .pain-card h3 {
+            color: #ff6b6b;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .exam-part-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #eee;
+        }
+
+        .exam-part-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .phase-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            border: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .phase-card:hover {
+            border-color: var(--color-primary);
+        }
+
+        .phase-number {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: var(--color-primary);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .timeline-lesson {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline-lesson::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--color-primary), var(--color-accent));
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.5rem;
+            padding-left: 20px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px var(--color-primary);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .comparison-table th {
+            background: #f8f9fc;
+            font-weight: 700;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--color-text-main);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .faq-answer {
+            color: var(--color-text-secondary);
+            line-height: 1.7;
+            padding-left: 2rem;
+        }
+
+        .tip-box {
+            background: linear-gradient(135deg, rgba(0, 212, 126, 0.1), rgba(0, 180, 100, 0.05));
+            border: 1px solid rgba(0, 212, 126, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tip-box h4 {
+            color: #00a85a;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 80, 80, 0.05));
+            border: 1px solid rgba(255, 107, 107, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .warning-box h4 {
+            color: #e63946;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--color-primary);
+            margin-bottom: 0.25rem;
+        }
+    </style>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Course",
       "name": "Przygotowanie do Matury z Angielskiego",
-      "description": "Korepetycje przygotowujące do matury podstawowej i rozszerzonej z języka angielskiego",
+      "description": "Korepetycje przygotowujące do matury podstawowej i rozszerzonej z języka angielskiego. Nacisk na praktykę, arkusze egzaminacyjne i speaking.",
       "provider": {
         "@type": "Person",
         "name": "Adrian Ekrem Abdulkerim",
         "url": "https://angielskikorepetycje.pl"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": ["online", "onsite"],
+        "courseWorkload": "PT1H"
       }
     }
     </script>
@@ -58,80 +253,410 @@
     </header>
 
     <main>
-        <!-- Hero -->
-        <section class="section" style="padding-top: 140px; text-align: center;">
+        <!-- Hero Section -->
+        <section class="section"
+            style="padding-top: 140px; text-align: center; background: linear-gradient(135deg, #f8f9fc 0%, #eef1f8 100%);">
             <div class="container">
-                <h1 style="font-size: 3rem; margin-bottom: 1rem;">Matura z Angielskiego – Zdaj na 100%</h1>
-                <h2 style="color: var(--color-text-secondary); font-weight: 400; margin-bottom: 2rem;">Podstawowa &
-                    Rozszerzona | Wrocław i Online</h2>
-                <p style="max-width: 700px; margin: 0 auto 2rem;">
-                    Znam strukturę matury od podszewki. Razem przejdziemy przez wszystkie typy zadań, arkusze z
-                    poprzednich lat i nauczysz się zarządzać czasem.
+                <p style="color: var(--color-primary); font-weight: 600; margin-bottom: 1rem;">Matura 2026</p>
+                <h1 style="font-size: 2.75rem; margin-bottom: 1rem;">Matura z Angielskiego bez Stresu</h1>
+                <h2
+                    style="color: var(--color-text-secondary); font-weight: 400; margin-bottom: 2rem; font-size: 1.4rem;">
+                    Podstawowa & Rozszerzona | Wrocław i Online
+                </h2>
+                <p
+                    style="max-width: 700px; margin: 0 auto 2rem; font-size: 1.1rem; color: var(--color-text-secondary);">
+                    Wiem, że matura to stres. Dlatego moim celem jest, żebyś wszedł na egzamin z pewnością,
+                    że <strong>wiesz, czego się spodziewać</strong> i <strong>jak rozwiązywać każdy typ
+                        zadania</strong>.
                 </p>
-                <a href="/#kontakt" class="btn btn-success">Zarezerwuj Korepetycje</a>
+                <a href="/kontakt" class="btn btn-success" style="font-size: 1.1rem; padding: 1rem 2rem;">Umów bezpłatną
+                    lekcję próbną</a>
+            </div>
+        </section>
+
+        <!-- Pain Points Section -->
+        <section class="section" style="background: white;">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Brzmi Znajomo?</h2>
+                <p
+                    style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Większość maturzystów przychodzi do mnie z podobnymi obawami.
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    <div class="pain-card">
+                        <h3>😰 "Nie zdążę na egzaminie"</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            70 minut mija w mgnieniu oka. Boisz się, że utkniesz na jednym zadaniu i nie skończysz
+                            reszty.
+                        </p>
+                    </div>
+                    <div class="pain-card">
+                        <h3>📝 "Nie wiem, jak pisać rozprawki"</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Masz pomysły, ale nie wiesz, jak je ubrać w poprawną strukturę. Boisz się stracić punkty za
+                            formę.
+                        </p>
+                    </div>
+                    <div class="pain-card">
+                        <h3>🎧 "Listening jest za szybki"</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Nagrania lecą raz, nie ma powtórki, słyszysz tylko fragmenty. Panikujesz i tracisz wątek.
+                        </p>
+                    </div>
+                    <div class="pain-card">
+                        <h3>🗣️ "Ustny mnie przeraża"</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Mówienie po angielsku przed komisją? Samo wyobrażenie tej sytuacji sprawia, że masz gęsią
+                            skórkę.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tip-box" style="max-width: 700px; margin: 3rem auto 0;">
+                    <h4><i data-lucide="lightbulb" style="width: 20px; height: 20px;"></i> Dobra wiadomość</h4>
+                    <p style="color: var(--color-text-secondary);">
+                        <strong>Matura to egzamin przewidywalny.</strong> Struktura, typy zadań i pułapki powtarzają się
+                        z roku na rok.
+                        Gdy je poznasz i przećwiczysz — strach znika.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Podstawowa vs Rozszerzona -->
+        <section class="section" style="background: var(--color-bg-light);">
+            <div class="container" style="max-width: 900px;">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Podstawowa czy Rozszerzona?</h2>
+
+                <div style="overflow-x: auto;">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 35%;">Aspekt</th>
+                                <th style="width: 32%; color: #666;">Podstawowa (B1)</th>
+                                <th style="width: 33%; color: var(--color-primary);">Rozszerzona (B2/C1)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Czas egzaminu</strong></td>
+                                <td>120 minut</td>
+                                <td>150 minut + ustny</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Listening</strong></td>
+                                <td>Wolniejsze tempo, prostsze dialogi</td>
+                                <td>Szybki, autentyczny język</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reading</strong></td>
+                                <td>Krótsze teksty, dosłowne pytania</td>
+                                <td>Długie teksty, parafrazy, wnioskowanie</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Writing</strong></td>
+                                <td>Mail / list (80-130 słów)</td>
+                                <td>Rozprawka, artykuł, recenzja (200-250 słów)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Speaking</strong></td>
+                                <td>—</td>
+                                <td>15 min przed komisją (3 zadania)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dla kogo</strong></td>
+                                <td>Większość kierunków</td>
+                                <td>Studia za granicą, prestiżowe uczelnie</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p style="text-align: center; color: var(--color-text-secondary); margin-top: 2rem;">
+                    Nie wiesz, który poziom wybrać? Na pierwszej lekcji pomogę Ci zdecydować na podstawie Twoich celów.
+                </p>
             </div>
         </section>
 
         <!-- What We Cover -->
         <section class="section" style="background: white;">
             <div class="container">
-                <h2 style="text-align: center; margin-bottom: 3rem;">Co ćwiczymy?</h2>
-                <div class="split-section" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-                    <div class="glass-card" style="padding: 1.5rem;">
-                        <h3
-                            style="color: var(--color-primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <i data-lucide="headphones" style="width: 24px; height: 24px;"></i> Rozumienie ze słuchu
+                <h2 style="text-align: center; margin-bottom: 1rem;">Co Ćwiczymy na Lekcjach?</h2>
+                <p
+                    style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem; max-width: 650px; margin-left: auto; margin-right: auto;">
+                    Każda część egzaminu wymaga innej strategii. Nie tylko uczymy się języka — <strong>uczymy się zdawać
+                        egzamin</strong>.
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    <div class="exam-part-card">
+                        <h3 style="color: var(--color-primary);">
+                            <i data-lucide="headphones" style="width: 24px; height: 24px;"></i>
+                            Listening
                         </h3>
-                        <p>Ćwiczymy na autentycznych nagraniach maturalnych. Uczę technik "predicted listening".</p>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                            Nagrania maturalne mają swoje schematy. Uczę Cię:
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                            <li><strong>Predicted listening</strong> — przewidywanie odpowiedzi przed odsłuchaniem</li>
+                            <li>Rozpoznawanie dystraktorów (fałszywe odpowiedzi)</li>
+                            <li>Technika "first listen + confirmation"</li>
+                        </ul>
                     </div>
-                    <div class="glass-card" style="padding: 1.5rem;">
-                        <h3
-                            style="color: var(--color-primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <i data-lucide="book-open" style="width: 24px; height: 24px;"></i> Rozumienie tekstu
+                    <div class="exam-part-card">
+                        <h3 style="color: var(--color-primary);">
+                            <i data-lucide="book-open" style="width: 24px; height: 24px;"></i>
+                            Reading
                         </h3>
-                        <p>Strategie szybkiego czytania, rozpoznawanie pułapek i parafraz w odpowiedziach.</p>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                            Czytanie całego tekstu to strata czasu. Uczę Cię:
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                            <li><strong>Skimming & scanning</strong> — szybkie znajdowanie odpowiedzi</li>
+                            <li>Rozpoznawanie parafraz (klucz do punktów!)</li>
+                            <li>Techniki na True/False/Not Given</li>
+                        </ul>
                     </div>
-                    <div class="glass-card" style="padding: 1.5rem;">
-                        <h3
-                            style="color: var(--color-accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <i data-lucide="pen-tool" style="width: 24px; height: 24px;"></i> Wypowiedź pisemna
+                    <div class="exam-part-card">
+                        <h3 style="color: var(--color-accent);">
+                            <i data-lucide="pen-tool" style="width: 24px; height: 24px;"></i>
+                            Writing
                         </h3>
-                        <p>Listy, maile, rozprawki – uczę struktury, która daje maksymalne punkty.</p>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                            Struktura = punkty. Uczę Cię:
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                            <li><strong>Szablony</strong> na rozprawkę, list, mail</li>
+                            <li>Linking words, które robią wrażenie</li>
+                            <li>Jak spełnić wszystkie kryteria oceniania</li>
+                        </ul>
+                    </div>
+                    <div class="exam-part-card">
+                        <h3 style="color: var(--color-primary);">
+                            <i data-lucide="mic" style="width: 24px; height: 24px;"></i>
+                            Speaking (rozszerzona)
+                        </h3>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                            15 minut przed komisją. Przygotowuję Cię przez:
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                            <li><strong>Symulacje egzaminu</strong> — ja gram egzaminatora</li>
+                            <li>Bank pytań i gotowe odpowiedzi</li>
+                            <li>Techniki rozwijania wypowiedzi</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Rozszerzona -->
+        <!-- Methodology Section -->
         <section class="section" style="background: var(--color-bg-light);">
-            <div class="container" style="max-width: 800px;">
-                <h2 style="text-align: center; margin-bottom: 2rem;">Matura Rozszerzona?</h2>
-                <p style="text-align: center; margin-bottom: 2rem;">
-                    Jeśli celujesz wysoko – studia za granicą, prestiżowe kierunki – matura rozszerzona to Twój bilet.
-                    Przygotowuję do części ustnej i pisemnej na poziomie B2/C1.
+            <div class="container" style="max-width: 850px;">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Jak Wyglądają Lekcje w Praktyce?</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem;">
+                    Nie siedzisz i nie słuchasz wykładu. Ty pracujesz — ja naprowadzam i koryguję.
                 </p>
-                <ul style="color: var(--color-text-main); line-height: 2; list-style: none;">
-                    <li style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
-                            style="width: 18px; height: 18px; color: var(--color-success);"></i> Analiza tekstów
-                        źródłowych</li>
-                    <li style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
-                            style="width: 18px; height: 18px; color: var(--color-success);"></i> Symulacje egzaminu
-                        ustnego</li>
-                    <li style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
-                            style="width: 18px; height: 18px; color: var(--color-success);"></i> Praca nad słownictwem
-                        akademickim</li>
-                </ul>
+
+                <div class="timeline-lesson">
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">0-10 min: Rozgrzewka + Check-in</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Krótka rozmowa po angielsku. Sprawdzamy, co pamiętasz z ostatniej lekcji. Omawiamy zadanie
+                            domowe (jeśli było).
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">10-40 min: Praca na Arkuszu</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Rozwiązujesz zadania z prawdziwych arkuszy maturalnych. Na żywo omawiamy strategie,
+                            analizujemy błędy. Nie zostawiamy nic "na później".
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">40-55 min: Gramatyka / Słownictwo w Kontekście</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Jeśli w zadaniach pojawiły się luki — tu je wypełniamy. Uczysz się gramatyki nie z tabelek,
+                            ale z błędów, które właśnie popełniłeś.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">55-60 min: Plan na Następny Tydzień</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Co przećwiczyć samodzielnie? Jakie słówka powtórzyć? Dostajesz konkretne, małe zadania — nie
+                            10 stron podręcznika.
+                        </p>
+                    </div>
+                </div>
+
+                <p
+                    style="text-align: center; margin-top: 2rem; color: var(--color-text-secondary); font-style: italic;">
+                    Szczegółowy opis mojej metodologii znajdziesz na stronie <a href="/metodologia"
+                        style="color: var(--color-primary);">Metodologia</a>.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3-Phase Approach -->
+        <section class="section" style="background: white;">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Trzy Etapy Przygotowania</h2>
+                <p
+                    style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Plan zależy od tego, ile masz czasu do matury. Ale struktura jest zawsze podobna.
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                    <div class="phase-card">
+                        <div class="phase-number">1</div>
+                        <h3 style="margin-bottom: 0.75rem; margin-top: 0.5rem;">Diagnoza</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Lekcje 1-2.</strong> Robisz próbny arkusz maturalny. Analizuję Twoje błędy i słabe
+                            strony.
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.8;">
+                            <li>Test diagnostyczny</li>
+                            <li>Mapa luk (gramatyka, słownictwo, strategie)</li>
+                            <li>Ustalenie priorytetów</li>
+                        </ul>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">2</div>
+                        <h3 style="margin-bottom: 0.75rem; margin-top: 0.5rem;">Budowanie Strategii</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Lekcje 3-15.</strong> Pracujemy nad każdą częścią egzaminu osobno. Uczysz się
+                            technik i szablonów.
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.8;">
+                            <li>Strategie na Listening, Reading, Writing</li>
+                            <li>Szablony wypowiedzi pisemnych</li>
+                            <li>Regularne zadania domowe</li>
+                        </ul>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">3</div>
+                        <h3 style="margin-bottom: 0.75rem; margin-top: 0.5rem;">Symulacje Egzaminu</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Ostatnie 4-6 tygodni.</strong> Pełne arkusze na czas. Bujesz pewność siebie i
+                            refleks.
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.8;">
+                            <li>Próbne matury co tydzień</li>
+                            <li>Symulacje ustnego (rozszerzona)</li>
+                            <li>Praca nad stresem i czasem</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Box - Time -->
+        <section class="section" style="background: var(--color-bg-light);">
+            <div class="container" style="max-width: 700px;">
+                <div class="warning-box">
+                    <h4><i data-lucide="alert-triangle" style="width: 20px; height: 20px;"></i> Kiedy zacząć?</h4>
+                    <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                        Im wcześniej, tym lepiej. Ale nawet z <strong>3 miesiącami</strong> do matury da się zrobić dużo
+                        — o ile pracujesz regularnie.
+                    </p>
+                    <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                        <li><strong>6+ miesięcy:</strong> Komfortowy czas na solidne przygotowanie</li>
+                        <li><strong>3-6 miesięcy:</strong> Intensywna praca, ale realistyczne postępy</li>
+                        <li><strong>1-2 miesiące:</strong> Tryb "crash course" — skupiamy się na kluczowych strategiach
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section" style="background: white;">
+            <div class="container" style="max-width: 800px;">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Często Zadawane Pytania</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Czy przygotowujesz do matury podstawowej?
+                    </div>
+                    <p class="faq-answer">
+                        Tak! Przygotowuję zarówno do podstawowej, jak i rozszerzonej. Przy podstawowej skupiamy się
+                        głównie na
+                        Listening, Reading i Writing (mail/list). Przy rozszerzonej dodajemy Speaking i bardziej
+                        zaawansowane techniki.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Ile lekcji potrzebuję do matury?
+                    </div>
+                    <p class="faq-answer">
+                        Zależy od Twojego poziomu startowego i celu (czy chcesz tylko zdać, czy celować w 90%+).
+                        Średnio polecam <strong>15-25 lekcji</strong> rozłożonych na kilka miesięcy. Na pierwszej lekcji
+                        ustalimy indywidualny plan.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Czy robicie próbne matury?
+                    </div>
+                    <p class="faq-answer">
+                        Tak, i to często. Przed egzaminem robisz przynajmniej 3-4 pełne symulacje na czas.
+                        Dla rozszerzonej dodatkowo robimy symulacje ustnego — ja gram komisję egzaminacyjną.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Mam bardzo niski poziom. Czy dam radę?
+                    </div>
+                    <p class="faq-answer">
+                        Jeśli masz dużo czasu (6+ miesięcy) — tak. Najpierw uzupełnimy fundamenty gramatyczne i
+                        słownictwo,
+                        a potem przejdziemy do strategii egzaminacyjnych. Przy bardzo krótkim czasie (1-2 miesiące)
+                        będziemy działać w trybie "damage control".
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Czy lekcje online są tak samo skuteczne?
+                    </div>
+                    <p class="faq-answer">
+                        Tak! Większość moich maturzystów uczy się online. Pracujemy na wspólnym ekranie (arkusze,
+                        slajdy),
+                        więc jest tak samo interaktywnie jak stacjonarnie. Potrzebujesz tylko laptopa i dobrych
+                        słuchawek.
+                    </p>
+                </div>
             </div>
         </section>
 
         <!-- CTA -->
-        <section class="section" style="text-align: center;">
+        <section class="section"
+            style="text-align: center; background: linear-gradient(135deg, rgba(101,123,230,0.1) 0%, rgba(0,212,126,0.1) 100%);">
             <div class="container">
-                <h2 style="margin-bottom: 1rem;">Matura 2026? Nie czekaj!</h2>
-                <p style="margin-bottom: 2rem; color: var(--color-text-secondary);">Im wcześniej zaczniesz, tym
-                    spokojniej na egzaminie.</p>
-                <a href="/#kontakt" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2.5rem;">Umów
-                    pierwszą lekcję</a>
+                <h2 style="margin-bottom: 1rem;">Matura 2026? Nie Czekaj.</h2>
+                <p
+                    style="margin-bottom: 0.5rem; color: var(--color-text-secondary); max-width: 550px; margin-left: auto; margin-right: auto;">
+                    Im wcześniej zaczniesz, tym spokojniejszy będziesz na egzaminie.
+                </p>
+                <p style="margin-bottom: 2rem; color: var(--color-text-secondary);">
+                    <strong>Pierwsza lekcja jest bezpłatna</strong> — sprawdzimy Twój poziom i ustalimy plan działania.
+                </p>
+                <a href="/kontakt" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2.5rem;">Umów
+                    Bezpłatną Lekcję Próbną</a>
             </div>
         </section>
     </main>
@@ -165,7 +690,9 @@
                 </div>
                 <div>
                     <h5 style="margin-bottom: 1rem;">Kontakt</h5>
-                    <p><a href="mailto:&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;">&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;</a></p>
+                    <p><a
+                            href="mailto:&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;">&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;</a>
+                    </p>
                     <p>+48 571 055 039</p>
                 </div>
             </div>
@@ -179,9 +706,9 @@
         </div>
     </footer>
 
-        <!-- Initialize Lucide Icons after DOM is ready -->
+    <!-- Initialize Lucide Icons after DOM is ready -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             if (typeof lucide !== 'undefined') {
                 lucide.createIcons();
             }
