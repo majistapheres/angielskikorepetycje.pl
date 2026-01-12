@@ -4,34 +4,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kurs TOEIC – Certyfikat Biznesowy | Adrian Ekrem</title>
+    <title>Kurs TOEIC – Certyfikat Biznesowy dla Kariery | Adrian Ekrem</title>
     <link rel="canonical" href="https://angielskikorepetycje.pl/kursy/toeic" />
     <meta name="description"
-        content="Przygotowanie do egzaminu TOEIC Listening & Reading. Business English, słownictwo korporacyjne, gramatyka w kontekście pracy.">
+        content="Potrzebujesz certyfikatu TOEIC do pracy? Przygotowanie do Listening & Reading z naciskiem na Business English. Cel: 800+ punktów. Wrocław i Online.">
     <link rel="stylesheet" href="/css/styles.css">
     <!-- Resource Hints for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://unpkg.com">
-    
+
     <!-- Optimized Font Loading -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
 
     <link rel="icon" type="image/png" href="/favicon.png">
     <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <style>
+        .pain-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border-left: 4px solid #ff6b6b;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .pain-card h3 {
+            color: #ff6b6b;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .module-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #eee;
+        }
+
+        .module-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .score-badge {
+            display: inline-block;
+            background: var(--color-primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .persona-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #eee;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .persona-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .persona-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: white;
+        }
+
+        .phase-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            border: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .phase-card:hover {
+            border-color: var(--color-primary);
+        }
+
+        .phase-number {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: var(--color-primary);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .timeline-lesson {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline-lesson::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--color-primary), var(--color-accent));
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.5rem;
+            padding-left: 20px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px var(--color-primary);
+        }
+
+        .score-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .score-table th,
+        .score-table td {
+            padding: 1rem 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .score-table th {
+            background: #f8f9fc;
+            font-weight: 700;
+        }
+
+        .score-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--color-text-main);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .faq-answer {
+            color: var(--color-text-secondary);
+            line-height: 1.7;
+            padding-left: 2rem;
+        }
+
+        .tip-box {
+            background: linear-gradient(135deg, rgba(0, 212, 126, 0.1), rgba(0, 180, 100, 0.05));
+            border: 1px solid rgba(0, 212, 126, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tip-box h4 {
+            color: #00a85a;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, rgba(101, 123, 230, 0.1), rgba(101, 123, 230, 0.05));
+            border: 1px solid rgba(101, 123, 230, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .info-box h4 {
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    </style>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Course",
       "name": "Kurs Przygotowawczy do TOEIC",
-      "description": "Kurs Business English przygotowujący do egzaminu TOEIC Listening & Reading.",
+      "description": "Kurs Business English przygotowujący do egzaminu TOEIC Listening & Reading. Nacisk na słownictwo korporacyjne i strategie egzaminacyjne.",
       "provider": {
         "@type": "Person",
         "name": "Adrian Ekrem Abdulkerim",
         "url": "https://angielskikorepetycje.pl"
       },
-      "image": "https://angielskikorepetycje.pl/toeic-hero.png"
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": ["online", "onsite"],
+        "courseWorkload": "PT1H"
+      }
     }
     </script>
 </head>
@@ -59,65 +275,437 @@
     </header>
 
     <main>
-        <!-- Hero -->
+        <!-- Hero Section -->
         <section class="section"
             style="padding-top: 140px; text-align: center; position: relative; overflow: hidden; color: white;">
             <div
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; background-image: url('toeic-hero.png'); background-size: cover; background-position: center;">
-            </div>
-            <div
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: rgba(0,0,0,0.75);">
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);">
             </div>
 
             <div class="container">
-                <h1 style="font-size: 3rem; margin-bottom: 1rem; color: white;">Certyfikat TOEIC dla Kariery</h1>
-                <h2 style="color: rgba(255,255,255,0.9); font-weight: 400; margin-bottom: 2rem;">Udowodnij swój
-                    angielski w środowisku pracy</h2>
+                <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 1rem;">Angielski Biznesowy z Certyfikatem</p>
+                <h1 style="font-size: 2.75rem; margin-bottom: 1rem; color: white;">Kurs Przygotowawczy do TOEIC</h1>
+                <h2 style="color: rgba(255,255,255,0.9); font-weight: 400; margin-bottom: 2rem; font-size: 1.4rem;">
+                    Listening & Reading | Cel: <span class="score-badge">800+ punktów</span>
+                </h2>
                 <p style="max-width: 700px; margin: 0 auto 2rem; font-size: 1.1rem; opacity: 0.9;">
-                    Najpopularniejszy egzamin biznesowy na świecie. Podnieś swoje kwalifikacje zawodowe i zdobądź awans.
+                    TOEIC to <strong>najpopularniejszy egzamin biznesowy na świecie</strong>.
+                    Pracodawcy go znają, akceptują i doceniają. Zdobądź certyfikat, który otworzy Ci drzwi.
                 </p>
-                <a href="/kontakt" class="btn btn-success" style="border: none;">Zapisz się na Kurs</a>
+                <a href="/kontakt" class="btn btn-success"
+                    style="border: none; font-size: 1.1rem; padding: 1rem 2rem;">Umów bezpłatną konsultację</a>
             </div>
         </section>
 
-        <!-- Focus Areas -->
+        <!-- Pain Points Section -->
         <section class="section" style="background: white;">
             <div class="container">
-                <h2 style="text-align: center; margin-bottom: 3rem;">Co obejmuje kurs?</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
-                    <div class="glass-card" style="padding: 1.5rem;">
-                        <div style="margin-bottom: 1rem; color: var(--color-primary);"><i data-lucide="briefcase"
-                                style="width: 32px; height: 32px;"></i></div>
-                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Business English</h3>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">Spotkania, negocjacje, maile,
-                            HR, finanse, marketing.</p>
+                <h2 style="text-align: center; margin-bottom: 1rem;">Dlaczego TOEIC Sprawia Problemy?</h2>
+                <p
+                    style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Egzamin wygląda prosto, ale ma swoje pułapki:
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    <div class="pain-card">
+                        <h3>⏱️ 200 pytań w 2 godziny</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            To mniej niż 40 sekund na pytanie. Bez technik szybkiego czytania — nie skończysz.
+                        </p>
                     </div>
-                    <div class="glass-card" style="padding: 1.5rem;">
-                        <div style="margin-bottom: 1rem; color: var(--color-primary);"><i data-lucide="headphones"
-                                style="width: 32px; height: 32px;"></i></div>
-                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Listening Comprehension</h3>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">Rozumienie rozmów biurowych,
-                            ogłoszeń i prezentacji.</p>
+                    <div class="pain-card">
+                        <h3>💼 Słownictwo biznesowe</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Ogłoszenia HR, raporty finansowe, maile korporacyjne — to nie jest codzienny angielski.
+                        </p>
                     </div>
-                    <div class="glass-card" style="padding: 1.5rem;">
-                        <div style="margin-bottom: 1rem; color: var(--color-accent);"><i data-lucide="fast-forward"
-                                style="width: 32px; height: 32px;"></i></div>
-                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Szybkość Czytania</h3>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">Egzamin TOEIC wymaga tempa.
-                            Uczymy technik skanowania tekstu.</p>
+                    <div class="pain-card">
+                        <h3>🎧 Różne akcenty</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Nagrania Listening zawierają akcenty amerykański, brytyjski, australijski i kanadyjski.
+                        </p>
+                    </div>
+                    <div class="pain-card">
+                        <h3>🔄 Pułapki w odpowiedziach</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Dystraktory brzmią podobnie do poprawnej odpowiedzi. Bez strategii — łatwo się pomylić.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tip-box" style="max-width: 700px; margin: 3rem auto 0;">
+                    <h4><i data-lucide="lightbulb" style="width: 20px; height: 20px;"></i> Dobra wiadomość</h4>
+                    <p style="color: var(--color-text-secondary);">
+                        TOEIC to egzamin <strong>wielokrotnego wyboru</strong> — nie musisz mówić ani pisać.
+                        Gdy opanujesz format i poszerzysz słownictwo biznesowe, wynik rośnie szybko.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who Is This For Section -->
+        <section class="section" style="background: var(--color-bg-light);">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Dla Kogo Ten Kurs?</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+                    <div class="persona-card">
+                        <div class="persona-icon">
+                            <i data-lucide="briefcase" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 style="margin-bottom: 0.5rem;">Korporacje</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.9rem;">
+                            Twoja firma wymaga certyfikatu TOEIC? Przygotuj się i zdobądź wynik, którego oczekują.
+                        </p>
+                    </div>
+                    <div class="persona-card">
+                        <div class="persona-icon">
+                            <i data-lucide="trending-up" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 style="margin-bottom: 0.5rem;">Awans / Podwyżka</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.9rem;">
+                            TOEIC na CV to konkretny dowód kompetencji. Pokaż pracodawcy, że inwestujesz w siebie.
+                        </p>
+                    </div>
+                    <div class="persona-card">
+                        <div class="persona-icon">
+                            <i data-lucide="globe" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 style="margin-bottom: 0.5rem;">Praca za Granicą</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.9rem;">
+                            Szukasz pracy w międzynarodowej firmie? TOEIC 800+ otwiera drzwi.
+                        </p>
+                    </div>
+                    <div class="persona-card">
+                        <div class="persona-icon">
+                            <i data-lucide="graduation-cap" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 style="margin-bottom: 0.5rem;">Studenci Biznesu</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.9rem;">
+                            Wiele uczelni biznesowych akceptuje TOEIC. Zdobądź certyfikat przed rekrutacją.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA -->
-        <section class="section" style="text-align: center; background: var(--color-bg-light);">
+        <!-- Test Structure -->
+        <section class="section" style="background: white;">
             <div class="container">
-                <h2 style="margin-bottom: 1rem;">Inwestycja w CV</h2>
-                <p style="margin-bottom: 2rem; color: var(--color-text-secondary);">Pracodawcy szukają konkretów. Daj im
-                    certyfikat TOEIC.</p>
-                <a href="/kontakt" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2.5rem;">Zapytaj
-                    o Ofertę</a>
+                <h2 style="text-align: center; margin-bottom: 1rem;">Struktura Egzaminu TOEIC L&R</h2>
+                <p
+                    style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem; max-width: 650px; margin-left: auto; margin-right: auto;">
+                    2 godziny, 200 pytań wielokrotnego wyboru. Brak mówienia, brak pisania.
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div class="module-card">
+                        <h3 style="color: var(--color-primary);">
+                            <i data-lucide="headphones" style="width: 24px; height: 24px;"></i>
+                            Listening (45 min, 100 pytań)
+                        </h3>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                            Cztery części z nagraniami biznesowymi:
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                            <li><strong>Part 1:</strong> Photographs (opisy zdjęć)</li>
+                            <li><strong>Part 2:</strong> Question-Response (pytanie + odpowiedź)</li>
+                            <li><strong>Part 3:</strong> Conversations (dialogi)</li>
+                            <li><strong>Part 4:</strong> Talks (monologi, ogłoszenia)</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h3 style="color: var(--color-primary);">
+                            <i data-lucide="book-open" style="width: 24px; height: 24px;"></i>
+                            Reading (75 min, 100 pytań)
+                        </h3>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                            Trzy części — tempo jest kluczowe:
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                            <li><strong>Part 5:</strong> Incomplete Sentences (gramatyka)</li>
+                            <li><strong>Part 6:</strong> Text Completion (uzupełnianie tekstu)</li>
+                            <li><strong>Part 7:</strong> Reading Comprehension (długie teksty)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What I Teach -->
+        <section class="section" style="background: var(--color-bg-light);">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Jak Przygotowuję do TOEIC?</h2>
+                <p
+                    style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem; max-width: 650px; margin-left: auto; margin-right: auto;">
+                    Nie tylko "przerabiamy materiał" — uczę strategii, które działają na egzaminie.
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <div class="glass-card" style="padding: 1.5rem; text-align: center;">
+                        <div style="margin-bottom: 1rem; color: var(--color-primary);"><i data-lucide="clock"
+                                style="width: 32px; height: 32px;"></i></div>
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Time Management</h3>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">
+                            Uczę, ile czasu poświęcić na każdą część. Part 7 jest najdłuższy — tam tracisz najwięcej
+                            punktów.
+                        </p>
+                    </div>
+                    <div class="glass-card" style="padding: 1.5rem; text-align: center;">
+                        <div style="margin-bottom: 1rem; color: var(--color-primary);"><i data-lucide="briefcase"
+                                style="width: 32px; height: 32px;"></i></div>
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Business Vocabulary</h3>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">
+                            Słownictwo z HR, finansów, marketingu, logistyki. Dokładnie to, co pojawia się na egzaminie.
+                        </p>
+                    </div>
+                    <div class="glass-card" style="padding: 1.5rem; text-align: center;">
+                        <div style="margin-bottom: 1rem; color: var(--color-accent);"><i data-lucide="zap"
+                                style="width: 32px; height: 32px;"></i></div>
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Prediction Techniques</h3>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">
+                            Czytasz pytanie przed odsłuchaniem. Przewidujesz, co usłyszysz. Oszczędzasz sekundy.
+                        </p>
+                    </div>
+                    <div class="glass-card" style="padding: 1.5rem; text-align: center;">
+                        <div style="margin-bottom: 1rem; color: var(--color-primary);"><i data-lucide="target"
+                                style="width: 32px; height: 32px;"></i></div>
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Distractor Recognition</h3>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">
+                            Uczysz się rozpoznawać fałszywe odpowiedzi, które brzmią podobnie do poprawnych.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Methodology Section -->
+        <section class="section" style="background: white;">
+            <div class="container" style="max-width: 850px;">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Jak Wyglądają Lekcje?</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem;">
+                    Praktyka > teoria. Rozwiązujesz zadania — ja uczę strategii.
+                </p>
+
+                <div class="timeline-lesson">
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">0-5 min: Warm-up</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Krótka rozmowa po angielsku. Sprawdzamy vocabulary z ostatniego tygodnia.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">5-40 min: Praca na zadaniach TOEIC</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Rozwiązujesz zadania z oficjalnych materiałów ETS. Omawiamy strategie, analizujemy błędy.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">40-55 min: Vocabulary / Grammar drill</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Uzupełniamy luki w słownictwie i gramatyce, które wyszły podczas zadań.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">55-60 min: Podsumowanie i plan</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Co powtórzyć? Jakie materiały przejrzeć? Zadania na następny tydzień.
+                        </p>
+                    </div>
+                </div>
+
+                <p
+                    style="text-align: center; margin-top: 2rem; color: var(--color-text-secondary); font-style: italic;">
+                    Więcej o moim podejściu znajdziesz na stronie <a href="/metodologia"
+                        style="color: var(--color-primary);">Metodologia</a>.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3-Phase Approach -->
+        <section class="section" style="background: var(--color-bg-light);">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Trzy Etapy Przygotowania</h2>
+                <p
+                    style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Typowy kurs to 10-20 lekcji rozłożonych na 1.5-3 miesiace.
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                    <div class="phase-card">
+                        <div class="phase-number">1</div>
+                        <h3 style="margin-bottom: 0.75rem; margin-top: 0.5rem;">Diagnoza</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Lekcje 1-2.</strong> Robisz test diagnostyczny. Sprawdzam Twój poziom i słabe
+                            punkty.
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.8;">
+                            <li>Mini-test Listening & Reading</li>
+                            <li>Szacunkowy wynik</li>
+                            <li>Mapa priorytetów (Part 5? Part 7?)</li>
+                        </ul>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">2</div>
+                        <h3 style="margin-bottom: 0.75rem; margin-top: 0.5rem;">Budowanie Strategii</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Lekcje 3-15.</strong> Pracujemy nad każdą częścią. Uczysz się technik.
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.8;">
+                            <li>Strategie na każdą część</li>
+                            <li>Business vocabulary</li>
+                            <li>Gramatyka w kontekście TOEIC</li>
+                        </ul>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">3</div>
+                        <h3 style="margin-bottom: 0.75rem; margin-top: 0.5rem;">Symulacje Pełnego Testu</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Ostatnie 2-3 tygodnie.</strong> Pełne testy w warunkach egzaminacyjnych.
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.8;">
+                            <li>Mock testy na czas (2h)</li>
+                            <li>Analiza błędów</li>
+                            <li>Dopracowanie słabych punktów</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Score Interpretation -->
+        <section class="section" style="background: white;">
+            <div class="container" style="max-width: 800px;">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Co Oznacza Twój Wynik?</h2>
+
+                <div style="overflow-x: auto;">
+                    <table class="score-table">
+                        <thead>
+                            <tr>
+                                <th>Wynik TOEIC</th>
+                                <th>Poziom CEFR</th>
+                                <th>Co to znaczy?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>905-990</strong></td>
+                                <td>C1</td>
+                                <td>Płynna komunikacja biznesowa</td>
+                            </tr>
+                            <tr>
+                                <td><strong>785-900</strong></td>
+                                <td>B2</td>
+                                <td>Samodzielna praca w języku angielskim</td>
+                            </tr>
+                            <tr>
+                                <td><strong>550-780</strong></td>
+                                <td>B1</td>
+                                <td>Podstawowa komunikacja w pracy</td>
+                            </tr>
+                            <tr>
+                                <td><strong>225-545</strong></td>
+                                <td>A2</td>
+                                <td>Ograniczona komunikacja</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="info-box" style="margin-top: 2rem;">
+                    <h4><i data-lucide="target" style="width: 20px; height: 20px;"></i> Typowe wymagania pracodawców
+                    </h4>
+                    <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                        <li><strong>700+:</strong> Wiele korporacji, stanowiska niespecjalistyczne</li>
+                        <li><strong>800+:</strong> Firmy międzynarodowe, stanowiska wymagające komunikacji</li>
+                        <li><strong>900+:</strong> Praca z klientami zagranicznymi, management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section" style="background: var(--color-bg-light);">
+            <div class="container" style="max-width: 800px;">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Często Zadawane Pytania</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Ile czasu potrzebuję na przygotowanie?
+                    </div>
+                    <p class="faq-answer">
+                        Typowo: <strong>1.5-3 miesiące</strong> przy regularnych lekcjach (1-2/tydzień).
+                        TOEIC jest prostszy niż IELTS/TOEFL, więc przygotowanie jest krótsze.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        TOEIC L&R vs TOEIC Speaking & Writing?
+                    </div>
+                    <p class="faq-answer">
+                        TOEIC Listening & Reading to najpopularniejsza wersja (200 pytań, 2h). TOEIC Speaking & Writing
+                        to osobny egzamin.
+                        Przygotowuję do obu, ale L&R jest zdecydowanie częściej wymagany.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Jak często mogę podejść do egzaminu?
+                    </div>
+                    <p class="faq-answer">
+                        TOEIC można zdawać wielokrotnie. Nie ma ograniczenia częstotliwości.
+                        Certyfikat jest ważny 2 lata.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Gdzie można zdać TOEIC w Polsce?
+                    </div>
+                    <p class="faq-answer">
+                        TOEIC zdaje się w autoryzowanych centrach egzaminacyjnych (np. ETS Global Polska).
+                        Sesje odbywają się regularnie w większych miastach. Możesz też zdawać online (TOEIC Online).
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Jakich materiałów używamy?
+                    </div>
+                    <p class="faq-answer">
+                        Oficjalne materiały ETS: <strong>Official TOEIC Listening & Reading Test Preparation</strong>.
+                        Plus moje własne listy słownictwa biznesowego i ćwiczenia gramatyczne.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section"
+            style="text-align: center; background: linear-gradient(135deg, rgba(30,58,95,0.1) 0%, rgba(45,90,135,0.1) 100%);">
+            <div class="container">
+                <h2 style="margin-bottom: 1rem;">Zainwestuj w Swoją Karierę</h2>
+                <p
+                    style="margin-bottom: 0.5rem; color: var(--color-text-secondary); max-width: 550px; margin-left: auto; margin-right: auto;">
+                    TOEIC to konkret na CV — dowód, że Twój angielski jest na poziomie.
+                </p>
+                <p style="margin-bottom: 2rem; color: var(--color-text-secondary);">
+                    <strong>Pierwsza konsultacja jest bezpłatna.</strong> Sprawdzimy Twój poziom i ustalimy plan.
+                </p>
+                <a href="/kontakt" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2.5rem;">Umów
+                    Bezpłatną Konsultację</a>
             </div>
         </section>
     </main>
@@ -151,7 +739,9 @@
                 </div>
                 <div>
                     <h5 style="margin-bottom: 1rem;">Kontakt</h5>
-                    <p><a href="mailto:&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;">&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;</a></p>
+                    <p><a
+                            href="mailto:&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;">&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;</a>
+                    </p>
                     <p>+48 571 055 039</p>
                 </div>
             </div>
@@ -165,9 +755,9 @@
         </div>
     </footer>
 
-        <!-- Initialize Lucide Icons after DOM is ready -->
+    <!-- Initialize Lucide Icons after DOM is ready -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             if (typeof lucide !== 'undefined') {
                 lucide.createIcons();
             }
