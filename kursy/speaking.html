@@ -4,34 +4,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kurs Speaking & Konwersacje – Wrocław i Online | Adrian Ekrem</title>
+    <title>Kurs Speaking & Konwersacje – Przełam Barierę Językową | Adrian Ekrem</title>
     <link rel="canonical" href="https://angielskikorepetycje.pl/kursy/speaking" />
     <meta name="description"
-        content="Przełam barierę językową. Intensywne konwersacje z angielskiego, poprawa wymowy i płynności. Wrocław lub Online.">
+        content="Masz B2 ale boisz się mówić? Kurs konwersacji z angielskiego oparty na praktyce, nie teorii. Przełam blokadę językową i mów płynnie. Wrocław lub Online.">
     <link rel="stylesheet" href="/css/styles.css">
     <!-- Resource Hints for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://unpkg.com">
-    
+
     <!-- Optimized Font Loading -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
 
     <link rel="icon" type="image/png" href="/favicon.png">
     <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <style>
+        .pain-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border-left: 4px solid #ff6b6b;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .pain-card h3 {
+            color: #ff6b6b;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .solution-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border-left: 4px solid #00d47e;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .solution-card h3 {
+            color: #00d47e;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .persona-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #eee;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .persona-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .persona-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: white;
+        }
+
+        .phase-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            border: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .phase-card:hover {
+            border-color: var(--color-primary);
+        }
+
+        .phase-number {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: var(--color-primary);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .lesson-timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .lesson-timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--color-primary), var(--color-accent));
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.5rem;
+            padding-left: 20px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px var(--color-primary);
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--color-text-main);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .faq-answer {
+            color: var(--color-text-secondary);
+            line-height: 1.7;
+            padding-left: 2rem;
+        }
+
+        .tip-box {
+            background: linear-gradient(135deg, rgba(0, 212, 126, 0.1), rgba(0, 180, 100, 0.05));
+            border: 1px solid rgba(0, 212, 126, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tip-box h4 {
+            color: #00a85a;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    </style>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Course",
       "name": "Kurs Speaking & Konwersacje",
-      "description": "Kurs skupiony na płynności mówienia, redukcji akcentu i pewności siebie w komunikacji.",
+      "description": "Kurs skupiony na płynności mówienia, redukcji akcentu i pewności siebie w komunikacji. Praktyczne podejście oparte na aktywnym mówieniu, nie teorii.",
       "provider": {
         "@type": "Person",
         "name": "Adrian Ekrem Abdulkerim",
         "url": "https://angielskikorepetycje.pl"
       },
-      "image": "https://angielskikorepetycje.pl/speaking-hero.png"
+      "image": "https://angielskikorepetycje.pl/speaking-hero.png",
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": ["online", "onsite"],
+        "courseWorkload": "PT1H"
+      }
     }
     </script>
 </head>
@@ -59,7 +224,7 @@
     </header>
 
     <main>
-        <!-- Hero with Image Background Overlay Effect -->
+        <!-- Hero Section -->
         <section class="section"
             style="padding-top: 140px; text-align: center; position: relative; overflow: hidden; color: white;">
             <!-- Background Image -->
@@ -68,47 +233,342 @@
             </div>
             <!-- Overlay -->
             <div
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: rgba(0,0,0,0.6);">
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: rgba(0,0,0,0.65);">
             </div>
 
             <div class="container">
+                <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 1rem;">Masz B2 ale boisz się mówić?</p>
                 <h1 style="font-size: 3rem; margin-bottom: 1rem; color: white;">Speaking & Konwersacje</h1>
-                <h2 style="color: rgba(255,255,255,0.9); font-weight: 400; margin-bottom: 2rem;">Mów płynnie, bez stresu
+                <h2 style="color: rgba(255,255,255,0.9); font-weight: 400; margin-bottom: 2rem; font-size: 1.5rem;">Mów
+                    płynnie, bez stresu
                     i tłumaczenia w głowie</h2>
                 <p style="max-width: 700px; margin: 0 auto 2rem; font-size: 1.1rem; opacity: 0.9;">
-                    Skupiamy się w 100% na komunikacji. Poprawiamy wymowę, uczymy się naturalnych zwrotów i eliminujemy
-                    blokadę językową.
+                    Kurs dla osób, które <strong>rozumieją angielski</strong>, ale zamierają gdy trzeba coś powiedzieć.
+                    Skupiamy się w 100% na komunikacji — nie na podręcznikach.
                 </p>
-                <a href="/kontakt.html" class="btn btn-success" style="border: none;">Umów rozmowę próbną</a>
+                <a href="/kontakt" class="btn btn-success"
+                    style="border: none; font-size: 1.1rem; padding: 1rem 2rem;">Umów bezpłatną rozmowę próbną</a>
             </div>
         </section>
 
-        <!-- Method -->
+        <!-- Pain Points Section -->
+        <section class="section" style="background: var(--color-bg-light);">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Znasz Ten Ból?</h2>
+                <p
+                    style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Jeśli którykolwiek z tych punktów brzmi znajomo, ten kurs jest dla Ciebie.
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    <div class="pain-card">
+                        <h3>🧠 Tłumaczysz w głowie</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Zanim coś powiesz, najpierw układasz zdanie po polsku, potem tłumaczysz. To trwa wieki i
+                            jest wyczerpujące.
+                        </p>
+                    </div>
+                    <div class="pain-card">
+                        <h3>😰 Blokada językowa</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Wiesz słówka, znasz gramatykę, ale gdy trzeba mówić — zamierasz. Strach przed błędem
+                            paraliżuje.
+                        </p>
+                    </div>
+                    <div class="pain-card">
+                        <h3>🎧 Rozumiesz, ale nie odpowiadasz</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Filmy, seriale, podcasty — rozumiesz wszystko. Ale gdy ktoś do Ciebie mówi, odpowiadasz
+                            "yes" i "okay".
+                        </p>
+                    </div>
+                    <div class="pain-card">
+                        <h3>📚 Masz B2 na papierze</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Certyfikaty są, testy zdane, ale w prawdziwej rozmowie — kompletny blank. Teoria nie
+                            przekłada się na praktykę.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tip-box" style="max-width: 700px; margin: 3rem auto 0;">
+                    <h4><i data-lucide="lightbulb" style="width: 20px; height: 20px;"></i> Dobra wiadomość</h4>
+                    <p style="color: var(--color-text-secondary);">
+                        To nie jest problem z Twoją inteligencją ani talentem językowym. To problem z <strong>metodą
+                            nauki</strong>.
+                        Przez lata uczyłeś się <em>o</em> języku, zamiast <em>używać</em> języka. To można naprawić.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who Is This For Section -->
         <section class="section" style="background: white;">
             <div class="container">
-                <h2 style="text-align: center; margin-bottom: 3rem;">Jak wyglądają zajęcia?</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Dla Kogo Ten Kurs?</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+                    <div class="persona-card">
+                        <div class="persona-icon">
+                            <i data-lucide="briefcase" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 style="margin-bottom: 0.5rem;">Profesjonaliści</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.9rem;">
+                            Potrzebujesz angielskiego w pracy — spotkania, prezentacje, maile. Chcesz brzmieć
+                            profesjonalnie.
+                        </p>
+                    </div>
+                    <div class="persona-card">
+                        <div class="persona-icon">
+                            <i data-lucide="user-check" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 style="margin-bottom: 0.5rem;">Przed Rozmową Kwalifikacyjną</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.9rem;">
+                            Interview po angielsku za 2-4 tygodnie? Przygotujemy Cię do typowych pytań i swobodnej
+                            rozmowy.
+                        </p>
+                    </div>
+                    <div class="persona-card">
+                        <div class="persona-icon">
+                            <i data-lucide="book-open" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 style="margin-bottom: 0.5rem;">Teoretycy Gramatyki</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.9rem;">
+                            Znasz Present Perfect od Past Simple, ale nie potrafisz tego użyć w rozmowie? Czas to
+                            zmienić.
+                        </p>
+                    </div>
+                    <div class="persona-card">
+                        <div class="persona-icon">
+                            <i data-lucide="plane" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 style="margin-bottom: 0.5rem;">Przed Wyjazdem</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.9rem;">
+                            Emigracja, studia za granicą, długi wyjazd? Przygotuj się na codzienne sytuacje po
+                            angielsku.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Method Section (Enhanced) -->
+        <section class="section" style="background: var(--color-bg-light);">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Jak Pracuję z Tobą?</h2>
+                <p
+                    style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem; max-width: 650px; margin-left: auto; margin-right: auto;">
+                    Nie uczymy się o języku — <strong>używamy języka</strong>. Na moich lekcjach Ty mówisz 80% czasu.
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.5rem;">
                     <div class="glass-card" style="padding: 1.5rem; text-align: center;">
                         <div style="margin-bottom: 1rem; color: var(--color-primary);"><i data-lucide="mic"
                                 style="width: 32px; height: 32px;"></i></div>
-                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Akcent & Wymowa</h3>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">Praca nad "British/American
-                            Accent", intonacją i łączeniem wyrazów.</p>
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Korekta Wymowy</h3>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">
+                            Uczę Cię <strong>fizyki dźwięku</strong> — jak ustawić usta i język, żeby brzmiało
+                            naturalnie. Nie "powtórz za mną", ale "zrób tak".
+                        </p>
                     </div>
                     <div class="glass-card" style="padding: 1.5rem; text-align: center;">
                         <div style="margin-bottom: 1rem; color: var(--color-primary);"><i data-lucide="message-square"
                                 style="width: 32px; height: 32px;"></i></div>
                         <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Naturalna Dyskusja</h3>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">Brak podręczników. Rozmawiamy
-                            o biznesie, kulturze, technologii i Twoich zainteresowaniach.</p>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">
+                            Brak podręczników. Rozmawiamy o Twoich zainteresowaniach, pracy, bieżących wydarzeniach —
+                            jak dwóch ludzi przy kawie.
+                        </p>
                     </div>
                     <div class="glass-card" style="padding: 1.5rem; text-align: center;">
                         <div style="margin-bottom: 1rem; color: var(--color-accent);"><i data-lucide="zap"
                                 style="width: 32px; height: 32px;"></i></div>
                         <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Szybkość Reakcji</h3>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">Ćwiczenia na szybkie budowanie
-                            zdań bez zastanawiania się nad gramatyką.</p>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">
+                            Ćwiczenia na budowanie zdań "na żywo" bez zastanawiania się. Im szybciej reagujesz, tym
+                            mniej tłumaczysz w głowie.
+                        </p>
                     </div>
+                    <div class="glass-card" style="padding: 1.5rem; text-align: center;">
+                        <div style="margin-bottom: 1rem; color: var(--color-primary);"><i data-lucide="repeat"
+                                style="width: 32px; height: 32px;"></i></div>
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Pętla Korekty</h3>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">
+                            Błąd → natychmiastowa korekta → powtórzenie poprawnej wersji. Żadnego "zobaczymy na
+                            następnej lekcji".
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson Structure -->
+        <section class="section" style="background: white;">
+            <div class="container" style="max-width: 800px;">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Jak Wygląda Typowa Lekcja?</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem;">
+                    60 minut skupienia na mówieniu. Zero nudy, zero wypełniania luk.
+                </p>
+
+                <div class="lesson-timeline">
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">0-10 min: Rozgrzewka</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Luźna rozmowa o Twoim tygodniu, ciekawych wydarzeniach. Cel: wejść w "tryb angielski" bez
+                            presji.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">10-35 min: Główny Temat</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Dyskusja, debata, role-play. Wprowadzam nowe słownictwo i struktury w kontekście. Ty mówisz,
+                            ja notuję błędy.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">35-50 min: Korekta i Dryl</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Wspólnie analizujemy błędy z notatek. Powtarzamy poprawne wersje aż wejdą do pamięci
+                            mięśniowej.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">50-60 min: Podsumowanie</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Co dziś poszło dobrze? Nad czym pracujemy dalej? Dostajesz zadanie do przemyślenia (nie do
+                            pisania).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3-Phase Approach -->
+        <section class="section"
+            style="background: linear-gradient(135deg, rgba(101,123,230,0.05) 0%, rgba(0,212,126,0.05) 100%);">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Trzy Fazy Rozwoju</h2>
+                <p
+                    style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Każdy uczeń przechodzi przez podobną ścieżkę. Tempo zależy od Twojego poziomu i celów.
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                    <div class="phase-card">
+                        <div class="phase-number">1</div>
+                        <h3 style="margin-bottom: 0.75rem; margin-top: 0.5rem;">Przełamanie Lodu</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Pierwsze 2-4 lekcje.</strong> Celem jest sprawić, żebyś zaczął mówić bez ciągłego
+                            oceniania siebie.
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.8;">
+                            <li>Budowanie komfortu i zaufania</li>
+                            <li>Identyfikacja głównych blokad</li>
+                            <li>Proste ćwiczenia na płynność</li>
+                        </ul>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">2</div>
+                        <h3 style="margin-bottom: 0.75rem; margin-top: 0.5rem;">Budowanie Płynności</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Lekcje 5-15.</strong> Rozszerzamy słownictwo i naturalne struktury. Uczysz się mówić
+                            dłuższymi wypowiedziami.
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.8;">
+                            <li>Kolokacje i idiomy w praktyce</li>
+                            <li>"Linking words" do płynnych wypowiedzi</li>
+                            <li>Ćwiczenia na spontaniczność</li>
+                        </ul>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">3</div>
+                        <h3 style="margin-bottom: 0.75rem; margin-top: 0.5rem;">Szlif Wymowy</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Lekcja 15+.</strong> Gdy mówisz swobodnie, pracujemy nad akcentem i brzmieniem
+                            native speaker.
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.8;">
+                            <li>Redukcja polskiego akcentu</li>
+                            <li>Intonacja i rytm zdania</li>
+                            <li>Connected speech (łączenie wyrazów)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p
+                    style="text-align: center; margin-top: 2rem; color: var(--color-text-secondary); font-style: italic;">
+                    Więcej o moim podejściu znajdziesz na stronie <a href="/metodologia"
+                        style="color: var(--color-primary);">Metodologia</a>.
+                </p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section" style="background: white;">
+            <div class="container" style="max-width: 800px;">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Często Zadawane Pytania</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Co jeśli mam niski poziom angielskiego?
+                    </div>
+                    <p class="faq-answer">
+                        Kurs konwersacyjny najlepiej sprawdza się od poziomu A2+, gdzie masz już podstawowe słownictwo.
+                        Jeśli jesteś na poziomie A1, najpierw zbudujemy fundamenty, a potem przejdziemy do intensywnych
+                        konwersacji.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Ile czasu zajmie, żebym mówił płynnie?
+                    </div>
+                    <p class="faq-answer">
+                        Zależy od Twojego punktu startowego. Większość uczniów zauważa znaczącą różnicę po 8-10
+                        lekcjach.
+                        Pełna płynność to proces ciągły, ale po 20-30 lekcjach rozmowa staje się komfortowa i naturalna.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Czy muszę znać gramatykę przed rozpoczęciem?
+                    </div>
+                    <p class="faq-answer">
+                        Nie musisz znać reguł na pamięć. Gramatykę wprowadzamy w praktyce — uczysz się przez mówienie,
+                        nie przez tabelki. Jeśli masz luki, wypełnimy je naturalnie podczas rozmów.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Jak wygląda lekcja online?
+                    </div>
+                    <p class="faq-answer">
+                        Spotykamy się przez Google Meet lub Zoom. Masz włączoną kamerę (ważne dla pracy nad wymową).
+                        Potrzebujesz tylko laptopa/komputera i stabilnego internetu. Słuchawki z mikrofonem to plus.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Czy mogę przygotować się do konkretnej rozmowy kwalifikacyjnej?
+                    </div>
+                    <p class="faq-answer">
+                        Tak! To częsty scenariusz. Przejdziemy przez typowe pytania ("Tell me about yourself", "Why
+                        should we hire you?"),
+                        przygotujemy Twoje odpowiedzi i przećwiczymy aż będziesz czuć się pewnie.
+                    </p>
                 </div>
             </div>
         </section>
@@ -116,11 +576,16 @@
         <!-- CTA -->
         <section class="section" style="text-align: center; background: var(--color-bg-light);">
             <div class="container">
-                <h2 style="margin-bottom: 1rem;">Przełam lody</h2>
-                <p style="margin-bottom: 2rem; color: var(--color-text-secondary);">Pierwsza lekcja to luźna rozmowa.
-                    Sprawdź, czy nadajemy na tych samych falach.</p>
-                <a href="/kontakt.html" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2.5rem;">Umów
-                    Free Trial</a>
+                <h2 style="margin-bottom: 1rem;">Gotowy Przełamać Barierę?</h2>
+                <p
+                    style="margin-bottom: 0.5rem; color: var(--color-text-secondary); max-width: 550px; margin-left: auto; margin-right: auto;">
+                    Pierwsza lekcja to luźna rozmowa. Sprawdzimy Twój poziom, omówimy cele i ustalimy plan działania.
+                </p>
+                <p style="margin-bottom: 2rem; color: var(--color-text-secondary);">
+                    <strong>Bez zobowiązań.</strong> Jeśli nie klikniemy — zero problemu.
+                </p>
+                <a href="/kontakt" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2.5rem;">Umów
+                    Bezpłatną Rozmowę Próbną</a>
             </div>
         </section>
     </main>
@@ -135,26 +600,28 @@
                 <div>
                     <h5 style="margin-bottom: 1rem;">Oferta</h5>
                     <ul style="line-height: 2;">
-                        <li><a href="/landing/tutor-wroclaw.html">Angielski Wrocław</a></li>
-                        <li><a href="/oferta-online.html">Angielski Online</a></li>
-                        <li><a href="/o-mnie.html">O Mnie</a></li>
-                        <li><a href="/metodologia.html">Metodologia</a></li>
+                        <li><a href="/landing/tutor-wroclaw">Angielski Wrocław</a></li>
+                        <li><a href="/oferta-online">Angielski Online</a></li>
+                        <li><a href="/o-mnie">O Mnie</a></li>
+                        <li><a href="/metodologia">Metodologia</a></li>
                         <li><a href="/baza-wiedzy">Baza Wiedzy</a></li>
                     </ul>
                 </div>
                 <div>
                     <h5 style="margin-bottom: 1rem;">Kursy</h5>
                     <ul style="line-height: 2;">
-                        <li><a href="/speaking.html">Speaking & Konwersacje</a></li>
-                        <li><a href="/ielts.html">Kurs IELTS</a></li>
-                        <li><a href="/toefl.html">Kurs TOEFL</a></li>
-                        <li><a href="/toeic.html">Kurs TOEIC</a></li>
-                        <li><a href="/matura.html">Matura Rozszerzona</a></li>
+                        <li><a href="/kursy/speaking">Speaking & Konwersacje</a></li>
+                        <li><a href="/kursy/ielts">Kurs IELTS</a></li>
+                        <li><a href="/kursy/toefl">Kurs TOEFL</a></li>
+                        <li><a href="/kursy/toeic">Kurs TOEIC</a></li>
+                        <li><a href="/kursy/matura">Matura Rozszerzona</a></li>
                     </ul>
                 </div>
                 <div>
                     <h5 style="margin-bottom: 1rem;">Kontakt</h5>
-                    <p><a href="mailto:&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;">&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;</a></p>
+                    <p><a
+                            href="mailto:&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;">&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;</a>
+                    </p>
                     <p>+48 571 055 039</p>
                 </div>
             </div>
@@ -168,9 +635,9 @@
         </div>
     </footer>
 
-        <!-- Initialize Lucide Icons after DOM is ready -->
+    <!-- Initialize Lucide Icons after DOM is ready -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             if (typeof lucide !== 'undefined') {
                 lucide.createIcons();
             }
