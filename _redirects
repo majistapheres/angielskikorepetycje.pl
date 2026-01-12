@@ -1,3 +1,14 @@
 # Redirects
 https://www.angielskikorepetycje.pl/* https://angielskikorepetycje.pl/:splat 301
 /blog /baza-wiedzy 301
+
+# Old course pages → New kursy/ structure (301 Permanent Redirects)
+/toefl.html /kursy/toefl 301
+/ielts.html /kursy/ielts 301
+/matura.html /kursy/matura 301
+/speaking.html /kursy/speaking 301
+/toeic.html /kursy/toeic 301
+
+# Moved articles
+/wiedza/metody/kawiarnie-wroclaw-nauka-jezyka.html /wiedza/porady/kawiarnie-wroclaw-nauka-jezyka 301
+/blog/porady/jak-wybrac-korepetytora /wiedza/porady/5-sygnalow-zlego-korepetytora 301
