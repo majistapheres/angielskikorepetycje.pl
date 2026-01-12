@@ -4,32 +4,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kurs Przygotowawczy do IELTS – Wrocław i Online | Adrian Ekrem</title>
+    <title>Kurs IELTS – Przygotowanie do Band 7.0+ | Adrian Ekrem</title>
     <link rel="canonical" href="https://angielskikorepetycje.pl/kursy/ielts" />
     <meta name="description"
-        content="Przygotowanie do egzaminu IELTS z Adrianem Ekremem. Techniki egzaminacyjne, symulacje testów, cel: Band 7.0+. Wrocław i Online.">
+        content="Potrzebujesz IELTS na studia lub emigrację? Indywidualne przygotowanie do Academic i General Training. Strategie egzaminacyjne, symulacje testów. Wrocław i Online.">
     <link rel="stylesheet" href="/css/styles.css">
     <!-- Resource Hints for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://unpkg.com">
-    
+
     <!-- Optimized Font Loading -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
 
     <link rel="icon" type="image/png" href="/favicon.png">
     <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <style>
+        .pain-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border-left: 4px solid #ff6b6b;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .pain-card h3 {
+            color: #ff6b6b;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .module-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #eee;
+        }
+
+        .module-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .band-score {
+            display: inline-block;
+            background: var(--color-primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .phase-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            border: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .phase-card:hover {
+            border-color: var(--color-primary);
+        }
+
+        .phase-number {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: var(--color-primary);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .timeline-lesson {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline-lesson::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--color-primary), var(--color-accent));
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.5rem;
+            padding-left: 20px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px var(--color-primary);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .comparison-table th {
+            background: #f8f9fc;
+            font-weight: 700;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--color-text-main);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .faq-answer {
+            color: var(--color-text-secondary);
+            line-height: 1.7;
+            padding-left: 2rem;
+        }
+
+        .tip-box {
+            background: linear-gradient(135deg, rgba(0, 212, 126, 0.1), rgba(0, 180, 100, 0.05));
+            border: 1px solid rgba(0, 212, 126, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tip-box h4 {
+            color: #00a85a;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, rgba(101, 123, 230, 0.1), rgba(101, 123, 230, 0.05));
+            border: 1px solid rgba(101, 123, 230, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .info-box h4 {
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    </style>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Course",
       "name": "Kurs Przygotowawczy do IELTS",
-      "description": "Indywidualny kurs przygotowujący do egzaminu IELTS Academic i General Training",
+      "description": "Indywidualny kurs przygotowujący do egzaminu IELTS Academic i General Training. Nacisk na strategie egzaminacyjne i autentyczne materiały Cambridge.",
       "provider": {
         "@type": "Person",
         "name": "Adrian Ekrem Abdulkerim",
         "url": "https://angielskikorepetycje.pl"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": ["online", "onsite"],
+        "courseWorkload": "PT1H"
       }
     }
     </script>
@@ -58,88 +248,396 @@
     </header>
 
     <main>
-        <!-- Hero -->
-        <section class="section" style="padding-top: 140px; text-align: center;">
+        <!-- Hero Section -->
+        <section class="section"
+            style="padding-top: 140px; text-align: center; background: linear-gradient(135deg, #f8f9fc 0%, #eef1f8 100%);">
             <div class="container">
-                <h1
-                    style="font-size: 3rem; margin-bottom: 1rem; background: var(--gradient-main); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
-                    Kurs Przygotowawczy do IELTS</h1>
-                <h2 style="color: var(--color-text-secondary); font-weight: 400; margin-bottom: 2rem;">Wrocław i Online
-                    – Cel: Band 7.0+</h2>
-                <p style="max-width: 700px; margin: 0 auto 2rem;">
-                    Nie uczę tylko angielskiego. <strong>Uczę, jak zdać egzamin.</strong> Techniki egzaminacyjne,
-                    zarządzanie czasem i autentyczne materiały Cambridge.
+                <p style="color: var(--color-primary); font-weight: 600; margin-bottom: 1rem;">Egzamin IELTS</p>
+                <h1 style="font-size: 2.75rem; margin-bottom: 1rem;">Kurs Przygotowawczy do IELTS</h1>
+                <h2
+                    style="color: var(--color-text-secondary); font-weight: 400; margin-bottom: 2rem; font-size: 1.4rem;">
+                    Academic & General Training | Cel: <span class="band-score">Band 7.0+</span>
+                </h2>
+                <p
+                    style="max-width: 700px; margin: 0 auto 2rem; font-size: 1.1rem; color: var(--color-text-secondary);">
+                    IELTS to nie tylko test języka — to egzamin ze <strong>strategii</strong>.
+                    Uczę Cię nie tylko angielskiego, ale przede wszystkim <strong>jak zdać ten konkretny test</strong>.
                 </p>
-                <a href="/#kontakt" class="btn btn-success">Zacznij Przygotowania</a>
+                <a href="/kontakt" class="btn btn-success" style="font-size: 1.1rem; padding: 1rem 2rem;">Umów bezpłatną
+                    konsultację</a>
             </div>
         </section>
 
-        <!-- 4 Modules -->
+        <!-- Pain Points Section -->
         <section class="section" style="background: white;">
             <div class="container">
-                <h2 style="text-align: center; margin-bottom: 3rem;">Cztery Moduły IELTS</h2>
-                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
-                    <div class="glass-card" style="padding: 1.5rem; text-align: center;">
-                        <div style="margin-bottom: 1rem; color: var(--color-primary);"><i data-lucide="headphones"
-                                style="width: 32px; height: 32px;"></i></div>
-                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Listening</h3>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">Ćwiczymy różne akcenty i
-                            szybkość mowy</p>
+                <h2 style="text-align: center; margin-bottom: 1rem;">Dlaczego IELTS Jest Trudny?</h2>
+                <p
+                    style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Nawet osoby z dobrym angielskim mają problem z wynikiem. Oto najczęstsze pułapki:
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    <div class="pain-card">
+                        <h3>⏱️ Brak czasu na Reading</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            60 minut na 3 długie teksty i 40 pytań. Większość osób nie kończy, bo czyta wszystko od A do
+                            Z.
+                        </p>
                     </div>
-                    <div class="glass-card" style="padding: 1.5rem; text-align: center;">
-                        <div style="margin-bottom: 1rem; color: var(--color-primary);"><i data-lucide="book-open"
-                                style="width: 32px; height: 32px;"></i></div>
-                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Reading</h3>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">Strategie szybkiego czytania i
-                            analizy tekstu</p>
+                    <div class="pain-card">
+                        <h3>📝 Task 1 Writing to zagadka</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Wykres, tabela, proces — i masz 20 minut, żeby to opisać. Bez schematu tracisz czas i
+                            punkty.
+                        </p>
                     </div>
-                    <div class="glass-card" style="padding: 1.5rem; text-align: center;">
-                        <div style="margin-bottom: 1rem; color: var(--color-primary);"><i data-lucide="pen-tool"
-                                style="width: 32px; height: 32px;"></i></div>
-                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Writing</h3>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">Task 1 & Task 2 – struktura i
-                            język akademicki</p>
+                    <div class="pain-card">
+                        <h3>🎧 Różne akcenty w Listening</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Brytyjski, australijski, indyjski — nagrania lecą jeden raz. Jeśli nie jesteś
+                            przyzwyczajony, tracisz odpowiedzi.
+                        </p>
                     </div>
-                    <div class="glass-card" style="padding: 1.5rem; text-align: center;">
-                        <div style="margin-bottom: 1rem; color: var(--color-primary);"><i data-lucide="message-circle"
-                                style="width: 32px; height: 32px;"></i></div>
-                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Speaking</h3>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">Symulacje z timerem, feedback
-                            na żywo</p>
+                    <div class="pain-card">
+                        <h3>🗣️ Speaking Part 2 — 2 minuty monologu</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Losowy temat, 1 minuta na przygotowanie, 2 minuty mówienia bez przerwy. To wymaga treningu.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tip-box" style="max-width: 700px; margin: 3rem auto 0;">
+                    <h4><i data-lucide="lightbulb" style="width: 20px; height: 20px;"></i> Klucz do sukcesu</h4>
+                    <p style="color: var(--color-text-secondary);">
+                        IELTS testuje <strong>umiejętność zdawania IELTS</strong>, nie tylko angielski.
+                        Osoby z niższym poziomem, ale dobrą strategią, często zdobywają wyższe wyniki niż "zaawansowani"
+                        bez przygotowania.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic vs General -->
+        <section class="section" style="background: var(--color-bg-light);">
+            <div class="container" style="max-width: 900px;">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Academic czy General Training?</h2>
+
+                <div style="overflow-x: auto;">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 30%;">Aspekt</th>
+                                <th style="width: 35%; color: var(--color-primary);">IELTS Academic</th>
+                                <th style="width: 35%; color: #666;">IELTS General Training</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Dla kogo</strong></td>
+                                <td>Studia, programy medyczne, naukowe</td>
+                                <td>Emigracja (Australia, Kanada, UK), praca</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reading</strong></td>
+                                <td>Teksty naukowe, akademickie</td>
+                                <td>Ogłoszenia, instrukcje, artykuły</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Writing Task 1</strong></td>
+                                <td>Opis wykresu, tabeli, procesu</td>
+                                <td>List (formalny/nieformalny)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Listening & Speaking</strong></td>
+                                <td colspan="2" style="text-align: center;">Identyczne dla obu wersji</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Typowy wymagany wynik</strong></td>
+                                <td>6.5 – 7.5 (uczelnie)</td>
+                                <td>6.0 – 7.0 (wizy, praca)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p style="text-align: center; color: var(--color-text-secondary); margin-top: 2rem;">
+                    Nie wiesz, która wersja? Na pierwszej lekcji ustalimy, co dokładnie potrzebujesz.
+                </p>
+            </div>
+        </section>
+
+        <!-- 4 Modules Detailed -->
+        <section class="section" style="background: white;">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Cztery Moduły — Jak Je Przećwiczymy?</h2>
+                <p
+                    style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem; max-width: 650px; margin-left: auto; margin-right: auto;">
+                    Każdy moduł ma swoje pułapki i strategie. Oto, jak podchodzę do każdego z nich:
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    <div class="module-card">
+                        <h3 style="color: var(--color-primary);">
+                            <i data-lucide="headphones" style="width: 24px; height: 24px;"></i>
+                            Listening (30 min)
+                        </h3>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                            40 pytań, 4 sekcje, jeden odsłuch. Uczę Cię:
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                            <li><strong>Prediction</strong> — przewidywanie odpowiedzi przed odsłuchaniem</li>
+                            <li>Rozpoznawanie sygnałów zmiany (but, however, actually)</li>
+                            <li>Trening z różnymi akcentami (UK, AU, US, Indian)</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h3 style="color: var(--color-primary);">
+                            <i data-lucide="book-open" style="width: 24px; height: 24px;"></i>
+                            Reading (60 min)
+                        </h3>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                            3 teksty, 40 pytań, zero czasu do stracenia. Uczę Cię:
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                            <li><strong>Skimming & Scanning</strong> — czytaj pytania, nie cały tekst</li>
+                            <li>Strategie na True/False/Not Given (najtrudniejsze!)</li>
+                            <li>Zarządzanie czasem: 20 min/tekst</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h3 style="color: var(--color-accent);">
+                            <i data-lucide="pen-tool" style="width: 24px; height: 24px;"></i>
+                            Writing (60 min)
+                        </h3>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                            Task 1 (150 słów) + Task 2 (250 słów). Uczę Cię:
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                            <li><strong>Szablony</strong> na wykresy, procesy, mapy</li>
+                            <li>Struktura Task 2 (opinion, discussion, problem-solution)</li>
+                            <li>Band descriptors — wiem, za co przyznają punkty</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h3 style="color: var(--color-primary);">
+                            <i data-lucide="mic" style="width: 24px; height: 24px;"></i>
+                            Speaking (11-14 min)
+                        </h3>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                            3 części: intro, monolog, dyskusja. Uczę Cię:
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                            <li><strong>Part 2 framework</strong> — jak mówić 2 minuty bez pauzy</li>
+                            <li>Filler phrases dla naturalności</li>
+                            <li>Symulacje z timerem — nagrywanie i analiza</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Why Me -->
+        <!-- Methodology Section -->
         <section class="section" style="background: var(--color-bg-light);">
+            <div class="container" style="max-width: 850px;">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Jak Wyglądają Lekcje w Praktyce?</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem;">
+                    Nie "przerabiamy materiał". Ty rozwiązujesz zadania — ja uczę strategii i koryguję błędy.
+                </p>
+
+                <div class="timeline-lesson">
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">0-5 min: Warm-up po angielsku</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Krótka rozmowa, żeby wejść w tryb angielski. Sprawdzamy, co pamiętasz z ostatniej lekcji.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">5-40 min: Praca na zadaniach IELTS</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Rozwiązujesz autentyczne zadania z materiałów Cambridge. Tłumaczę strategie, pokazuję
+                            pułapki, analizujemy błędy na bieżąco.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">40-55 min: Korekta i techniki</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Omawiamy Twoje odpowiedzi. Co poszło nie tak? Jaką strategię zastosować następnym razem?
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">55-60 min: Podsumowanie i plan</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Co przećwiczyć samodzielnie? Jakie materiały przejrzeć? Konkretne zadania na następny
+                            tydzień.
+                        </p>
+                    </div>
+                </div>
+
+                <p
+                    style="text-align: center; margin-top: 2rem; color: var(--color-text-secondary); font-style: italic;">
+                    Więcej o moim podejściu znajdziesz na stronie <a href="/metodologia"
+                        style="color: var(--color-primary);">Metodologia</a>.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3-Phase Approach -->
+        <section class="section" style="background: white;">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Trzy Etapy Przygotowania</h2>
+                <p
+                    style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Ilość lekcji zależy od Twojego poziomu i daty egzaminu. Typowo: 15-30 lekcji.
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                    <div class="phase-card">
+                        <div class="phase-number">1</div>
+                        <h3 style="margin-bottom: 0.75rem; margin-top: 0.5rem;">Diagnoza</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Lekcje 1-2.</strong> Robisz pełny test próbny. Analizuję Twoje słabe punkty.
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.8;">
+                            <li>Mock test wszystkich 4 modułów</li>
+                            <li>Szacunkowy Band Score</li>
+                            <li>Mapa priorytetów (gdzie tracisz punkty?)</li>
+                        </ul>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">2</div>
+                        <h3 style="margin-bottom: 0.75rem; margin-top: 0.5rem;">Budowanie Strategii</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Lekcje 3-20.</strong> Pracujemy nad każdym modułem osobno. Uczysz się technik.
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.8;">
+                            <li>Strategie na Listening, Reading, Writing, Speaking</li>
+                            <li>Praca nad słownictwem i gramatyką</li>
+                            <li>Regularne zadania domowe</li>
+                        </ul>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">3</div>
+                        <h3 style="margin-bottom: 0.75rem; margin-top: 0.5rem;">Symulacje Pełnego Testu</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Ostatnie 3-4 tygodnie.</strong> Pełne testy na czas. Budujesz pewność siebie.
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.8;">
+                            <li>Mock testy co tydzień</li>
+                            <li>Symulacje Speaking z timerem</li>
+                            <li>Dopracowanie słabych punktów</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Box - Materials -->
+        <section class="section" style="background: var(--color-bg-light);">
+            <div class="container" style="max-width: 700px;">
+                <div class="info-box">
+                    <h4><i data-lucide="book-copy" style="width: 20px; height: 20px;"></i> Jakich materiałów używamy?
+                    </h4>
+                    <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                        Tylko oficjalne materiały Cambridge (Cambridge IELTS 14-19) plus sprawdzone zasoby:
+                    </p>
+                    <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                        <li><strong>Cambridge IELTS books</strong> — autentyczne arkusze egzaminacyjne</li>
+                        <li><strong>British Council / IDP practice tests</strong></li>
+                        <li><strong>Moje własne materiały</strong> — szablony Writing, banki pytań Speaking</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section" style="background: white;">
             <div class="container" style="max-width: 800px;">
-                <h2 style="text-align: center; margin-bottom: 2rem;">Dlaczego ja?</h2>
-                <ul style="color: var(--color-text-main); line-height: 2; list-style: none;">
-                    <li style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
-                            style="width: 18px; height: 18px; color: var(--color-success);"></i> Korzystam z
-                        autentycznych arkuszy Cambridge, nie przypadkowych materiałów</li>
-                    <li style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
-                            style="width: 18px; height: 18px; color: var(--color-success);"></i> Znam pułapki
-                        egzaminatorów i uczę, jak ich unikać</li>
-                    <li style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
-                            style="width: 18px; height: 18px; color: var(--color-success);"></i> Skupiam się na Twoich
-                        słabych punktach, nie powtarzamy tego, co już umiesz</li>
-                    <li style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
-                            style="width: 18px; height: 18px; color: var(--color-success);"></i> Śledzę Twoje postępy i
-                        dostosowuję plan nauki</li>
-                </ul>
+                <h2 style="text-align: center; margin-bottom: 3rem;">Często Zadawane Pytania</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Ile czasu potrzebuję na przygotowanie do IELTS?
+                    </div>
+                    <p class="faq-answer">
+                        Zależy od Twojego poziomu i celu. Typowo: <strong>2-4 miesiące</strong> przy regularnych
+                        lekcjach (1-2/tydzień).
+                        Jeśli masz B2 i celujesz w 6.5, może wystarczyć 6-8 tygodni. Dla Band 7.5+ potrzeba więcej
+                        czasu.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Jaki Band Score mogę realnie osiągnąć?
+                    </div>
+                    <p class="faq-answer">
+                        To zależy od punktu startowego. Na pierwszej lekcji zrobimy test diagnostyczny i określimy
+                        realny cel.
+                        Większość uczniów poprawia wynik o <strong>0.5-1.5 banda</strong> po przygotowaniu.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        IELTS Academic czy IELTS na komputerze?
+                    </div>
+                    <p class="faq-answer">
+                        IELTS Computer-Based ma identyczny format i trudność — zmienia się tylko medium (piszesz na
+                        klawiaturze, nie na papierze).
+                        Przygotowuję do obu wersji. Wyniki są szybciej (3-5 dni vs 13 dni).
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Czy przygotowujesz do konkretnych modułów (np. tylko Writing)?
+                    </div>
+                    <p class="faq-answer">
+                        Tak! Jeśli wiesz, że Listening i Reading masz opanowane, możemy skupić się tylko na Writing i
+                        Speaking.
+                        Plan ustalamy indywidualnie.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Czy lekcje online są tak samo skuteczne?
+                    </div>
+                    <p class="faq-answer">
+                        Tak. Większość moich uczniów IELTS uczy się online. Dzielimy ekran, rozwiązujemy zadania
+                        wspólnie,
+                        Speaking ćwiczymy przez kamerę — tak jak na prawdziwym egzaminie.
+                    </p>
+                </div>
             </div>
         </section>
 
         <!-- CTA -->
-        <section class="section" style="text-align: center;">
+        <section class="section"
+            style="text-align: center; background: linear-gradient(135deg, rgba(101,123,230,0.1) 0%, rgba(0,212,126,0.1) 100%);">
             <div class="container">
                 <h2 style="margin-bottom: 1rem;">Gotowy na IELTS?</h2>
-                <p style="margin-bottom: 2rem; color: var(--color-text-secondary);">Pierwsza konsultacja jest bezpłatna.
+                <p
+                    style="margin-bottom: 0.5rem; color: var(--color-text-secondary); max-width: 550px; margin-left: auto; margin-right: auto;">
+                    Umów się na bezpłatną konsultację. Zrobimy test diagnostyczny, oszacujemy Twój obecny Band Score i
+                    ustalimy plan.
                 </p>
-                <a href="/#kontakt" class="btn btn-success" style="font-size: 1.2rem; padding: 1rem 2.5rem;">Umów się
-                    teraz</a>
+                <p style="margin-bottom: 2rem; color: var(--color-text-secondary);">
+                    <strong>Pierwsza lekcja jest bezpłatna.</strong>
+                </p>
+                <a href="/kontakt" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2.5rem;">Umów
+                    Bezpłatną Konsultację</a>
             </div>
         </section>
     </main>
@@ -173,7 +671,9 @@
                 </div>
                 <div>
                     <h5 style="margin-bottom: 1rem;">Kontakt</h5>
-                    <p><a href="mailto:&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;">&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;</a></p>
+                    <p><a
+                            href="mailto:&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;">&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;</a>
+                    </p>
                     <p>+48 571 055 039</p>
                 </div>
             </div>
@@ -187,9 +687,9 @@
         </div>
     </footer>
 
-        <!-- Initialize Lucide Icons after DOM is ready -->
+    <!-- Initialize Lucide Icons after DOM is ready -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             if (typeof lucide !== 'undefined') {
                 lucide.createIcons();
             }
