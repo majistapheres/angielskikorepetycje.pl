@@ -4,34 +4,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kurs TOEFL iBT – Studia w USA | Adrian Ekrem</title>
+    <title>Kurs TOEFL iBT – Przygotowanie do 100+ Punktów | Adrian Ekrem</title>
     <link rel="canonical" href="https://angielskikorepetycje.pl/kursy/toefl" />
     <meta name="description"
-        content="Profesjonalne przygotowanie do TOEFL iBT. Strategie egzaminacyjne, Academic English, symulacje testów. Osiągnij wynik 100+.">
+        content="Marzysz o studiach w USA lub Kanadzie? Przygotowanie do TOEFL iBT z naciskiem na Integrated Tasks i Academic English. Cel: 100+ punktów. Wrocław i Online.">
     <link rel="stylesheet" href="/css/styles.css">
     <!-- Resource Hints for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://unpkg.com">
-    
+
     <!-- Optimized Font Loading -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
 
     <link rel="icon" type="image/png" href="/favicon.png">
     <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <style>
+        .pain-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border-left: 4px solid #ff6b6b;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .pain-card h3 {
+            color: #ff6b6b;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .module-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #eee;
+        }
+
+        .module-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .score-badge {
+            display: inline-block;
+            background: var(--color-primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .phase-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            border: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .phase-card:hover {
+            border-color: var(--color-primary);
+        }
+
+        .phase-number {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: var(--color-primary);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .timeline-lesson {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline-lesson::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--color-primary), var(--color-accent));
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.5rem;
+            padding-left: 20px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px var(--color-primary);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .comparison-table th {
+            background: #f8f9fc;
+            font-weight: 700;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--color-text-main);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .faq-answer {
+            color: var(--color-text-secondary);
+            line-height: 1.7;
+            padding-left: 2rem;
+        }
+
+        .tip-box {
+            background: linear-gradient(135deg, rgba(0, 212, 126, 0.1), rgba(0, 180, 100, 0.05));
+            border: 1px solid rgba(0, 212, 126, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tip-box h4 {
+            color: #00a85a;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 80, 80, 0.05));
+            border: 1px solid rgba(255, 107, 107, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .warning-box h4 {
+            color: #e63946;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    </style>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Course",
       "name": "Kurs Przygotowawczy do TOEFL iBT",
-      "description": "Przygotowanie do egzaminu TOEFL wymaganego na uczelniach w USA i Kanadzie.",
+      "description": "Przygotowanie do egzaminu TOEFL iBT wymaganego na uczelniach w USA i Kanadzie. Nacisk na Integrated Tasks i Academic English.",
       "provider": {
         "@type": "Person",
         "name": "Adrian Ekrem Abdulkerim",
         "url": "https://angielskikorepetycje.pl"
       },
-      "image": "https://angielskikorepetycje.pl/toefl-hero.png"
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": ["online", "onsite"],
+        "courseWorkload": "PT1H"
+      }
     }
     </script>
 </head>
@@ -59,66 +248,405 @@
     </header>
 
     <main>
-        <!-- Hero -->
+        <!-- Hero Section -->
         <section class="section"
             style="padding-top: 140px; text-align: center; position: relative; overflow: hidden; color: white;">
             <div
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; background-image: url('toefl-hero.png'); background-size: cover; background-position: center;">
-            </div>
-            <div
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: rgba(0,0,0,0.7);">
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);">
             </div>
 
             <div class="container">
-                <h1 style="font-size: 3rem; margin-bottom: 1rem; color: white;">Przygotowanie do TOEFL iBT</h1>
-                <h2 style="color: rgba(255,255,255,0.9); font-weight: 400; margin-bottom: 2rem;">Twój bilet na uczelnie
-                    w USA i Kanadzie</h2>
+                <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 1rem;">Studia w USA / Kanadzie?</p>
+                <h1 style="font-size: 2.75rem; margin-bottom: 1rem; color: white;">Kurs Przygotowawczy do TOEFL iBT</h1>
+                <h2 style="color: rgba(255,255,255,0.9); font-weight: 400; margin-bottom: 2rem; font-size: 1.4rem;">
+                    Cel: <span class="score-badge">100+ punktów</span>
+                </h2>
                 <p style="max-width: 700px; margin: 0 auto 2rem; font-size: 1.1rem; opacity: 0.9;">
-                    Opanuj strukturę egzaminu. Integrated Writng, Speaking i Academic Reading nie będą już problemem.
-                    Celujemy w wynik 100+.
+                    TOEFL to nie tylko test języka — to test <strong>umiejętności akademickich</strong>.
+                    Uczę strategii na Integrated Tasks, note-taking i Academic English.
                 </p>
-                <a href="/kontakt" class="btn btn-success" style="border: none;">Rozpocznij Kurs</a>
+                <a href="/kontakt" class="btn btn-success"
+                    style="border: none; font-size: 1.1rem; padding: 1rem 2rem;">Umów bezpłatną konsultację</a>
             </div>
         </section>
 
-        <!-- Modules -->
+        <!-- Pain Points Section -->
         <section class="section" style="background: white;">
             <div class="container">
-                <h2 style="text-align: center; margin-bottom: 3rem;">Specyfika TOEFL</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
-                    <div class="glass-card" style="padding: 1.5rem;">
-                        <div style="margin-bottom: 1rem; color: var(--color-primary);"><i data-lucide="file-text"
-                                style="width: 32px; height: 32px;"></i></div>
-                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Integrated Tasks</h3>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">Łączenie czytania, słuchania i
-                            mówienia/pisania. Kluczowa umiejętność na tym egzaminie.</p>
+                <h2 style="text-align: center; margin-bottom: 1rem;">Dlaczego TOEFL Jest Wyzwaniem?</h2>
+                <p
+                    style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    TOEFL różni się od innych egzaminów. Oto najczęstsze problemy:
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    <div class="pain-card">
+                        <h3>🔀 Integrated Tasks — co to?</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Czytasz tekst, słuchasz wykładu, potem piszesz lub mówisz — łącząc obie informacje. To
+                            wymaga treningu.
+                        </p>
                     </div>
-                    <div class="glass-card" style="padding: 1.5rem;">
-                        <div style="margin-bottom: 1rem; color: var(--color-primary);"><i data-lucide="monitor"
-                                style="width: 32px; height: 32px;"></i></div>
-                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Test Komputerowy</h3>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">Symulujemy warunki
-                            egzaminacyjne przed komputerem. Pisanie esejów na czas.</p>
+                    <div class="pain-card">
+                        <h3>📝 Note-taking pod presją</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Słuchasz 5-minutowego wykładu o astrofizyce i musisz notować kluczowe punkty. Bez systemu —
+                            chaos.
+                        </p>
                     </div>
-                    <div class="glass-card" style="padding: 1.5rem;">
-                        <div style="margin-bottom: 1rem; color: var(--color-accent);"><i data-lucide="graduation-cap"
-                                style="width: 32px; height: 32px;"></i></div>
-                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Academic Vocabulary</h3>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">Słownictwo z biologii,
-                            historii, astronomii i socjologii – typowe tematy TOEFL.</p>
+                    <div class="pain-card">
+                        <h3>🎓 Academic Vocabulary</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Teksty o historii, biologii, geologii — tematy, których nie spotkasz w codziennym
+                            angielskim.
+                        </p>
+                    </div>
+                    <div class="pain-card">
+                        <h3>🖥️ 3+ godziny przed komputerem</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Cały egzamin na komputerze, w jednym posiedzeniu. Koncentracja spada, błędy rosną.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tip-box" style="max-width: 700px; margin: 3rem auto 0;">
+                    <h4><i data-lucide="lightbulb" style="width: 20px; height: 20px;"></i> Dobra wiadomość</h4>
+                    <p style="color: var(--color-text-secondary);">
+                        TOEFL to egzamin <strong>przewidywalny</strong>. Struktura zadań się nie zmienia.
+                        Gdy opanujesz techniki i przyzwyczaisz się do formatu — wynik rośnie szybko.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOEFL vs IELTS -->
+        <section class="section" style="background: var(--color-bg-light);">
+            <div class="container" style="max-width: 900px;">
+                <h2 style="text-align: center; margin-bottom: 3rem;">TOEFL vs IELTS — Który Wybrać?</h2>
+
+                <div style="overflow-x: auto;">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 30%;">Aspekt</th>
+                                <th style="width: 35%; color: var(--color-primary);">TOEFL iBT</th>
+                                <th style="width: 35%; color: #666;">IELTS Academic</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Akceptowany głównie</strong></td>
+                                <td>USA, Kanada (uniwersytety)</td>
+                                <td>UK, Australia, Europa</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Format</strong></td>
+                                <td>100% na komputerze</td>
+                                <td>Papierowy lub komputerowy</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Speaking</strong></td>
+                                <td>Do mikrofonu (nagrywane)</td>
+                                <td>Rozmowa z egzaminatorem</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Integrated Tasks</strong></td>
+                                <td>Tak (kluczowy element!)</td>
+                                <td>Nie</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Czas trwania</strong></td>
+                                <td>~3 godziny (bez przerw)</td>
+                                <td>~2h 45min</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Skala wyników</strong></td>
+                                <td>0-120 punktów</td>
+                                <td>1.0-9.0 (Band Score)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p style="text-align: center; color: var(--color-text-secondary); margin-top: 2rem;">
+                    Jeśli Twoja uczelnia akceptuje oba — TOEFL jest lepszy dla osób, które wolą pisać niż rozmawiać na
+                    żywo.
+                </p>
+            </div>
+        </section>
+
+        <!-- 4 Sections Detailed -->
+        <section class="section" style="background: white;">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Cztery Sekcje TOEFL — Jak Je Zdominować?</h2>
+                <p
+                    style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem; max-width: 650px; margin-left: auto; margin-right: auto;">
+                    Każda sekcja ma swoje pułapki. Oto, jak do nich podchodzę:
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    <div class="module-card">
+                        <h3 style="color: var(--color-primary);">
+                            <i data-lucide="book-open" style="width: 24px; height: 24px;"></i>
+                            Reading (35 min)
+                        </h3>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                            2 teksty akademickie, 20 pytań. Uczę Cię:
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                            <li><strong>Active reading</strong> — notowanie kluczowych punktów</li>
+                            <li>Rozpoznawanie typów pytań (inference, vocabulary, summary)</li>
+                            <li>Strategia na "Insert text" i "Prose summary"</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h3 style="color: var(--color-primary);">
+                            <i data-lucide="headphones" style="width: 24px; height: 24px;"></i>
+                            Listening (36 min)
+                        </h3>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                            Wykłady i konwersacje akademickie. Uczę Cię:
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                            <li><strong>Cornell note-taking</strong> — system notowania</li>
+                            <li>Rozpoznawanie "attitude" i "purpose" pytań</li>
+                            <li>Trening z prawdziwymi wykładami</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h3 style="color: var(--color-accent);">
+                            <i data-lucide="mic" style="width: 24px; height: 24px;"></i>
+                            Speaking (16 min)
+                        </h3>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                            4 zadania (1 niezależne + 3 integrated). Uczę Cię:
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                            <li><strong>Templates</strong> na każdy typ zadania</li>
+                            <li>Jak podsumować tekst + wykład w 60 sekund</li>
+                            <li>Symulacje z nagrywaniem i analizą</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h3 style="color: var(--color-primary);">
+                            <i data-lucide="pen-tool" style="width: 24px; height: 24px;"></i>
+                            Writing (29 min)
+                        </h3>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                            1 Integrated + 1 Academic Discussion. Uczę Cię:
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                            <li><strong>Integrated essay template</strong> — struktura, która działa</li>
+                            <li>Jak pisać szybko i na temat</li>
+                            <li>Academic Discussion — nowy format 2023+</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA -->
-        <section class="section" style="text-align: center; background: var(--color-bg-light);">
+        <!-- Methodology Section -->
+        <section class="section" style="background: var(--color-bg-light);">
+            <div class="container" style="max-width: 850px;">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Jak Wyglądają Lekcje w Praktyce?</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem;">
+                    Nie "przerabiamy" materiał — Ty rozwiązujesz zadania, ja uczę strategii i koryguję.
+                </p>
+
+                <div class="timeline-lesson">
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">0-5 min: Warm-up</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Krótka rozmowa po angielsku. Sprawdzamy, co pamiętasz z ostatniego tygodnia.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">5-40 min: Praca na zadaniach TOEFL</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Rozwiązujesz autentyczne zadania z oficjalnych materiałów ETS. Omawiamy strategie,
+                            analizujemy błędy na bieżąco.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">40-55 min: Note-taking / Speaking drill</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Ćwiczymy umiejętności, które są kluczowe: notowanie w Listening, szybkie odpowiedzi w
+                            Speaking.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 style="margin-bottom: 0.25rem;">55-60 min: Podsumowanie i plan</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                            Co przećwiczyć samodzielnie? Jakie słownictwo powtórzyć? Konkretne zadania na następny
+                            tydzień.
+                        </p>
+                    </div>
+                </div>
+
+                <p
+                    style="text-align: center; margin-top: 2rem; color: var(--color-text-secondary); font-style: italic;">
+                    Więcej o moim podejściu znajdziesz na stronie <a href="/metodologia"
+                        style="color: var(--color-primary);">Metodologia</a>.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3-Phase Approach -->
+        <section class="section" style="background: white;">
             <div class="container">
-                <h2 style="margin-bottom: 1rem;">Marzysz o studiach w Stanach?</h2>
-                <p style="margin-bottom: 2rem; color: var(--color-text-secondary);">Nie pozwól, by język był przeszkodą.
-                    Zbudujmy Twój wynik.</p>
-                <a href="/kontakt" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2.5rem;">Skonsultuj
-                    Plan Nauki</a>
+                <h2 style="text-align: center; margin-bottom: 1rem;">Trzy Etapy Przygotowania</h2>
+                <p
+                    style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Typowy kurs to 15-30 lekcji rozłożonych na 2-4 miesiące.
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                    <div class="phase-card">
+                        <div class="phase-number">1</div>
+                        <h3 style="margin-bottom: 0.75rem; margin-top: 0.5rem;">Diagnoza</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Lekcje 1-2.</strong> Robisz pełny test diagnostyczny. Sprawdzam Twój poziom i słabe
+                            punkty.
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.8;">
+                            <li>Mock test wszystkich 4 sekcji</li>
+                            <li>Szacunkowy wynik (np. ~85 punktów)</li>
+                            <li>Mapa priorytetów</li>
+                        </ul>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">2</div>
+                        <h3 style="margin-bottom: 0.75rem; margin-top: 0.5rem;">Budowanie Strategii</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Lekcje 3-20.</strong> Pracujemy nad każdą sekcją. Uczysz się technik i templates.
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.8;">
+                            <li>Note-taking system</li>
+                            <li>Speaking templates</li>
+                            <li>Integrated Writing struktura</li>
+                        </ul>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">3</div>
+                        <h3 style="margin-bottom: 0.75rem; margin-top: 0.5rem;">Symulacje Pełnego Testu</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Ostatnie 2-3 tygodnie.</strong> Pełne testy w warunkach egzaminacyjnych.
+                        </p>
+                        <ul style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.8;">
+                            <li>Mock testy na czas (3+ godziny)</li>
+                            <li>Analiza błędów</li>
+                            <li>Dopracowanie słabych punktów</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Score Requirements -->
+        <section class="section" style="background: var(--color-bg-light);">
+            <div class="container" style="max-width: 700px;">
+                <div class="warning-box">
+                    <h4><i data-lucide="target" style="width: 20px; height: 20px;"></i> Jaki wynik potrzebujesz?</h4>
+                    <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                        Wymagania zależą od uczelni. Orientacyjne progi:
+                    </p>
+                    <ul style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;">
+                        <li><strong>80-90:</strong> Podstawowy próg dla wielu programów</li>
+                        <li><strong>100+:</strong> Top uczelnie (MIT, Stanford, Ivy League)</li>
+                        <li><strong>110+:</strong> MBA, programy medyczne, prawo</li>
+                    </ul>
+                    <p style="color: var(--color-text-secondary); margin-top: 1rem; font-size: 0.9rem;">
+                        Sprawdź wymagania konkretnej uczelni przed rozpoczęciem nauki.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section" style="background: white;">
+            <div class="container" style="max-width: 800px;">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Często Zadawane Pytania</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Ile czasu potrzebuję na przygotowanie?
+                    </div>
+                    <p class="faq-answer">
+                        Typowo: <strong>2-4 miesiące</strong> przy regularnych lekcjach (1-2/tydzień).
+                        Zależy od Twojego punktu startowego i celu. Jeśli masz B2 i celujesz w 100+, potrzebujesz więcej
+                        czasu niż na 80.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Co to są Integrated Tasks?
+                    </div>
+                    <p class="faq-answer">
+                        Zadania, które łączą kilka umiejętności. Na przykład: czytasz tekst, słuchasz wykładu, potem
+                        piszesz esej podsumowujący oba źródła.
+                        To główna różnica między TOEFL a IELTS — i główna trudność.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        TOEFL Home Edition — czy przygotowujesz?
+                    </div>
+                    <p class="faq-answer">
+                        Tak! TOEFL Home Edition ma identyczny format jak wersja w centrum egzaminacyjnym.
+                        Różnica to tylko miejsce (Twój dom vs centrum). Przygotowuję do obu.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Czy potrzebuję American English?
+                    </div>
+                    <p class="faq-answer">
+                        Nie musisz mówić z amerykańskim akcentem, ale TOEFL używa głównie amerykańskiego słownictwa i
+                        pisowni.
+                        Na lekcjach zwracam uwagę na różnice (color vs colour, elevator vs lift).
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i data-lucide="help-circle"
+                            style="width: 20px; height: 20px; color: var(--color-primary); flex-shrink: 0;"></i>
+                        Jakich materiałów używamy?
+                    </div>
+                    <p class="faq-answer">
+                        Oficjalne materiały ETS (twórcy TOEFL): <strong>Official TOEFL iBT Tests</strong>, <strong>TOEFL
+                            Practice Online</strong>.
+                        Plus moje własne szablony na Speaking i Writing.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section"
+            style="text-align: center; background: linear-gradient(135deg, rgba(26,54,93,0.1) 0%, rgba(44,82,130,0.1) 100%);">
+            <div class="container">
+                <h2 style="margin-bottom: 1rem;">Marzysz o Studiach w USA?</h2>
+                <p
+                    style="margin-bottom: 0.5rem; color: var(--color-text-secondary); max-width: 550px; margin-left: auto; margin-right: auto;">
+                    Nie pozwól, by TOEFL stanął Ci na drodze. Umów się na bezpłatną konsultację.
+                </p>
+                <p style="margin-bottom: 2rem; color: var(--color-text-secondary);">
+                    <strong>Sprawdzimy Twój poziom i ustalimy plan na Twój target score.</strong>
+                </p>
+                <a href="/kontakt" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2.5rem;">Umów
+                    Bezpłatną Konsultację</a>
             </div>
         </section>
     </main>
@@ -152,7 +680,9 @@
                 </div>
                 <div>
                     <h5 style="margin-bottom: 1rem;">Kontakt</h5>
-                    <p><a href="mailto:&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;">&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;</a></p>
+                    <p><a
+                            href="mailto:&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;">&#107;&#111;&#110;&#116;&#97;&#107;&#116;&#64;&#97;&#110;&#103;&#105;&#101;&#108;&#115;&#107;&#105;&#107;&#111;&#114;&#101;&#112;&#101;&#116;&#121;&#99;&#106;&#101;&#46;&#112;&#108;</a>
+                    </p>
                     <p>+48 571 055 039</p>
                 </div>
             </div>
@@ -166,9 +696,9 @@
         </div>
     </footer>
 
-        <!-- Initialize Lucide Icons after DOM is ready -->
+    <!-- Initialize Lucide Icons after DOM is ready -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             if (typeof lucide !== 'undefined') {
                 lucide.createIcons();
             }
