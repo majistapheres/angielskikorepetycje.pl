@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korepetycje Angielskiego Śródmieście Wrocław | Adrian Teacher</title>
+    <link rel="canonical" href="https://angielskikorepetycje.pl/wroclaw/srodmiescie" />
+    <meta name="description"
+        content="Korepetycje z angielskiego w Śródmieściu Wrocławia. Lekcje przy Dworcu Głównym, Sky Tower. Wygodne dla pracujących.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Korepetycje Angielskiego Śródmieście - Adrian Ekrem",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Wrocław",
+        "addressRegion": "Dolnośląskie",
+        "streetAddress": "Śródmieście"
+      },
+      "areaServed": ["Śródmieście", "Dworzec Główny", "Sky Tower", "Nadodrze"],
+      "priceRange": "$$"
+    }
+    </script>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="/" class="logo">Adrian<span>Ekrem</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/" class="nav-link">Start</a></li>
+                    <li><a href="/wroclaw/korepetycje-wroclaw" class="nav-link active"
+                            style="color: var(--color-primary);">Wrocław</a></li>
+                    <li><a href="/oferta-online" class="nav-link">Online</a></li>
+                    <li><a href="/o-mnie" class="nav-link">O mnie</a></li>
+                    <li><a href="/baza-wiedzy" class="nav-link">Baza Wiedzy</a></li>
+                    <li><a href="/kontakt" class="nav-link">Kontakt</a></li>
+                    <li><a href="/cennik" class="nav-cta">Umów Lekcję</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="section" style="padding-top: 140px; text-align: center;">
+            <div class="container">
+                <nav style="margin-bottom: 1rem; font-size: 0.9rem;">
+                    <a href="/wroclaw/korepetycje-wroclaw" style="color: var(--color-primary);">← Wrocław</a>
+                </nav>
+                <h1 style="font-size: 3rem; margin-bottom: 1rem; color: var(--color-primary);">Korepetycje Angielskiego
+                    – Śródmieście</h1>
+                <p
+                    style="font-size: 1.25rem; color: var(--color-text-secondary); max-width: 700px; margin: 0 auto 2rem;">
+                    Pracujesz w centrum? Mieszkasz przy Sky Tower lub Dworcu Głównym? Angielski biznesowy przed lub po
+                    pracy – dopasowany do Twojego grafiku.
+                </p>
+                <a href="/kontakt" class="btn btn-primary">Umów Lekcję w Śródmieściu</a>
+            </div>
+        </section>
+
+        <section class="container section">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Gdzie się spotykamy?</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <div class="glass-card" style="padding: 2rem;">
+                    <h3 style="color: var(--color-primary);">🏢 Sky Tower</h3>
+                    <p>Kawiarnie przy Sky Tower to wygodne miejsce dla pracujących. Lekcja przed lub po pracy.</p>
+                </div>
+                <div class="glass-card" style="padding: 2rem;">
+                    <h3 style="color: var(--color-primary);">🚂 Dworzec Główny</h3>
+                    <p>Dojeżdżasz do Wrocławia? Spotkajmy się przy dworcu. Oszczędzisz czas na dojazdy.</p>
+                </div>
+                <div class="glass-card" style="padding: 2rem;">
+                    <h3 style="color: var(--color-primary);">💼 Angielski Biznesowy</h3>
+                    <p>Śródmieście to serce biznesu. Przygotowuję do spotkań, negocjacji i prezentacji po angielsku.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="text-align: center; background: var(--color-white);">
+            <div class="container">
+                <h3 style="margin-bottom: 2rem;">Gotowy na lekcję w Śródmieściu?</h3>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="/kontakt" class="btn btn-primary">Kontakt</a>
+                    <a href="/wroclaw/korepetycje-wroclaw" class="btn btn-success">Inne Dzielnice</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korepetycje Angielskiego Fabryczna Wrocław | Adrian Teacher</title>
+    <link rel="canonical" href="https://angielskikorepetycje.pl/wroclaw/fabryczna" />
+    <meta name="description"
+        content="Korepetycje z angielskiego na Fabrycznej we Wrocławiu. Magnolia Park, Muchobór, Oporów. Dojazd lub lekcje online.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Korepetycje Angielskiego Fabryczna - Adrian Ekrem",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Wrocław",
+        "addressRegion": "Dolnośląskie",
+        "streetAddress": "Fabryczna"
+      },
+      "areaServed": ["Fabryczna", "Magnolia Park", "Muchobór", "Oporów", "Gądów Mały"],
+      "priceRange": "$$"
+    }
+    </script>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="/" class="logo">Adrian<span>Ekrem</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/" class="nav-link">Start</a></li>
+                    <li><a href="/wroclaw/korepetycje-wroclaw" class="nav-link active"
+                            style="color: var(--color-primary);">Wrocław</a></li>
+                    <li><a href="/oferta-online" class="nav-link">Online</a></li>
+                    <li><a href="/o-mnie" class="nav-link">O mnie</a></li>
+                    <li><a href="/baza-wiedzy" class="nav-link">Baza Wiedzy</a></li>
+                    <li><a href="/kontakt" class="nav-link">Kontakt</a></li>
+                    <li><a href="/cennik" class="nav-cta">Umów Lekcję</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="section" style="padding-top: 140px; text-align: center;">
+            <div class="container">
+                <nav style="margin-bottom: 1rem; font-size: 0.9rem;">
+                    <a href="/wroclaw/korepetycje-wroclaw" style="color: var(--color-primary);">← Wrocław</a>
+                </nav>
+                <h1 style="font-size: 3rem; margin-bottom: 1rem; color: var(--color-primary);">Korepetycje Angielskiego
+                    – Fabryczna</h1>
+                <p
+                    style="font-size: 1.25rem; color: var(--color-text-secondary); max-width: 700px; margin: 0 auto 2rem;">
+                    Mieszkasz na Fabrycznej, Muchborze czy Oporowie? Dojeżdżam do Ciebie lub spotykamy się w okolicy
+                    Magnolia Park.
+                </p>
+                <a href="/kontakt" class="btn btn-primary">Umów Lekcję na Fabrycznej</a>
+            </div>
+        </section>
+
+        <section class="container section">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Gdzie się spotykamy?</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <div class="glass-card" style="padding: 2rem;">
+                    <h3 style="color: var(--color-primary);">🛍️ Magnolia Park</h3>
+                    <p>Kawiarnie przy Magnolii to wygodne miejsce na spotkanie. Duży parking i łatwy dojazd.</p>
+                </div>
+                <div class="glass-card" style="padding: 2rem;">
+                    <h3 style="color: var(--color-primary);">🏠 Dojazd do Domu</h3>
+                    <p>Muchobór, Oporów, Gądów Mały – dojeżdżam do Twojego domu. Zero stresu z parkowaniem.</p>
+                </div>
+                <div class="glass-card" style="padding: 2rem;">
+                    <h3 style="color: var(--color-primary);">💻 Hybrid Learning</h3>
+                    <p>Łącz lekcje stacjonarne z online. Fabryczna jest dalej od centrum – hybrid to oszczędność czasu.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="text-align: center; background: var(--color-white);">
+            <div class="container">
+                <h3 style="margin-bottom: 2rem;">Gotowy na lekcję na Fabrycznej?</h3>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="/kontakt" class="btn btn-primary">Kontakt</a>
+                    <a href="/wroclaw/korepetycje-wroclaw" class="btn btn-success">Inne Dzielnice</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+
+</body>
+
+</html>

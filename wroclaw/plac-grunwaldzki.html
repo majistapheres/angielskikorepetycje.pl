@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korepetycje Angielskiego Plac Grunwaldzki Wrocław | Adrian Teacher</title>
+    <link rel="canonical" href="https://angielskikorepetycje.pl/wroclaw/plac-grunwaldzki" />
+    <meta name="description"
+        content="Korepetycje z angielskiego przy Placu Grunwaldzkim we Wrocławiu. Idealne dla studentów Politechniki i mieszkańców okolicy.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Korepetycje Angielskiego Plac Grunwaldzki - Adrian Ekrem",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Wrocław",
+        "addressRegion": "Dolnośląskie",
+        "streetAddress": "Plac Grunwaldzki"
+      },
+      "areaServed": ["Plac Grunwaldzki", "Politechnika Wrocławska", "Hala Stulecia", "Biskupin"],
+      "priceRange": "$$"
+    }
+    </script>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="/" class="logo">Adrian<span>Ekrem</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/" class="nav-link">Start</a></li>
+                    <li><a href="/wroclaw/korepetycje-wroclaw" class="nav-link active"
+                            style="color: var(--color-primary);">Wrocław</a></li>
+                    <li><a href="/oferta-online" class="nav-link">Online</a></li>
+                    <li><a href="/o-mnie" class="nav-link">O mnie</a></li>
+                    <li><a href="/baza-wiedzy" class="nav-link">Baza Wiedzy</a></li>
+                    <li><a href="/kontakt" class="nav-link">Kontakt</a></li>
+                    <li><a href="/cennik" class="nav-cta">Umów Lekcję</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="section" style="padding-top: 140px; text-align: center;">
+            <div class="container">
+                <nav style="margin-bottom: 1rem; font-size: 0.9rem;">
+                    <a href="/wroclaw/korepetycje-wroclaw" style="color: var(--color-primary);">← Wrocław</a>
+                </nav>
+                <h1 style="font-size: 3rem; margin-bottom: 1rem; color: var(--color-primary);">Korepetycje Angielskiego
+                    – Plac Grunwaldzki</h1>
+                <p
+                    style="font-size: 1.25rem; color: var(--color-text-secondary); max-width: 700px; margin: 0 auto 2rem;">
+                    Studiujesz na Politechnice? Mieszkasz przy Placu Grunwaldzkim? Angielski techniczny, IELTS, TOEFL –
+                    przygotowanie do egzaminów w Twojej okolicy.
+                </p>
+                <a href="/kontakt" class="btn btn-primary">Umów Lekcję przy Placu Grunwaldzkim</a>
+            </div>
+        </section>
+
+        <section class="container section">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Gdzie się spotykamy?</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <div class="glass-card" style="padding: 2rem;">
+                    <h3 style="color: var(--color-primary);">🎓 Politechnika Wrocławska</h3>
+                    <p>Kawiarnie studenckie w okolicach PWr to świetne miejsce na naukę. Rozumiem potrzeby studentów
+                        technicznych.</p>
+                </div>
+                <div class="glass-card" style="padding: 2rem;">
+                    <h3 style="color: var(--color-primary);">🏛️ Hala Stulecia</h3>
+                    <p>Spotkajmy się w kawiarni przy Hali Stulecia. Spacer po Parku Szczytnickim to bonus do lekcji.</p>
+                </div>
+                <div class="glass-card" style="padding: 2rem;">
+                    <h3 style="color: var(--color-primary);">💼 Angielski Techniczny</h3>
+                    <p>Przygotowuję do prezentacji, dokumentacji technicznej i komunikacji w międzynarodowych zespołach
+                        IT.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="text-align: center; background: var(--color-white);">
+            <div class="container">
+                <h3 style="margin-bottom: 2rem;">Gotowy na lekcję przy Placu Grunwaldzkim?</h3>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="/kontakt" class="btn btn-primary">Kontakt</a>
+                    <a href="/wroclaw/korepetycje-wroclaw" class="btn btn-success">Inne Dzielnice</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+
+</body>
+
+</html>
