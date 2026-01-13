@@ -772,6 +772,29 @@
             labelWroclaw.style.color = isWroclaw ? 'var(--color-accent)' : 'var(--color-text-secondary)';
             slider.style.backgroundColor = isWroclaw ? 'var(--color-accent)' : 'var(--color-primary)';
         });
+
+        // Also add click handlers to labels and slider for better UX
+        document.querySelector('.toggle-slider').addEventListener('click', function () {
+            const toggle = document.getElementById('pricingToggle');
+            toggle.checked = !toggle.checked;
+            toggle.dispatchEvent(new Event('change'));
+        });
+
+        document.getElementById('toggleLabelOnline').addEventListener('click', function () {
+            const toggle = document.getElementById('pricingToggle');
+            if (toggle.checked) {
+                toggle.checked = false;
+                toggle.dispatchEvent(new Event('change'));
+            }
+        });
+
+        document.getElementById('toggleLabelWroclaw').addEventListener('click', function () {
+            const toggle = document.getElementById('pricingToggle');
+            if (!toggle.checked) {
+                toggle.checked = true;
+                toggle.dispatchEvent(new Event('change'));
+            }
+        });
     </script>
 
     <style>
