@@ -328,34 +328,42 @@
                 <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 2rem;">Każda lekcja
                     trwa 60 minut</p>
 
-                <!-- Toggle Switch -->
-                <div
-                    style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-bottom: 2.5rem;">
-                    <span id="toggleLabelOnline"
-                        style="font-weight: 600; color: var(--color-primary); transition: color 0.3s;">Online</span>
-                    <label class="toggle-switch"
-                        style="position: relative; display: inline-block; width: 60px; height: 32px;">
-                        <input type="checkbox" id="pricingToggle" style="opacity: 0; width: 0; height: 0;">
-                        <span class="toggle-slider"
-                            style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: var(--color-primary); border-radius: 32px; transition: 0.4s;"></span>
-                    </label>
-                    <span id="toggleLabelWroclaw"
-                        style="font-weight: 600; color: var(--color-text-secondary); transition: color 0.3s;">Wrocław
-                        (+30 zł)</span>
+                <!-- Beautiful Tab Toggle -->
+                <div class="pricing-toggle-container"
+                    style="display: flex; justify-content: center; margin-bottom: 3rem;">
+                    <div class="pricing-tabs"
+                        style="display: inline-flex; background: linear-gradient(135deg, rgba(101,123,230,0.1), rgba(101,123,230,0.05)); border-radius: 50px; padding: 6px; gap: 4px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);">
+                        <button id="tabOnline" onclick="switchPricing('online')" class="pricing-tab active"
+                            style="padding: 12px 28px; border: none; border-radius: 50px; font-weight: 600; font-size: 0.95rem; cursor: pointer; transition: all 0.3s ease; background: var(--color-primary); color: white; box-shadow: 0 4px 12px rgba(101,123,230,0.3);">
+                            💻 Online
+                        </button>
+                        <button id="tabWroclaw" onclick="switchPricing('wroclaw')" class="pricing-tab"
+                            style="padding: 12px 28px; border: none; border-radius: 50px; font-weight: 600; font-size: 0.95rem; cursor: pointer; transition: all 0.3s ease; background: transparent; color: var(--color-text-secondary);">
+                            📍 Wrocław <span style="font-size: 0.8rem; opacity: 0.8;">(+30 zł)</span>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="pricing-grid">
                     <!-- Speaking & Konwersacje -->
                     <div class="pricing-card featured">
+                        <div
+                            style="background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; display: inline-block; margin-bottom: 1rem;">
+                            NAJPOPULARNIEJSZY</div>
                         <h3>Speaking & Konwersacje</h3>
                         <p style="color: var(--color-text-secondary);">Ogólny angielski, płynność, pewność siebie</p>
-                        <div class="price" style="font-size: 2.5rem; margin: 1rem 0;">
-                            <span class="price-online">110</span><span class="price-wroclaw"
-                                style="display: none;">140</span> <span style="font-size: 1rem;">PLN</span>
+                        <div class="price" style="margin: 1.5rem 0;">
+                            <span class="price-value price-online"
+                                style="font-size: 3rem; font-weight: 700; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">110</span>
+                            <span class="price-value price-wroclaw"
+                                style="font-size: 3rem; font-weight: 700; background: linear-gradient(135deg, var(--color-accent), #ff6b6b); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; display: none;">140</span>
+                            <span
+                                style="font-size: 1.2rem; color: var(--color-text-secondary); margin-left: 4px;">zł</span>
+                            <span
+                                style="font-size: 0.85rem; color: var(--color-text-secondary); display: block; margin-top: 4px;">za
+                                60 minut</span>
                         </div>
-                        <p style="font-size: 0.8rem; color: var(--color-text-secondary); margin-bottom: 1rem;">Cena za
-                            60 minut</p>
-                        <ul>
+                        <ul style="margin-bottom: 1.5rem;">
                             <li><i data-lucide="check"
                                     style="width: 18px; height: 18px; color: var(--color-accent);"></i> Konwersacje na
                                 żywo</li>
@@ -366,8 +374,8 @@
                                     style="width: 18px; height: 18px; color: var(--color-accent);"></i> Materiały w
                                 cenie</li>
                             <li class="wroclaw-feature" style="display: none;"><i data-lucide="check"
-                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> Dojazd wliczony
-                            </li>
+                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> 🚗 Dojazd
+                                wliczony w cenę</li>
                         </ul>
                         <a href="#booking" class="btn btn-primary" style="width: 100%;">Zarezerwuj</a>
                     </div>
@@ -376,13 +384,18 @@
                     <div class="pricing-card">
                         <h3>Egzaminy IELTS / TOEFL</h3>
                         <p style="color: var(--color-text-secondary);">Intensywne przygotowanie egzaminacyjne</p>
-                        <div class="price" style="font-size: 2.5rem; margin: 1rem 0;">
-                            <span class="price-online">130</span><span class="price-wroclaw"
-                                style="display: none;">160</span> <span style="font-size: 1rem;">PLN</span>
+                        <div class="price" style="margin: 1.5rem 0;">
+                            <span class="price-value price-online"
+                                style="font-size: 3rem; font-weight: 700; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">130</span>
+                            <span class="price-value price-wroclaw"
+                                style="font-size: 3rem; font-weight: 700; background: linear-gradient(135deg, var(--color-accent), #ff6b6b); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; display: none;">160</span>
+                            <span
+                                style="font-size: 1.2rem; color: var(--color-text-secondary); margin-left: 4px;">zł</span>
+                            <span
+                                style="font-size: 0.85rem; color: var(--color-text-secondary); display: block; margin-top: 4px;">za
+                                60 minut</span>
                         </div>
-                        <p style="font-size: 0.8rem; color: var(--color-text-secondary); margin-bottom: 1rem;">Cena za
-                            60 minut</p>
-                        <ul>
+                        <ul style="margin-bottom: 1.5rem;">
                             <li><i data-lucide="check"
                                     style="width: 18px; height: 18px; color: var(--color-accent);"></i> Strategia
                                 egzaminacyjna</li>
@@ -393,8 +406,8 @@
                                     style="width: 18px; height: 18px; color: var(--color-accent);"></i> Feedback na
                                 piśmie</li>
                             <li class="wroclaw-feature" style="display: none;"><i data-lucide="check"
-                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> Dojazd wliczony
-                            </li>
+                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> 🚗 Dojazd
+                                wliczony w cenę</li>
                         </ul>
                         <a href="#booking" class="btn btn-outline" style="width: 100%;">Zarezerwuj</a>
                     </div>
@@ -403,13 +416,18 @@
                     <div class="pricing-card">
                         <h3>Matura Rozszerzona</h3>
                         <p style="color: var(--color-text-secondary);">Przygotowanie do matury z angielskiego</p>
-                        <div class="price" style="font-size: 2.5rem; margin: 1rem 0;">
-                            <span class="price-online">120</span><span class="price-wroclaw"
-                                style="display: none;">150</span> <span style="font-size: 1rem;">PLN</span>
+                        <div class="price" style="margin: 1.5rem 0;">
+                            <span class="price-value price-online"
+                                style="font-size: 3rem; font-weight: 700; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">120</span>
+                            <span class="price-value price-wroclaw"
+                                style="font-size: 3rem; font-weight: 700; background: linear-gradient(135deg, var(--color-accent), #ff6b6b); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; display: none;">150</span>
+                            <span
+                                style="font-size: 1.2rem; color: var(--color-text-secondary); margin-left: 4px;">zł</span>
+                            <span
+                                style="font-size: 0.85rem; color: var(--color-text-secondary); display: block; margin-top: 4px;">za
+                                60 minut</span>
                         </div>
-                        <p style="font-size: 0.8rem; color: var(--color-text-secondary); margin-bottom: 1rem;">Cena za
-                            60 minut</p>
-                        <ul>
+                        <ul style="margin-bottom: 1.5rem;">
                             <li><i data-lucide="check"
                                     style="width: 18px; height: 18px; color: var(--color-accent);"></i> Arkusze z
                                 poprzednich lat</li>
@@ -420,8 +438,8 @@
                                     style="width: 18px; height: 18px; color: var(--color-accent);"></i> Pisanie i ustny
                             </li>
                             <li class="wroclaw-feature" style="display: none;"><i data-lucide="check"
-                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> Dojazd wliczony
-                            </li>
+                                    style="width: 18px; height: 18px; color: var(--color-accent);"></i> 🚗 Dojazd
+                                wliczony w cenę</li>
                         </ul>
                         <a href="#booking" class="btn btn-outline" style="width: 100%;">Zarezerwuj</a>
                     </div>
@@ -429,17 +447,20 @@
 
                 <!-- Price Difference Explanation -->
                 <div
-                    style="max-width: 700px; margin: 3rem auto 0; padding: 1.5rem; background: rgba(101,123,230,0.05); border-radius: 12px; border-left: 4px solid var(--color-primary);">
-                    <h4 style="margin-bottom: 0.75rem; color: var(--color-primary);">Dlaczego lekcje stacjonarne są
-                        droższe?</h4>
-                    <p style="line-height: 1.8; color: var(--color-text-secondary); margin: 0;">Cena lekcji
-                        stacjonarnych (+30 zł) uwzględnia:
-                        <strong>czas dojazdu</strong> (45-90 minut na spotkanie), <strong>koszty transportu</strong>
-                        (paliwo, komunikacja miejska)
-                        oraz <strong>elastyczność lokalizacji</strong> (spotykamy się w kawiarni, u Ciebie w domu lub
-                        biurze).
-                        To inwestycja w wygodę i komfort nauki w środowisku, które Ci odpowiada.
-                    </p>
+                    style="max-width: 700px; margin: 3rem auto 0; padding: 1.5rem 2rem; background: linear-gradient(135deg, rgba(101,123,230,0.08), rgba(101,123,230,0.02)); border-radius: 16px; border: 1px solid rgba(101,123,230,0.15);">
+                    <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                        <span style="font-size: 1.5rem;">💡</span>
+                        <div>
+                            <h4 style="margin-bottom: 0.5rem; color: var(--color-primary); font-size: 1rem;">Dlaczego
+                                lekcje stacjonarne kosztują więcej?</h4>
+                            <p
+                                style="line-height: 1.7; color: var(--color-text-secondary); margin: 0; font-size: 0.95rem;">
+                                Cena (+30 zł) uwzględnia <strong>czas dojazdu</strong> (45-90 min), <strong>koszty
+                                    transportu</strong> oraz <strong>wygodę spotkania</strong> w kawiarni, u Ciebie w
+                                domu lub biurze.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -754,66 +775,44 @@
             document.getElementById('calendar-' + type).classList.add('active');
         }
 
-        // Pricing Toggle Switch
-        document.getElementById('pricingToggle').addEventListener('change', function () {
-            const isWroclaw = this.checked;
-            const pricesOnline = document.querySelectorAll('.price-online');
-            const pricesWroclaw = document.querySelectorAll('.price-wroclaw');
-            const wroclawFeatures = document.querySelectorAll('.wroclaw-feature');
-            const labelOnline = document.getElementById('toggleLabelOnline');
-            const labelWroclaw = document.getElementById('toggleLabelWroclaw');
-            const slider = document.querySelector('.toggle-slider');
+        // Pricing Toggle Function
+        function switchPricing(mode) {
+            const isWroclaw = mode === 'wroclaw';
 
-            pricesOnline.forEach(el => el.style.display = isWroclaw ? 'none' : 'inline');
-            pricesWroclaw.forEach(el => el.style.display = isWroclaw ? 'inline' : 'none');
-            wroclawFeatures.forEach(el => el.style.display = isWroclaw ? 'list-item' : 'none');
+            // Update tab buttons
+            const tabOnline = document.getElementById('tabOnline');
+            const tabWroclaw = document.getElementById('tabWroclaw');
 
-            labelOnline.style.color = isWroclaw ? 'var(--color-text-secondary)' : 'var(--color-primary)';
-            labelWroclaw.style.color = isWroclaw ? 'var(--color-accent)' : 'var(--color-text-secondary)';
-            slider.style.backgroundColor = isWroclaw ? 'var(--color-accent)' : 'var(--color-primary)';
-        });
-
-        // Also add click handlers to labels and slider for better UX
-        document.querySelector('.toggle-slider').addEventListener('click', function () {
-            const toggle = document.getElementById('pricingToggle');
-            toggle.checked = !toggle.checked;
-            toggle.dispatchEvent(new Event('change'));
-        });
-
-        document.getElementById('toggleLabelOnline').addEventListener('click', function () {
-            const toggle = document.getElementById('pricingToggle');
-            if (toggle.checked) {
-                toggle.checked = false;
-                toggle.dispatchEvent(new Event('change'));
+            if (isWroclaw) {
+                tabOnline.style.background = 'transparent';
+                tabOnline.style.color = 'var(--color-text-secondary)';
+                tabOnline.style.boxShadow = 'none';
+                tabWroclaw.style.background = 'var(--color-accent)';
+                tabWroclaw.style.color = 'white';
+                tabWroclaw.style.boxShadow = '0 4px 12px rgba(255, 107, 107, 0.3)';
+            } else {
+                tabOnline.style.background = 'var(--color-primary)';
+                tabOnline.style.color = 'white';
+                tabOnline.style.boxShadow = '0 4px 12px rgba(101,123,230,0.3)';
+                tabWroclaw.style.background = 'transparent';
+                tabWroclaw.style.color = 'var(--color-text-secondary)';
+                tabWroclaw.style.boxShadow = 'none';
             }
-        });
 
-        document.getElementById('toggleLabelWroclaw').addEventListener('click', function () {
-            const toggle = document.getElementById('pricingToggle');
-            if (!toggle.checked) {
-                toggle.checked = true;
-                toggle.dispatchEvent(new Event('change'));
-            }
-        });
+            // Update prices
+            document.querySelectorAll('.price-online').forEach(el => {
+                el.style.display = isWroclaw ? 'none' : 'inline';
+            });
+            document.querySelectorAll('.price-wroclaw').forEach(el => {
+                el.style.display = isWroclaw ? 'inline' : 'none';
+            });
+
+            // Update Wroclaw features
+            document.querySelectorAll('.wroclaw-feature').forEach(el => {
+                el.style.display = isWroclaw ? 'list-item' : 'none';
+            });
+        }
     </script>
-
-    <style>
-        .toggle-switch input:checked+.toggle-slider::before {
-            transform: translateX(28px);
-        }
-
-        .toggle-slider::before {
-            position: absolute;
-            content: "";
-            height: 24px;
-            width: 24px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            border-radius: 50%;
-            transition: 0.4s;
-        }
-    </style>
 
 </body>
 
