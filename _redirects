@@ -12,3 +12,19 @@ https://www.angielskikorepetycje.pl/* https://angielskikorepetycje.pl/:splat 301
 # Moved articles
 /wiedza/metody/kawiarnie-wroclaw-nauka-jezyka.html /wiedza/porady/kawiarnie-wroclaw-nauka-jezyka 301
 /blog/porady/jak-wybrac-korepetytora /wiedza/porady/5-sygnalow-zlego-korepetytora 301
+
+# Google-indexed URLs that have changed (Jan 2026)
+/10-bledow-matura-angielski.html /wiedza/egzaminy/10-bledow-matura-angielski 301
+/matura-angielski.html /kursy/matura 301
+/kurs-speaking.html /kursy/speaking 301
+/kurs-toeic.html /kursy/toeic 301
+/angielski-online.html /oferta-online 301
+/blog.html /baza-wiedzy 301
+
+# URLs without .html extension (from GSC temporary removals)
+/angielski-wroclaw /index 301
+/matura-angielski /kursy/matura 301
+/kurs-ielts /kursy/ielts 301
+/kurs-speaking /kursy/speaking 301
+/angielski-online /oferta-online 301
+/kurs-toefl /kursy/toefl 301
