@@ -490,33 +490,42 @@
                                 <td><strong>Starter</strong></td>
                                 <td>5h</td>
                                 <td><span class="discount-badge">5% taniej</span></td>
-                                <td>523 PLN</td>
-                                <td>618 PLN</td>
-                                <td>570 PLN</td>
+                                <td><span class="pkg-online">523</span><span class="pkg-wroclaw"
+                                        style="display:none;">665</span> zł</td>
+                                <td><span class="pkg-online">618</span><span class="pkg-wroclaw"
+                                        style="display:none;">760</span> zł</td>
+                                <td><span class="pkg-online">570</span><span class="pkg-wroclaw"
+                                        style="display:none;">713</span> zł</td>
                             </tr>
                             <tr>
                                 <td><strong>Standard</strong></td>
                                 <td>10h</td>
                                 <td><span class="discount-badge">10% taniej</span></td>
-                                <td>990 PLN</td>
-                                <td>1170 PLN</td>
-                                <td>1080 PLN</td>
+                                <td><span class="pkg-online">990</span><span class="pkg-wroclaw"
+                                        style="display:none;">1260</span> zł</td>
+                                <td><span class="pkg-online">1170</span><span class="pkg-wroclaw"
+                                        style="display:none;">1440</span> zł</td>
+                                <td><span class="pkg-online">1080</span><span class="pkg-wroclaw"
+                                        style="display:none;">1350</span> zł</td>
                             </tr>
                             <tr>
                                 <td><strong>Pro</strong></td>
                                 <td>20h</td>
                                 <td><span class="discount-badge">15% taniej</span></td>
-                                <td>1870 PLN</td>
-                                <td>2210 PLN</td>
-                                <td>2040 PLN</td>
+                                <td><span class="pkg-online">1870</span><span class="pkg-wroclaw"
+                                        style="display:none;">2380</span> zł</td>
+                                <td><span class="pkg-online">2210</span><span class="pkg-wroclaw"
+                                        style="display:none;">2720</span> zł</td>
+                                <td><span class="pkg-online">2040</span><span class="pkg-wroclaw"
+                                        style="display:none;">2550</span> zł</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <p
+                <p id="packageNote"
                     style="text-align: center; margin-top: 1.5rem; font-size: 0.9rem; color: var(--color-text-secondary);">
-                    💡 <em>Ceny powyżej dotyczą lekcji online. Lekcje stacjonarne (Wrocław) +30 zł/h.</em>
+                    💻 <em>Ceny powyżej dotyczą lekcji online.</em>
                 </p>
             </div>
         </section>
@@ -811,6 +820,22 @@
             document.querySelectorAll('.wroclaw-feature').forEach(el => {
                 el.style.display = isWroclaw ? 'list-item' : 'none';
             });
+
+            // Update package table prices
+            document.querySelectorAll('.pkg-online').forEach(el => {
+                el.style.display = isWroclaw ? 'none' : 'inline';
+            });
+            document.querySelectorAll('.pkg-wroclaw').forEach(el => {
+                el.style.display = isWroclaw ? 'inline' : 'none';
+            });
+
+            // Update package note text
+            const packageNote = document.getElementById('packageNote');
+            if (packageNote) {
+                packageNote.innerHTML = isWroclaw
+                    ? '📍 <em>Ceny powyżej dotyczą lekcji stacjonarnych we Wrocławiu.</em>'
+                    : '💻 <em>Ceny powyżej dotyczą lekcji online.</em>';
+            }
         }
     </script>
 
