@@ -1,0 +1,12 @@
+# Cloudflare Pages Configuration
+# This file configures D1 database binding for the view counter
+
+name = "angielski-korepetycje"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "./"
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "blog-views"
+database_id = "1debf7fc-2019-4e3c-a4eb-c5071c38193b"
